@@ -1,0 +1,71 @@
+\chapter{Pendahuluan}
+\label{chap:pendahuluan}
+
+\section{Latar Belakang}
+\label{sec:latarBelakang}
+
+Pemrosesan bahasa alami atau dalam bahasa Inggris disebut dengan {\it natural language processing} (NLP) adalah cabang ilmu komputer dan linguistik yang mengkaji interaksi antara komputer dan manusia menggunakan bahasa alami. NLP sering dianggap sebagai cabang dari kecerdasan buatan dan bidang kajiannya bersinggungan dengan linguistik komputasional. Kajian NLP antara lain mencakup segmentasi tuturan {\it (speech segmentation)}, segmentasi teks {\it (text segmentation)}, penandaan kelas kata {\it (part-of-speech tagging)}, serta pengawataksaan makna {\it (word sense disambiguation)}. Salah satu alat yang digunakan oleh komputer dalam proses mengenali bahasa alami manusia adalah {\it morphological parser}.
+
+{\it Morphological parser} berfungsi untuk membagi sebuah kata menjadi komponen-komponen penyusunnya. Proses ini dapat mengenali komponen kata seperti awalan, kata dasar, sisipan, dan akhiran serta dapat mengenali jika kata tersebut merupakan kata ulang maupun kata majemuk. Proses di mana {\it morphological parser} melakukan tugasnya dalam menguraikan kata menjadi komponen-komponen penyusunnya disebut dengan {\it morphological parsing}. Proses ini dapat membantu mengurangi ambiguitas selama proses mengetahui makna suatu kalimat. Sebagai contoh, kata "mengurus" bisa mempunyai makna menjadi kurus maupun mengerjakan sebuah urusan, bergantung pada apa kata dasar dari kata tersebut. Jika kita bisa membagi kata tersebut menjadi komponen penyusunnya, kita bisa lebih yakin mengenai makna dari kata tersebut dalam kalimat. {\it Morphological parsing} merupakan salah satu proses penting dalam NLP.
+
+{\it Morphological parser} sudah banyak dibuat untuk beberapa bahasa yang ada di dunia\cite{hasim:08:turkish}. Saat ini, belum ada yang membuat {\it morphological parser} untuk kalimat dalam bahasa Indonesia dengan benar. Padahal, aturan morfologi pada bahasa Indonesia relatif lebih sederhana dibandingkan aturan pada bahasa lain.
+
+
+\section{Rumusan Masalah}
+\label{sec:rumusanMasalah}
+
+Sehubungan dengan latar belakang yang telah diuraikan di atas, maka dibuat rumusan masalah sebagai berikut ini.
+\begin{itemize}
+	\item Bagaimana aturan morfologi bahasa Indonesia?
+	\item Bagaimana struktur data dari {\it lexicon} yang digunakan pada perangkat lunak?
+	\item Bagaimana cara mengimplementasikan aturan morfologi bahasa Indonesia ke dalam perangkat lunak?
+	\item Bagaimana performansi dari perangkat lunak yang dihasilkan?
+\end{itemize}
+
+\section{Tujuan}
+\label{sec:tujuan}
+
+Tujuan dari penelitian ini adalah sebagai berikut:
+\begin{itemize}
+	\item Mengetahui aturan morfologi bahasa Indonesia
+	\item Mengetahui struktur data dari {\it lexicon} yang digunakan pada perangkat lunak
+	\item Mengimplementasikan aturan morfologi bahasa Indonesia ke dalam perangkat lunak
+	\item Mengetahui performansi dari perangkat lunak yang dihasilkan
+\end{itemize}
+
+\section{Batasan Masalah}
+\label{sec:batasanMasalah}
+
+Terdapat beberapa batasan masalah untuk penelitian ini:
+
+\begin{itemize}
+	\item Kalimat yang dapat diproses adalah kalimat dalam bahasa Indonesia yang ditulis sesuai ejaan yang disempurnakan (EYD)
+	\item Kata-kata serapan dari bahasa asing yang belum ada dalam Kamus Besar Bahasa Indonesia (KBBI) tidak dapat diproses
+	\item Kata yang dapat diproses adalah kata yang dibentuk dari proses morfologi berupa afiksasi, komposisi, dan reduplikasi
+\end{itemize}
+
+\section{Metodologi Penelitian}
+\label{sec:metodologiPenelitian}
+
+Tahap-tahap yang akan dilakukan dalam penelitian ini adalah sebagai berikut:
+\begin{enumerate}
+	\item Melakukan studi literatur tentang morfologi bahasa Indonesia dan perangkat lunak {\it morphological parser} yang sudah ada
+	\item Melakukan analisis pada {\it morphological parser} bahasa Indonesia dan {\it lexicon} yang digunakan serta merancang struktur data dari {\it lexicon}
+	\item Merancang dan mengimplementasikan {\it lexicon} dan {\it morphological parser} ke dalam perangkat lunak
+	\item Mengumpulkan contoh kalimat dalam bahasa Indonesia sebagai bahan pengujian
+	\item Melakukan pengujian terhadap perangkat lunak
+\end{enumerate}
+
+\section{Sistematika Pembahasan}
+\label{sec:sistematikaPembahasan}
+
+Keseluruhan bab yang disusun dalam karya tulis ini terbagi ke dalam bab-bab sebagai berikut:
+
+\begin{enumerate}
+	\item BAB 1 - PENDAHULUAN membahas mengenai latar belakang, rumusan masalah, tujuan, batasan masalah, metodologi penelitian, dan sistematika pembahasan.
+	\item BAB 2 - DASAR TEORI membahas mengenai morfem, proses morfologi bahasa Indonesia, {\it lexicon} bahasa Indonesia dan struktur data dari {\it lexicon}.
+	\item BAB 3 - ANALISIS membahas mengenai analisis \textit{morphological parser} bahasa Indonesia, {\it lexicon} bahasa Indonesia, dan struktur data {\it lexicon} yang digunakan pada perangkat lunak {\it Morphological Parser}.
+	\item BAB 4 - PERANCANGAN membahas mengenai perancangan antarmuka dan struktur data pada perangkat lunak {\it Morphological Parser}.
+	\item BAB 5 - IMPLEMENTASI DAN PENGUJIAN membahas mengenai implementasi dan pengujian yang dilakukan pada perangkat lunak {\it Morphological Parser}.
+	\item BAB 6 - KESIMPULAN DAN SARAN membahas mengenai kesimpulan dan saran mengenai perangkat lunak {\it Morphological Parser}.
+\end{enumerate}
