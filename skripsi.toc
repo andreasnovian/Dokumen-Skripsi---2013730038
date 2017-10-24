@@ -6,32 +6,31 @@
 \contentsline {chapter}{\numberline {1}Pendahuluan}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Rumusan Masalah}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Tujuan}{2}{section.1.3}
+\contentsline {section}{\numberline {1.3}Tujuan}{1}{section.1.3}
 \contentsline {section}{\numberline {1.4}Batasan Masalah}{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}Metodologi Penelitian}{2}{section.1.5}
 \contentsline {section}{\numberline {1.6}Sistematika Pembahasan}{2}{section.1.6}
 \contentsline {chapter}{\numberline {2}Dasar Teori}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Morfologi\cite {chaer:08:morfologi}}{5}{section.2.1}
+\contentsline {section}{\numberline {2.1}Morfologi}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Morfologi dalam Linguistik}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Morfologi dan Ilmu Kebahasaan Lain}{7}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Objek Kajian Morfologi}{7}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Morfem}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Identifikasi Morfem}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Alomorf dan Morf}{10}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Jenis Morfem}{10}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Morfem Dasar, Bentuk Dasar, Pangkal (\textit {Stem}), Akar, dan Leksem}{13}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Morfem Afiks}{14}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Proses Morfologi}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Bentuk Dasar}{15}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Pembentuk Kata}{15}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Hasil Proses Pembentukan}{16}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Morfofonemik dalam Pembentukan Kata}{16}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}\textit {Prefiksasi ber-}}{17}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}\textit {Prefiksasi me- (termasuk klofiks me-kan dan me-i)}}{17}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}\textit {Prefiksasi pe- dan konfiksasi pe-an}}{18}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}\textit {Prefiksasi per- dan konfiksasi per-an}}{19}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}\textit {Prefiksasi ter-}}{20}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.1.2}Objek Kajian Morfologi}{6}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Morfem}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Identifikasi Morfem}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Alomorf dan Morf}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Jenis Morfem}{9}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Morfem Dasar, Bentuk Dasar, Pangkal (\textit {Stem}), Akar, dan Leksem}{12}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Morfem Afiks}{13}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Proses Morfologi}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Bentuk Dasar}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Pembentuk Kata}{14}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Hasil Proses Pembentukan}{15}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Morfofonemik dalam Pembentukan Kata}{15}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}\textit {Prefiksasi ber-}}{16}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}\textit {Prefiksasi me- (termasuk klofiks me-kan dan me-i)}}{16}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}\textit {Prefiksasi pe- dan konfiksasi pe-an}}{17}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}\textit {Prefiksasi per- dan konfiksasi per-an}}{18}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}\textit {Prefiksasi ter-}}{19}{subsection.2.4.5}
 \contentsline {chapter}{\numberline {3}Analisis}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}Leksikon}{21}{section.3.1}
 \contentsline {section}{\numberline {3.2}Proses \textit {Morphological Parsing}}{22}{section.3.2}
-\contentsline {chapter}{Daftar Referensi}{23}{chapter*.5}
+\contentsline {chapter}{Daftar Referensi}{25}{chapter*.5}
