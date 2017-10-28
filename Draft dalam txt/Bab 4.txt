@@ -1,0 +1,5 @@
+- Perancangan Struktur Data Trie (rancangan detail + syntax)
+- Perancangan Struktur Penyimpanan Lexicon (rancangan detail + syntax)
+- Perancangan syntax keluaran proses Morphological Parsing
+- Perancangan Use Case Diagram (final)
+- Perancangan Antarmuka (final)

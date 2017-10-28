@@ -1,0 +1,2 @@
+- Kesimpulan (dapat melakukan proses parsing bla bla bla)
+- Saran, dilengkapi bentuk turunan untuk setiap kata dalam bahasa Indonesia.

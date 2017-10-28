@@ -1,0 +1,2 @@
+- Implementasi semua bab 4 dalam bentuk program
+- Hasil pengujian

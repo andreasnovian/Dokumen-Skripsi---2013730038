@@ -1,0 +1,67 @@
+LAMBANG LEXICON
+kata dasar	--> sayur
+komposisi	--> @ (contoh @bening)
+reduplikasi	--> ^
+*reduplikasi--> ^2 (utuh)
+*reduplikasi--> ^mayur (berubah bunyi)
+prefiks		--> [
+sufiks		--> ]
+konfiks		--> #..-.. (contoh #ber-an)
+*pemisah	--> +
+
+Contoh: 
+- mempertanggungjawabkan ditulis menjadi --> tanggung+@jawab+]kan+[per+[me
+- bersalam-salaman ditulis menjadi --> salam+^2+#ber-an
+- tari-menari ditulis menjadi --> tari+^menari
+- tari-tarian ditulis menjadi --> tari+^2+]an
+- makanan-makanan ditulis menjadi --> makan+]an+^2
+- dimakan pakaian ditulis menjadi --> makan+[di+@pakaian
+
+Semua bentuk dasar yang valid dalam Bahasa Indonesia disimpan dalam folder bernama "lxc"
+Semua bentuk dasar disimpan dalam file bernama "roots.lxc" dan dipisahkan dengan karakter enter (\n)
+Setiap bentuk dasar mempunyai satu file khusus untuk menyimpan komponen dari bentuk dasar tersebut dengan nama file sama dengan bentuk dasar dan dengan ekstensi ".lxc"
+Isi dari setiap file tersebut adalah bentuk dasar diikuti oleh karakter enter (\n) lalu diikuti setiap komponen yang bisa diimbuhkan ke bentuk dasar tersebut
+Supaya lebih efisien, penulisan setiap komponen TIDAK PERLU diawali dengan bentuk dasar
+Setiap komponen dipisahkan oleh karakter enter (\n)
+
+Contoh, isi dari file "sayur.lxc" adalah sebagai berikut:
+sayur
+@asam
+@bening
+^mayur
+[me
+]an
+^2+]an
+
+Satu komponen valid dapat terdiri dari beberapa komponen yang dipisahkan dengan lambang '+'
+Komponen diimbuhkan pada bentuk dasar secara berurutan dari kiri ke kanan
+Urutan penulisan komponen afiks (dalam satu komponen valid) adalah sebagai berikut: konfiks, sufiks, prefiks
+Khusus untuk prefiks, jika terdapat lebih dari satu prefiks, maka prefiks yang lebih dekat dengan bentuk dasar ditulis lebih dahulu
+
+Contoh:
+Bentuk Dasar: salam
+Komponen: ^2+#ber-an 
+
+Proses pengimbuhan
+- "salam" diberi komponen ^2 menjadi "salam-salam"
+- "salam-salam" diberi komponen #ber-an menjadi "bersalam-salaman"
+
+Contoh:
+Bentuk Dasar: makan
+Komponen: ]an+^2 
+
+Proses pengimbuhan
+- "makan" diberi komponen ]an menjadi "makanan"
+- "makanan" diberi komponen ^2 menjadi "makanan-makanan"
+
+Contoh:
+Bentuk Dasar: tanggung
+Komponen: @jawab+]kan+[per+[me
+
+Proses pengimbuhan
+- "tanggung" diberi komponen @jawab menjadi "tanggung jawab"
+- "tanggung jawab" diberi komponen ]kan menjadi "tanggung jawabkan"
+- "tanggung jawabkan" diberi komponen [per menjadi "pertanggungjawabkan"
+- "pertanggungjawabkan" diberi komponen [me menjadi "mempertanggungjawabkan"
+
+Jika pada komponen ditemukan ada prefiks dan sufiks sekaligus atau ada konfiks yang diimbuhkan, hilangkan karakter spasi pada kata yang akan diimbuhkan jika ada.
