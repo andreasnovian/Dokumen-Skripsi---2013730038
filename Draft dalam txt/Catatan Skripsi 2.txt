@@ -1,0 +1,157 @@
+Meneruskan paper mahasiswa UI, A Two-Level Morphological Analyser for the Indonesian Language, menambahkan fitur komposisi.
+
+Bisa menambahkan leksikon untuk kata yang belum ada dalam leksikon
+
+Yang disimpan dalam leksikon adalah kata dasar dan kata tersebut bisa dipasangkan dengan imbuhan apa saja, contoh :
+	kata dasar : ketik
+	bisa diimbuhkan dengan : prefiks: ber, me, ...
+							 sufiks: i, kan, ...
+							 konfiks: me-kan, ...
+							 
+YANG HARUS DIKERJAIN :
+Pelajari struktur penyimpanan lexicon, jenis kata yang disimpan dan cara penyimpanannya
+
+Perlu proses khusus untuk komposisi, karena komposisi awalnya dipisah kalau dikasih konfiks jadi disatukan, contoh mempertanggungjawabkan
+IDE: ada tag khusus untuk kata yang harus disambung, ketika tag itu ditemukan, kata dasarnya diproses dulu dengan dihilangkan karakter spasi, baru lanjut diproses dengan konfiks
+
+Penyimpanan di lexicon pakai tag, untuk menandai prefiks dkk
+Prefiks : me-, pe-, per-, di-, ber-, ter-, se-, ke-
+Infiks	: -el-, -em-, -er-
+Sufiks	: -kan, -i, -an
+Konfiks	: ke-an, ber-an, pe-an, per-an, se-nya
+Klitika	: ku-, kau-, -ku, -mu, -nya, -lah
+Klofiks : me-kan, me-i, memper-, memper-kan, memper-i, ber-kan, di-kan, di-i, diper-, diper-kan, diper-i, ter-kan, ter-i
+
+Untuk komposisi, harus disimpan kata utuh berupa kemungkinan komposisi kata yang mengikuti, contoh
+Pada leksem "makan" disimpan juga "ampun", "angin", "arwah", dll. Cek KBBI.
+"makan ampun", "makan angin", dan "makan arwah" adalah hasil komposisi dari kata "makan" 
+
+MORFOTAKTIK 	: aturan mengenai suatu kata dasar boleh dipasangkan dengan imbuhan apa saja
+MORFOFONEMIK	: aturan mengenai perubahan suku kata ketika kata dasar diberikan imbuhan
+
+MORFOTAKTIK
+Terdiri dari dua, concatenative dan non-concatenative
+- Concatenative adalah pengimbuhan afiks
+- Non-concatenative adalah pengulangan dan komposisi
+
+Pengulangan terdiri dari tiga: penuh, sebagian, dan berimbuhan. 
+Contoh :
+- Penuh 		: buku-buku, marah-marah
+- Sebagian		: berlari-lari (ber + lari-lari)
+- Berimbuhan	: tanam-menanam, tanam-tanaman
+
+MORFOFONEMIK
+Terdiri dari dua grup, perubahan pada kata dasar dan perubahan pada imbuhan
+Perubahan pada kata dasar:
+- k diganti ng ketika imbuhannya me- atau pe-, contoh mengantuk
+- s diganti ny ketika imbuhannya me- atau pe-, contoh penyebaran
+- p diganti m ketika imbuhannya me- atau pe-, contoh pemakai
+- t diganti n ketika imbuhannya me- atau pe-, contoh menertawakan
+
+Perubahan pada imbuhan
+
+Prefiksasi ber-
+- menjadi be- ketika diikuti kata berawalan r atau suku pertama berbunyi -er-
+- menjadi bel- ketika diikuti kata ajar
+- tetap ber selain di atas
+
+Prefiksasi me- (tidak ada x z)
+- tetap me- ketika diikuti kata berawalan r, l, w, y, m, n, k, s, p, t
+- menjadi mem- ketika diikuti kata berawalan b, f, dan v
+- menjadi men- ketika diikuti kata berawalan c, d, j, sy
+- menjadi meng- ketika diikuti kata berawalan g, h, kh, a, i, u, e, o, q
+- menjadi menge- ketika diikuti kata yang hanya terdiri dari satu suku kata
+
+Prefiksasi pe- (tidak ada x z)
+- tetap pe- ketika diikuti kata berawalan r, l, w, y, m, n, k, s, p, t
+- menjadi pem- ketika diikuti kata berawalan b, f, dan v
+- menjadi pen- ketika diikuti kata berawalan c, d, j
+- menjadi peng- ketika diikuti kata berawalan g, h, kh, a, i, u, e, o, q
+- menjadi penge- ketika diikuti kata yang hanya terdiri dari satu suku kata
+
+Prefiksasi per-
+- menjadi pe- ketika diikuti kata berawalan r atau suku pertama berbunyi -er-
+- menjadi pel- ketika diikuti kata ajar
+- tetap per- selain di atas
+
+Prefiksasi ter-
+- menjadi te- ketika diikuti kata berawalan r
+- tetap ter- selain di atas
+
+LAMBANG LEXICON
+kata dasar	--> makan
+prekomposisi	--> @ (dalam satu kata)
+postkomposisi	--> & (pisah kata)
+reduplikasi	--> ^
+*reduplikasi--> ^2 (utuh, diulang sama persis seluruhnya setelah semua proses beres)
+*reduplikasi--> ^(makan) (proses kata dasar dulu, lalu redup dengan makan)
+*reduplikasi--> ^(makan+]an) (proses kata dasar dulu, baru terakhir redup dengan makanan)
+prefiks		--> [
+sufiks		--> ]
+konfiks		--> #..-..
+*kombinasi	--> +
+*dalam redup--> (..)
+
+LAMBANG HASIL PARSING
+kata dasar	--> makan
+kata invalid--> !makan
+prekomposisi	--> @ (dalam satu kata)
+postkomposisi	--> & (pisah kata)
+reduplikasi	--> ^
+*reduplikasi--> ^2 (utuh, diulang sama persis seluruhnya setelah semua proses beres)
+*reduplikasi--> ^(makan) (proses kata dasar dulu, lalu redup dengan makan)
+*reduplikasi--> ^(makan+]an) (proses kata dasar dulu, baru terakhir redup dengan makanan)
+prefiks		--> [
+sufiks		--> ]
+konfiks		--> #..-..
+proklitika	--> $
+enklitika	--> %
+*kombinasi	--> +
+*dalam redup--> (..)
+
+IMPLEMENTASI
+Aturan morfotaktik diimplementasikan pada kelas PARSER, lalu divalidasi oleh kelas LEXICON yang menyimpan semua jenis komponen morfologi yang bisa dipasangkan pada suatu kata dasar
+Aturan morfofonemik diimplementasikan pada kelas PARSER, dengan melakukan identifikasi tiap komponen morfologi, lalu membuat formula leksikonnya, kemudian dicek apakah ada di leksikon atau tidak
+
+Prefiks : me-, pe-, per-, di-, ber-, ter-, se-, ke-
+Infiks	: -el-, -em-, -er-
+Sufiks	: -kan, -i, -an
+Konfiks	: ke-an, ber-an, pe-an, per-an, se-nya
+Klitika	: ku-, kau-, -ku, -mu, -nya, -lah, -kah, -pun
+Klofiks : me-kan, me-i, memper-, memper-kan, memper-i, ber-kan, di-kan, di-i, diper-, diper-kan, diper-i, ter-kan, ter-i
+
+Afiks di kiri bentuk dasar:
+me-, pe-, ber-, per-, di-, ter-, 
+se-, ke-, ku-, kau-, 
+
+Afiks di kanan bentuk dasar:
+-kan, -an, -i, 
+-ku, -mu, -nya, -lah, -kah, -pun
+
+Perbedaan konfiks dan klofiks:
+Konfiks: harus diimbuhkan depan dan belakang sekaligus baru punya arti
+Klofiks: bisa diimbuhkan salah satu saja dan masih punya arti (ada dalam leksikon kombinasi imbuhannya)
+
+Langkah kerja kelas Parser:
+- Pisahkan tiap kata, berdasarkan karakter spasi
+- Cek kata dalam kamus, jika ada masukkan sebagai salah satu kemungkinan hasil
+- Identifikasi afiks dan semua kemungkinan morfofonemiknya
+	- Cari prefiks, pisahkan prefiks dengan katanya, cek kata di kamus
+	- Dengan prefiks yang sama, cek semua kemungkinan sufiks, pisahkan dengan sufiks, cek di kamus
+	- Ketika ditemukan ada prefiks dan sufiks, coba pasangkan salah satunya aja, lalu cek di daftar komponen di kamus
+		- Jika dicoba salah satu saja dan ketemu, artinya pasangan prefiks dan sufiks itu adalah klofiks
+		- Jika tidak ketemu untuk salah satunya, lakukan cek komponen untuk pasangan konfiks
+		
+Ide untuk parsing komposisi:
+Ketika ketemu pasangan konfiks yang valid, coba ambil tiap karakter, cek kamus, jika valid cek kata yang mengikuti komposisi bukan
+Misal : tanggungjawab
+iterasi 1 : cek String t, tidak valid
+iterasi 2 : cek String ta, tidak valid
+.
+.
+.
+iterasi x : cek String tanggung, valid, lalu cek @jawab sebagai komponennya tanggung, valid
+iterasi x+1 : cek String tanggungj, tidak valid...
+HANYA dilakukan ketika ketemu pasangan konfiks yang valid, hemat biaya	
+
+Kata yang kemungkinan nggak bisa diproses : mengotak-ngotakkan
