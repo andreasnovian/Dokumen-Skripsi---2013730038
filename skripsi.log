@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  29 OCT 2017 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  29 OCT 2017 15:11
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1149,7 +1149,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [8] [9] [10]
 [11]
-<Gambar/gambar-morfem-bebas-terikat.png, id=235, 243.91125pt x 124.21407pt>
+<Gambar/gambar-morfem-bebas-terikat.png, id=236, 243.91125pt x 124.21407pt>
 File: Gambar/gambar-morfem-bebas-terikat.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-bebas-terikat.png>
@@ -1157,18 +1157,18 @@ Package pdftex.def Info: Gambar/gambar-morfem-bebas-terikat.png used on input l
 ine 200.
 (pdftex.def)             Requested size: 243.91064pt x 124.21375pt.
  [12 <./Gambar/gambar-morfem-bebas-terikat.png>] [13]
-<Gambar/gambar-morfem-dasar-afiks.png, id=251, 269.50688pt x 137.01187pt>
+<Gambar/gambar-morfem-dasar-afiks.png, id=252, 269.50688pt x 137.01187pt>
 File: Gambar/gambar-morfem-dasar-afiks.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-dasar-afiks.png>
 Package pdftex.def Info: Gambar/gambar-morfem-dasar-afiks.png used on input lin
-e 221.
+e 222.
 (pdftex.def)             Requested size: 269.50621pt x 137.01154pt.
  [14 <./Gambar/gambar-morfem-dasar-afiks.png>] [15] [16]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 275.
+(Font)              <9> on input line 274.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 275.
+(Font)              <5> on input line 274.
  [17] [18] [19] [20] [21] [22] [23] [24] [25]) [26]
 \openout2 = `Bab/bab3.aux'.
 
@@ -1208,13 +1208,13 @@ Package rerunfilecheck Info: File `skripsi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
- 34817 strings out of 493323
- 757464 string characters out of 3139037
+ 34816 strings out of 493323
+ 757457 string characters out of 3139037
  1108028 words of memory out of 3000000
  37411 multiletter control sequences out of 15000+200000
  86494 words of font info for 145 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 78i,11n,130p,1631b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 78i,11n,130p,1631b,707s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1238,9 +1238,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy10.pfb>
-Output written on skripsi.pdf (33 pages, 420396 bytes).
+Output written on skripsi.pdf (33 pages, 420486 bytes).
 PDF statistics:
  470 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
+ 136 named destinations out of 1000 (max. 500000)
  24862 words of extra memory for PDF output out of 24883 (max. 10000000)
 
