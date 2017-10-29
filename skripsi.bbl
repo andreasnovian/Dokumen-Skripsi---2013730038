@@ -1,14 +1,19 @@
 \begin{thebibliography}{99}
 
-\bibitem{chaer:08:morfologi}
-Chaer, A. (2008) {\em Morfologi Bahasa Indonesia (Pendekatan Proses)}. Rineka
-  Cipta,  Jakarta.
-
 \bibitem{hasim:08:turkish}
 Sak, H., Gungor, T., dan Saraclar, M. (2008) Turkish language resources:
   Morphological parser, morphological disambiguator and web corpus.
 \newblock {\em GoTAL '08 Proceedings of the 6th International Conference on
   Advances in Natural Language Processing},  Gothenburg, Sweden,  25-27 August,
    pp. 417--427. Springer-Verlag Berlin, Heidelberg.
+
+\bibitem{sajib:10:bangla}
+Dasgupta, S., Khan, N., Sarkar, A.~I., Pavel, D. S.~H., dan Khan, M. (2010)
+  Morphological analysis of inflecting compound words in bangla. Technical
+  report. BRAC University,  Dhaka, Bangladesh.
+
+\bibitem{chaer:08:morfologi}
+Chaer, A. (2008) {\em Morfologi Bahasa Indonesia (Pendekatan Proses)}. Rineka
+  Cipta,  Jakarta.
 
 \end{thebibliography}

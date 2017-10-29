@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  24 OCT 2017 09:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  29 OCT 2017 14:00
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1046,62 +1046,93 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.15}).
 
-<./Gambar/Logo-UNPAR.png, id=146, 180.31364pt x 177.42285pt>
-File: ./Gambar/Logo-UNPAR.png Graphic file (type png)
+\openout2 = `Bab/bab1.aux'.
 
-<use ./Gambar/Logo-UNPAR.png>
-Package pdftex.def Info: ./Gambar/Logo-UNPAR.png used on input line 401.
-(pdftex.def)             Requested size: 180.3132pt x 177.42241pt.
+(Bab/bab1.tex
+Bab 1.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 1.
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
  [1
 
 
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Gambar/Logo-UNPAR.png>]
- [2
 
-]
-File: ./Gambar/Logo-UNPAR.png Graphic file (type png)
- <use ./Gambar/Logo-UNPAR.png>
-Package pdftex.def Info: ./Gambar/Logo-UNPAR.png used on input line 401.
-(pdftex.def)             Requested size: 180.3132pt x 177.42241pt.
- [3] [4
 
-]
-[5] [6
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 21.
 
-]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 401.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 401.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 21.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 401
-.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 401
-.
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 21.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+ [2] [3]) [4]
+\openout2 = `Bab/bab2.aux'.
+
+
+(Bab/bab2.tex
+Bab 2.
+[5
+
+
+
+] <Gambar/gambar-hierarki-linguistik.png, id=176, 153.57375pt x 131.74219pt>
+File: Gambar/gambar-hierarki-linguistik.png Graphic file (type png)
+
+<use Gambar/gambar-hierarki-linguistik.png>
+Package pdftex.def Info: Gambar/gambar-hierarki-linguistik.png used on input li
+ne 23.
+(pdftex.def)             Requested size: 115.18002pt x 98.80638pt.
+
+<Gambar/gambar-objek-kajian-linguistik.png, id=180, 274.77657pt x 190.46156pt>
+File: Gambar/gambar-objek-kajian-linguistik.png Graphic file (type png)
+
+<use Gambar/gambar-objek-kajian-linguistik.png>
+Package pdftex.def Info: Gambar/gambar-objek-kajian-linguistik.png used on inpu
+t line 32.
+(pdftex.def)             Requested size: 206.08191pt x 142.8458pt.
+ [6 <./Gambar/gambar-hierarki-linguistik.png> <./Gambar/gambar-objek-kajian-lin
+guistik.png>] [7]
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 84.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 84.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 84.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 401.
+(Font)              <10.95> on input line 84.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 401.
+(Font)              <8> on input line 84.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 401.
-LaTeX Font Info:    Try loading font information for U+msa on input line 401.
+(Font)              <6> on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1109,135 +1140,56 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 401.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [7] [8
-
-] [9]
-[10
-
-] [11] [12
-
-] [13] [14
-
-] [15
-
-] [16
-
-] (skripsi.toc
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/lmr/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/cmr/bx/sc' tried instead on input line 2.
-)
-\tf@toc=\write6
-\openout6 = `skripsi.toc'.
-
- [17] [18
-
-] (skripsi.lof)
-\tf@lof=\write7
-\openout7 = `skripsi.lof'.
-
-
-[19] [20
-
-] (skripsi.lot)
-\tf@lot=\write8
-\openout8 = `skripsi.lot'.
-
- [21] [22
-
-]
-\openout2 = `Bab/bab1.aux'.
-
- (Bab/bab1.tex
-Bab 1.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 19.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 19.
- [1
-
-
-]
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
- [2]) [3]
-\openout2 = `Bab/bab2.aux'.
-
-
-(Bab/bab2.tex [4
-
-
-
-]
-Bab 2.
-<Gambar/gambar-hierarki-linguistik.png, id=334, 153.57375pt x 131.74219pt>
-File: Gambar/gambar-hierarki-linguistik.png Graphic file (type png)
-
-<use Gambar/gambar-hierarki-linguistik.png>
-Package pdftex.def Info: Gambar/gambar-hierarki-linguistik.png used on input li
-ne 23.
-(pdftex.def)             Requested size: 115.18002pt x 98.80638pt.
- [5 <./Gambar/gambar-hierarki-linguistik.png>]
-<Gambar/gambar-objek-kajian-linguistik.png, id=342, 274.77657pt x 190.46156pt>
-File: Gambar/gambar-objek-kajian-linguistik.png Graphic file (type png)
-
-<use Gambar/gambar-objek-kajian-linguistik.png>
-Package pdftex.def Info: Gambar/gambar-objek-kajian-linguistik.png used on inpu
-t line 32.
-(pdftex.def)             Requested size: 206.08191pt x 142.8458pt.
- [6 <./Gambar/gambar-objek-kajian-linguistik.png>] [7] [8]
-<Gambar/gambar-morfem-bebas-terikat.png, id=377, 243.91125pt x 124.21407pt>
+) [8] [9] [10]
+[11]
+<Gambar/gambar-morfem-bebas-terikat.png, id=235, 243.91125pt x 124.21407pt>
 File: Gambar/gambar-morfem-bebas-terikat.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-bebas-terikat.png>
 Package pdftex.def Info: Gambar/gambar-morfem-bebas-terikat.png used on input l
 ine 200.
 (pdftex.def)             Requested size: 243.91064pt x 124.21375pt.
- [9] [10 <./Gambar/gambar-morfem-bebas-terikat.png>]
-<Gambar/gambar-morfem-dasar-afiks.png, id=392, 269.50688pt x 137.01187pt>
+ [12 <./Gambar/gambar-morfem-bebas-terikat.png>] [13]
+<Gambar/gambar-morfem-dasar-afiks.png, id=251, 269.50688pt x 137.01187pt>
 File: Gambar/gambar-morfem-dasar-afiks.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-dasar-afiks.png>
 Package pdftex.def Info: Gambar/gambar-morfem-dasar-afiks.png used on input lin
 e 221.
 (pdftex.def)             Requested size: 269.50621pt x 137.01154pt.
- [11 <./Gambar/gambar-morfem-dasar-afiks.png>] [12]
+ [14 <./Gambar/gambar-morfem-dasar-afiks.png>] [15] [16]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 275.
- [13] [14] [15] [16] [17] [18]) [19]
+ [17] [18] [19] [20] [21] [22] [23] [24] [25]) [26]
 \openout2 = `Bab/bab3.aux'.
 
- (Bab/bab3.tex [20
 
-
-
-]
+(Bab/bab3.tex
 Bab 3.
-<Gambar/gambar-trie.png, id=475, 234.8775pt x 325.215pt>
+<Gambar/gambar-trie.png, id=348, 234.8775pt x 325.215pt>
 File: Gambar/gambar-trie.png Graphic file (type png)
 
 <use Gambar/gambar-trie.png>
 Package pdftex.def Info: Gambar/gambar-trie.png used on input line 16.
 (pdftex.def)             Requested size: 176.15768pt x 243.91064pt.
- [21 <./Gambar/gambar-trie.png>] [22] [23])
-[24] (skripsi.bbl) [25
+ [27
 
 
-]
+
+] [28 <./Gambar/gambar-trie.png>] [29] [30])
+[31] (skripsi.bbl [32
+
+
+]) [33]
 \openout2 = `Lampiran/lampA.aux'.
 
  (Lampiran/lampA.tex)
@@ -1246,23 +1198,23 @@ Package pdftex.def Info: Gambar/gambar-trie.png used on input line 16.
  (Lampiran/lampB.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
- (skripsi.aux
-(Bab/bab1.aux) (Bab/bab2.aux) (Bab/bab3.aux) (Lampiran/lampA.aux)
+
+(skripsi.aux (Bab/bab1.aux) (Bab/bab2.aux) (Bab/bab3.aux) (Lampiran/lampA.aux)
 (Lampiran/lampB.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: FF20FA0D65E3347A921341F7F559A83B;5437.
+(rerunfilecheck)             Checksum: D780490E857E20C4FDE8532A69C95C17;4996.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
- 34768 strings out of 493323
- 756934 string characters out of 3139037
+ 34819 strings out of 493323
+ 757488 string characters out of 3139037
  1108028 words of memory out of 3000000
- 37331 multiletter control sequences out of 15000+200000
- 94797 words of font info for 151 fonts, out of 3000000 for 9000
+ 37411 multiletter control sequences out of 15000+200000
+ 86624 words of font info for 146 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 78i,12n,130p,1542b,673s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 78i,11n,130p,1631b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1275,21 +1227,20 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiK
 TeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
 /dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.e
-nc} <C:\Users\Andreas Novian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecxc1095.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmsy10.pfb>
-Output written on skripsi.pdf (47 pages, 537262 bytes).
+nc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
+/lmsy10.pfb>
+Output written on skripsi.pdf (33 pages, 420214 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 27971 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 24862 words of extra memory for PDF output out of 24883 (max. 10000000)
 
