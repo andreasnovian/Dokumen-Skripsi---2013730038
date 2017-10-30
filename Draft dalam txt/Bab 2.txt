@@ -5,5 +5,4 @@
 	- Morfem afiks
 - Proses Morfologi
 - Morfofonemik
-- Morfotaktik
 - Struktur Data Trie
