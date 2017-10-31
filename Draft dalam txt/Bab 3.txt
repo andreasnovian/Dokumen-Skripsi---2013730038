@@ -1,3 +1,4 @@
+- Morphological Parser versi "A Two-Level Morphological Analyser for the Indonesian Language"
 - Lexicon
 	- Struktur Data Trie (analisis kebutuhan)
 	- Struktur Penyimpanan (Rule Lexicon), masih analisis kebutuhan apa saja yang harus disimpan
@@ -6,5 +7,4 @@
 	- Proses untuk Kata Hasil Reduplikasi
 	- Proses untuk Kata Hasil Komposisi
 - Finite-State Automata (ilustrasi aturan morfotaktik)
-- Morphological Parser versi "A Two-Level Morphological Analyser for the Indonesian Language"
 - Use Case Diagram (tahap awal)
