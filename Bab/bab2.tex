@@ -553,3 +553,99 @@ Morfofonemik dalam proses pengimbuhan dengan prefiks \textit{ter-} dapat berupa:
 	$ter + baik \rightarrow terbaik$
 	
 \end{enumerate}
+
+
+\section{Struktur Data Trie}
+\label{sec:trie}
+
+\textit{Trie} adalah struktur data berupa pohon terurut untuk menyimpan suatu himpunan string di mana setiap node pada pohon tersebut mengandung awalan (prefix) yang sama\cite{najogie:10:trie}. Kata "trie" berasal dari kata \textit{retrieval} yang berarti pengambilan. Struktur data trie ditemukan oleh seorang professor di MIT bernama Edward Fredkin. Trie sering digunakan pada masalah komputasi yang melibatkan penyimpanan dan pencarian string. Trie memiliki sejumlah keunggulan dibanding struktur data lain untuk memecahkan masalah serupa terutama dalam hal kecepatan dan memori yang digunakan.
+
+Dalam trie, tidak ada node yang menyimpan kunci yang terkait dengan node tersebut, sebaliknya, posisinya di pohon menunjukkan kunci apa yang terkait dengannya. Setiap keturunan dari sebuah node memiliki prefix yang sama dengan string yang diwakilkan oleh node tersebut, dan akar menandakan sebuah string kosong.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{Gambar/contoh-trie-1}
+\caption[Trie]{Trie dengan kata "trie","ini", dan "contoh"\cite{najogie:10:trie}} 
+\label{contoh-trie-1}
+\end{figure}
+
+Gambar \ref{contoh-trie-1} di atas adalah contoh representasi struktur data trie yang menyimpan tiga buah string, yaitu "trie","ini", dan "contoh". Dari gambar tersebut kita bisa mendapat gambaran mengenai kompleksitas waktu yang diperlukan untuk mencari sebuah kata dalam trie. Jika panjang kata terpanjang dalam trie adalah \textit{L}, maka untuk mencari sebuah kata dalam trie memerlukan waktu terburuk O(\textit{L})
+
+\subsection{Bitwise Trie}
+\label{sec:bitwiseTrie}
+
+Bitwise trie adalah salah satu variasi dari trie yang memiliki banyak kesamaan dengan trie berbasis karakter biasa, kecuali dalam representasi dengan bit individual yang biasanya digunakan untuk traversal secara efektif dan membentuk sebuah pohon biner. Secara umum, implementasinya menggunakan fungsi khusus CPU untuk dapat secara cepat mencari himpunan bit dengan panjang tertentu. Nilai ini lalu akan digunakan sebagai entri dari tabel dengan indeks 32 atau 64 yang menunujuk kepada elemen pertama dalam bitwise trie dengan sejumlah bilangan 0 di depan. Proses pencarian selanjutnya akan dilakukan dengan mengetes setiap bit dalam kunci dan memilih anak[0] atau anak[1] sesuai aturan hingga pencarian berakhir.
+
+Walaupun proses ini mungkin terdengar lambat, tetapi sangat fleksibel karena kurangnya ketergantungan terhadap \textit{register} dan oleh karena itu pada kenyataannya melakukan eksekusi dengan sangat baik pada CPU modern.
+
+\subsection{Patricia Trie}
+\label{sec:patriciaTrie}
+
+PATRICIA adalah variasi lain dari trie yang merupakan singkatan dari Practical Algorithm To Retrieve Information Coded In Alphanumeric. PATRICIA trie sendiri lebih dikenal dengan sebutan \textit{pohon radix} atau \textit{radix tree}. Pohon radix bisa diartikan secara sederhana sebagai trie yang kompleksitas ruangnya lebih efisien, di mana setiap node yang hanya memiliki satu anak digabung dengan anaknya sendiri. Hasilnya adalah setiap node paling dalam paling tidak memiliki 2 anak. Tidak seperti trie biasa, anak bisa diberi label deretan karakter maupun satu karakter. Ini membuat pohon radix jauh lebih efisien untuk jumlah string yang sedikit (terutama jika stringnya cukup panjang) dan untuk himpunan string yang memiliki prefix sama yang panjang.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{Gambar/contoh-radix-tree}
+\caption[Trie]{Pohon radix dengan 7 kata dengan prefix "r"\cite{najogie:10:trie}} 
+\label{contoh-radix-tree}
+\end{figure}
+
+Pohon radix memiliki fasilitas untuk melakukan operasi-operasi berikut, yang mana setiap operasinya memiliki kompleksitas waktu terburuk O(k), di mana k adalah panjang maksimum string dalam himpunan.
+
+\begin{itemize}
+	\item Pencarian: Mencari keberadaan suatu string pada himpunan string. Operasi ini sama dengan pencarian pada trie biasa kecuali beberapa sisi mengandung lebih dari satu karakter.
+	\item Penyisipan: Menambahkan sebuah string ke pohon. Kita mencari tempat yang tepat di pohon untuk menyisipkan elemen baru. Jika sudah ada sisi yang memiliki prefix sama dengan string masukan, kita akan memisahkan nya menjadi dua sisi dan memprosesnya. Proses pemisahan ini meyakinkan bahwa tidak ada node yang memiliki anak lebih banyak dari jumlah karakter string yang ada.
+	\item Hapus: Menghapus sebuah string dari pohon. Pertama kita menghapus daun yang berkaitan. Lalu, jika orangtuanya hanya memiliki satu anak lagi, kita menghapus orangtuanya dan menggabungkan sisi yang saling terhubung
+	\item Cari anak: Mencari string terbesar yang lebih kecil dari string masukan, sesuai dengan urutan alfabet.
+	\item Cari orang tua: Mencari string terkecil yang lebih besar dari string masukan, sesuai dengan urutan alfabet.
+\end{itemize}
+
+Pengembangan yang umum dari pohon radix yaitu menggunakan node dua warna, hitam dan putih. Untuk mengecek apakah sebuah string masukan sudah ada di dalam pohon, pencarian dimulai dari puncak, dan terus menelusuri setiap sisi sampai tidak ada lagi jalan. Jika node akhir dari proses ini berwarna hitam, berarti pencarian gagal, jika node berwarna putih berarti pencarian telah berhasil. Hal ini membuat kita bisa menambahkan string dalam jumlah banyak yang memiliki prefix yang sama dengan elemen di pohon dengan menggunakan node putih, lalu menghapus sejumlah pengecualian untuk mengehemat memori dengan cara menambahkan elemen string baru dengan node hitam.
+
+\subsection{Implementasi Trie dalam Kamus}
+\label{sec:kamus}
+
+Salah satu implementasi dari struktur data trie yang paling populer adalah dalam kamus. Kamus terdiri dari kumpulan kata-kata yang sudah terurut menaik berdasarkan urutan alfabet. Dalam perkembangannya saat ini sudah banyak kamus yang hadir dalam bentuk perangkat lunak, yang bisa digunakan di komputer ataupun di telepon genggam. Kamus dalam bentuk perangkat lunak tentunya memiliki fitur-fitur yang memudahkan pengaksesannya, antara lain pencarian kata dan penambahan kata ke kamus.
+
+Berikut adalah ilustrasi kamus dengan struktur data trie.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.25]{Gambar/contoh-trie-2}
+\caption[Trie]{Trie dengan kata "hello","hey","number","name","cat","camel", dan "cup"\cite{najogie:10:trie}} 
+\label{contoh-trie-2}
+\end{figure}
+
+Dapat dibayangkan, ketika kita mencari sebuah kata dalam kamus, kita akan mulai dengan karakter pertama dari kata tersebut. Jika tidak ada anak dari akar yang nilainya sama dengan karakter itu, maka langsung disimpulkan kata tidak ada di kamus. Jika ada, akan ditelusuri terus sampai ke dasar dari trie, jika kata ditemukan, maka akan dikembalikan info dari node itu, sedangkan jika tidak ketemu kita bisa mengembalikan kata yang memiliki prefix sama dengan kata yang dicari sebagai saran pencarian.
+
+Sementara itu penambahan kata akan berakibat penambahan cabang baru bila kata itu belum ada sebelumnya.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.25]{Gambar/contoh-trie-3}
+\caption[Trie]{Penambahan kata "coding" pada trie di gambar \ref{contoh-trie-2}\cite{najogie:10:trie}} 
+\label{contoh-trie-3}
+\end{figure}
+
+\subsection{Keunggulan Trie dibandingkan Struktur Data Lain}
+\label{sec:keunggulanTrie}
+
+Trie sebagai turunan dari pohon memiliki keunggulan dibandingkan stuktur data yang sering digunakan untuk persoalan yang sama, yakni pohon pencarian biner dan tabel hash.
+
+Berikut keunggulan utama trie dibandingkan pohon pencarian biner:
+
+\begin{itemize}
+	\item Pencarian kunci dengan trie lebih cepat. Mencari sebuah kunci dengan panjang \textit{m} menghabiskan waktu dengan kasus terburuk O(\textit{m}). Pohon pencarian biner melakukan O(log(\textit{n})) perbandingan kunci, dimana \textit{n} adalah jumlah elemen di dalam pohon, karena pencarian pada pohon biner bergantung pada kedalaman pohon, yang mana bernilai logaritmik terhadap jumlah kunci pencarian apabila pohonnya seimbang. Oleh karena itu pada kasus terburuk, sebuah pohon biner menghabiskan waktu O(\textit{m} log \textit{n}), yang mana pada kasus terburuk juga log \textit{n} akan mendekati \textit{m}. Operasi sederhana yang digunakan trie pada saat pencarian karakter, seperti penggunaan array index menggunakan karakter, juga membuat pencarian dengan trie menjadi lebih cepat.
+	\item Trie menggunakan ruang lebih sedikit jika memuat string pendek dalam jumlah besar, karena kunci tidak disimpan secara eksplisit dan node dipakai bersama oleh kunci yang memiliki prefix yang serupa.
+	\item Trie bisa memiliki fitur untuk menghitung kesamaan prefix terpanjang, yang membantu untuk mencari pengunaan kunci bersama terpanjang dari karakter-karakter yang unik.
+\end{itemize}
+
+Berikut keunggulan utama trie dibanding tabel hash:
+
+\begin{itemize}
+	\item Trie bisa melakukan pencarian kunci yang paling mirip hampir sama cepatnya dengan pencarian kunci yang tepat, sementara tabel hash hanya bisa mencari kunci yang sama tepat karena tidak menyimpan hubungan antara kunci.
+	\item Trie lebih cepat secara rata-rata untuk menyisipkan elemen baru dibandingkan dengan tabel hash. Hal ini terjadi karena tabel hash harus membangun ulang indeksnya ketika tabel sudah penuh, yang mana menghabiskan waktu sangat banyak. Oleh karena itu, trie memiliki kompleksitas waktu terburuk yang batasnya lebih konsisten, yang mana merupakan salah satu unsur penting pada jalannya sebuah program.
+	\item Trie bisa diimplementasikan sedemikian sehingga tidak memerlukan memori tambahan. Tabel hash harus selalu memliki memori tambahan untuk menyimpan pengindeksan tabel hash.
+	\item Pencarian kunci bisa jauh lebih cepat jika fungsi hashing dapat dihindarkan. Trie bisa menyimpan kunci bertipe integer maupun pointer tanpa perlu membuat fungsi hashing sebelumnya. Hal ini membuat trie lebih cepat daripada tabel hash pada hampir setiap kasus karena fungsi hash yang baik sekalipun cenderung overhead ketika melakukan hashing pada data yang hanya berukuran 4 sampai 8 byte.
+	\item Trie bisa menghitung kesamaan prefix terpanjang, sedangkan tabel hash tidak.
+\end{itemize}
