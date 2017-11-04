@@ -201,44 +201,34 @@ Ada dua jenis kata yang disimpan dalam leksikon, yaitu kata dasar dan kata turun
 
 Dalam Kamus Besar Bahasa Indonesia Dalam Jaringan (KBBI daring)\footnote{https://kbbi.kemdikbud.go.id/}, kata dasar dan kata turunan disimpan secara terpisah namun keduanya dapat dicari melalui kolom pencarian. Sementara pada Kamus Besar Bahasa Indonesia Luar Jaringan (KBBI luring)\footnote{http://ebsoft.web.id/kbbi-kamus-besar-bahasa-indonesia-offline-gratis/}, hanya kata dasar saja yang bisa dicari melalui kolom pencarian namun semua kata turunannya juga disimpan sebagai bagian dari sebuah kata dasar. Pada penelitian kali ini akan digunakan struktur penyimpanan dan pencarian seperti pada KBBI luring.
 
-Struktur penyimpanan seperti pada KBBI luring memungkinkan untuk mengenali perbedaan antara kata dasar dan kata yang telah melalui proses morfologi seperti afiksasi, reduplikasi, dan komposisi. Perangkat lunak yang dirancang pada penelitian ini harus dapat menentukan apakah sebuah kata merupakan kata dasar yang valid dalam bahasa Indonesia. Pencarian kata dasar dalam lexicon harus dapat melakukan hal tersebut sehingga pencarian hanya bisa dilakukan terhadap kata dasar saja dan tidak dengan kata turunannya. Kata turunan perlu disimpan dalam lexicon untuk melakukan validasi terhadap hasil dari proses parsing yang dilakukan oleh perangkat lunak. Kata yang telah melalui proses parsing dicek kebenarannya apakah merupakan kata turunan yang valid atau tidak dari kata dasar yang bersangkutan.
+Struktur penyimpanan seperti pada KBBI luring memungkinkan untuk mengenali perbedaan antara kata dasar dan kata yang telah melalui proses morfologi seperti afiksasi, reduplikasi, dan komposisi. Perangkat lunak yang dirancang pada penelitian ini harus dapat menentukan apakah sebuah kata merupakan kata dasar yang valid atau tidak dalam bahasa Indonesia. Pencarian kata dasar dalam lexicon harus dapat melakukan hal tersebut sehingga pencarian hanya bisa dilakukan terhadap kata dasar saja dan tidak dengan kata turunannya. Kata turunan perlu disimpan dalam lexicon untuk melakukan validasi terhadap hasil dari proses parsing yang dilakukan oleh perangkat lunak. %Kata yang telah melalui proses parsing dicek kebenarannya apakah merupakan kata turunan yang valid atau tidak dari kata dasar yang bersangkutan.
 
 
 \section{Proses \textit{Morphological Parsing}}
 \label{sec:morphologicalParsing}
 
-Pada subbab \ref{sec:prosesMorfologi} telah dibahas mengenai proses morfologi, yang pada dasarnya adalah proses pembentukan kata melalui beberapa proses, yaitu pembubuhan afiks (afiksasi), pengulangan (reduplikasi), penggabungan (komposisi), pemendekan (akronimisasi), dan pengubahan status (konversi). Proses \textit{morphological parsing} merupakan kebalikan dari proses morfologi. Masukan bagi proses \textit{morphological parsing} adalah kata atau kalimat yang telah melalui proses morfologi dan keluarannya adalah komponen-komponen penyusunnya.
+Pada subbab \ref{sec:prosesMorfologi} telah dibahas mengenai proses morfologi, yang pada dasarnya adalah proses pembentukan kata melalui beberapa proses, yaitu pembubuhan afiks (afiksasi), pengulangan (reduplikasi), dan penggabungan (komposisi). Proses \textit{morphological parsing} merupakan kebalikan dari proses morfologi. Masukan bagi proses \textit{morphological parsing} adalah kata atau kalimat yang telah melalui proses morfologi dan keluarannya adalah komponen-komponen penyusunnya.
 
 Proses \textit{morphological parsing} untuk setiap kata dalam masukan dapat dituliskan sebagai berikut:
 \begin{enumerate}
 	\item Periksa leksikon, jika kata tersebut ada dalam leksikon, masukkan sebagai salah satu kemungkinan keluaran
-	\item Periksa adanya simbol penghubung (-), yang menandakan hasil proses reduplikasi, lalu lakukan pemisahan kata dan lakukan proses parsing pada kedua kata tersebut
-	\item Jika ada kata yang mengikuti, periksa kemungkinan kata yang sedang diproses dan kata yang mengikuti adalah dua kata hasil komposisi, lalu lakukan proses parsing pada kedua kata tersebut
-	\item Periksa adanya kemungkinan afiks, baik itu prefiks, sufiks, infiks, maupun konfiks. Pisahkan afiks yang ditemukan dengan komponen kata yang lain dan lakukan pengecekan leksikon pada komponen kata tersebut
-	\item Jika sudah dilakukan pemisahan terhadap kemungkinan afiks namun kata yang sedang diproses tidak ditemukan dalam leksikon, kemungkinan kata tersebut bukan kata dalam bahasa Indonesia
+	\item Periksa adanya kemungkinan afiks, baik itu prefiks, sufiks, maupun konfiks. Pisahkan afiks yang ditemukan dengan komponen kata yang lain dan lakukan pengecekan leksikon pada komponen kata tersebut
+	\item Periksa adanya simbol penghubung (-), yang menandakan hasil proses reduplikasi, lalu lakukan pengecekan leksikon terhadap kata dasar dari kata tersebut
+	\item Jika ada kata yang mengikuti, periksa kemungkinan kata yang sedang diproses dan kata yang mengikuti adalah dua kata hasil komposisi dengan melakukan pengecekan terhadap kata dasar dari kata tersebut
+	%\item Jika sudah dilakukan pemisahan terhadap kemungkinan afiks namun kata yang sedang diproses tidak ditemukan dalam leksikon, kemungkinan kata tersebut bukan kata dalam bahasa Indonesia
 \end{enumerate}
+
+Lexicon yang dibuat dalam perangkat lunak ini juga menyimpan kata turunan yang valid dari setiap kata dasar yang ada. Setelah proses parsing selesai dilakukan, lexicon dapat melakukan validasi apakah kata turunan yang sudah diproses benar merupakan kata turunan yang valid dari kata dasar yang bersangkutan. 
 
 Sebagai contoh, jika dilakukan proses \textit{morphological parsing} pada kata 'kemerah-merahan', maka prosesnya adalah sebagai berikut:
 \begin{itemize}
 	\item Periksa leksikon, kata tersebut tidak ditemukan dalam leksikon
-	\item Ditemukan simbol penghubung (-) sehingga diketahui kata tersebut adalah hasil proses reduplikasi. Pisahkan kata sehingga didapat kata 'kemerah' dan 'merahan'
-	\item Periksa leksikon kembali untuk kedua kata tersebut, kedua kata tersebut tidak ditemukan dalam leksikon
-	\item Periksa kemungkinan afiks pada kata 'kemerah' dan 'merahan'
-	\item Didapatkan prefiks $\lbrace$ke-$\rbrace$ + bentuk dasar $\lbrace$merah$\rbrace$ dan bentuk dasar $\lbrace$merah$\rbrace$ + sufiks $\lbrace$-an$\rbrace$, yang setelah ditinjau lebih lanjut didapatkan konfiks $\lbrace$ke-an$\rbrace$ + bentuk dasar $\lbrace$merah$\rbrace$
-	\item Hasil akhir proses parsing adalah konfiks $\lbrace$ke-an$\rbrace$ + bentuk dasar $\lbrace$merah$\rbrace$ + reduplikasi
+	\item Periksa kemungkinan afiks, ditemukan kemungkinan konfiks {ke-an} dan klofiks {ke-an}, lakukan proses terhadap kata 'merah-merah'
+	\item Ditemukan simbol penghubung (-) sehingga diketahui kata tersebut adalah hasil proses reduplikasi. Pisahkan kata dan lakukan pengecekan leksikon sehingga didapat hasilnya adalah reduplikasi dari kata dasar 'merah'
+	\item Didapat dua kemungkinan hasil, yaitu reduplikasi kata 'merah' diikuti konfiksasi {ke-an} dan reduplikasi kata 'merah' diikuti klofiksasi {ke-an}
+	\item Lakukan validasi pada lexicon, dan didapatkan kata turunan yang valid adalah reduplikasi kata 'merah' diikuti konfiksasi {ke-an}
+	\item Hasil akhir proses parsing adalah bentuk dasar $\lbrace$merah$\rbrace$ + reduplikasi + konfiks $\lbrace$ke-an$\rbrace$
 \end{itemize}
-
-Walaupun berbentuk mirip dengan kata 'kemerah-merahan', proses parsing pada kata 'berlari-larian' sedikit berbeda. Prosesnya adalah sebagai berikut:
-\begin{itemize}
-	\item Periksa leksikon, kata tersebut tidak ditemukan dalam leksikon
-	\item Ditemukan simbol penghubung (-) sehingga diketahui kata tersebut adalah hasil proses reduplikasi. Pisahkan kata sehingga didapat kata 'berlari' dan 'larian'
-	\item Periksa leksikon kembali untuk kedua kata tersebut, kata 'berlari' ditemukan sebagai turunan dari kata dasar $\lbrace$lari$\rbrace$ yang ditambahkan prefiks $\lbrace$ber-$\rbrace$
-	\item Periksa kemungkinan afiks pada kata 'larian'
-	\item Didapatkan bentuk dasar $\lbrace$lari$\rbrace$ + sufiks $\lbrace$-an$\rbrace$ 
-	\item Hasil akhir proses parsing adalah prefiks $\lbrace$ber-$\rbrace$ + bentuk dasar $\lbrace$lari$\rbrace$ + sufiks $\lbrace$-an$\rbrace$ + reduplikasi
-\end{itemize}
-
-Pada proses pemeriksaan leksikon yang pertama, pemeriksaan dilakukan hanya pada kata dasar, sementara pada proses pemeriksaan leksikon yang kedua dan seterusnya dilakukan pada kata dasar dan turunannya. Kata 'kemerah-merahan' dan kata 'berlari-larian' ada dalam leksikon sebagai turunan dari kata dasar $\lbrace$merah$\rbrace$ dan $\lbrace$lari$\rbrace$ sehingga kedua kata tersebut tidak ditemukan dalam proses pemeriksaan leksikon yang pertama. Hal ini dilakukan supaya dapat membedakan antara kata yang dibentuk dari proses konfiksasi dengan kata yang dibentuk dari proses klofiksasi.
 
 %Perlu diperhatikan, jika sebuah kata merupakan hasil proses reduplikasi, maka kata tersebut tidak mungkin adalah hasil proses komposisi, demikian juga sebaliknya.
 
