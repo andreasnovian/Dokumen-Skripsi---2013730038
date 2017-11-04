@@ -155,3 +155,19 @@ iterasi x+1 : cek String tanggungj, tidak valid...
 HANYA dilakukan ketika ketemu pasangan konfiks yang valid, hemat biaya	
 
 Kata yang kemungkinan nggak bisa diproses : mengotak-ngotakkan
+
+
+SKRIPSI 2 - 2 November 2017
+
+Cetak dokumen skripsi dengan line number
+Deadline 29 November 2017, jam 9 pagi
+Poster jadi bagian dari penilaian
+Waktu presentasi jadi 35 menit, tanya jawab 65 menit, penilaian 10 menit
+
+Bimbingan 5
+- Cari perangkat lunak stemmer untuk pembanding yang dibahas di bab 5, apakah lebih akurat atau tidak
+- Jelaskan perbedaan konfiks dan klofiks di bab 3, tapi cantumkan referensinya di bab 2
+- Isi dari Bab 5 Implementasi dan Pengujian, bagian implementasi akan sedikit, paling cerita tentang cara menulis program dsb, banyaknya di Pengujian
+- Cari kasus sebanyak mungkin untuk kata dan kalimat yang akan diuji
+- Analisis perangkat lunak sejenis rasanya tidak perlu kalau memang tidak dipergunakan
+- 
