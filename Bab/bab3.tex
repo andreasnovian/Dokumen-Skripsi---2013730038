@@ -236,16 +236,125 @@ Untuk kata dengan kemungkinan hasil parsing lebih dari satu, seperti kata 'berua
 \begin{itemize}
 	\item Periksa leksikon, ditemukan bentuk dasar $\lbrace$beruang$\rbrace$, masukkan sebagai salah satu kemungkinan keluaran
 	\item Periksa kemungkinan afiks pada kata 'beruang'
-	\item Didapatkan prefiks $\lbrace$ber-$\rbrace$ + bentuk dasar $\lbrace$uang$\rbrace$ 
-	\item Hasil akhir proses parsing adalah bentuk dasar $\lbrace$beruang$\rbrace$ dan prefiks $\lbrace$ber-$\rbrace$ + bentuk dasar $\lbrace$uang$\rbrace$
+	\item Didapatkan prefiks $\lbrace$ber-$\rbrace$ + bentuk dasar $\lbrace$uang$\rbrace$, masukkan sebagai salah satu kemungkinan keluaran
+	\item Periksa kemungkinan adanya fonem yang dilesapkan pada bentuk dasar, yaitu fonem 'r', dan didapatkan prefiks $\lbrace$ber-$\rbrace$ + bentuk dasar $\lbrace$ruang$\rbrace$, masukkan sebagai salah satu kemungkinan keluaran
+	\item Lakukan validasi pada lexicon terhadap kata turunan dari bentuk dasar $\lbrace$uang$\rbrace$ dan $\lbrace$ruang$\rbrace$
+	\item Hasil akhir proses parsing adalah bentuk dasar $\lbrace$beruang$\rbrace$, prefiks $\lbrace$ber-$\rbrace$ + bentuk dasar $\lbrace$uang$\rbrace$, dan prefiks $\lbrace$ber-$\rbrace$ + bentuk dasar $\lbrace$ruang$\rbrace$
 \end{itemize}
 
-Bentuk-bentuk yang tidak secara khusus ada dalam bahasa Indonesia seperti bentuk angka, nama orang, dan kata dalam bahasa asing ditulis sebagai \textit{bentuk asing} sebagai hasil dari proses parsing.
+Bentuk-bentuk yang tidak secara khusus ada dalam bahasa Indonesia seperti angka, nama orang, dan kata dalam bahasa asing ditulis sebagai \textit{bentuk asing} dalam keluaran dari proses parsing.
 
 Beberapa contoh yang sudah dibahas di atas adalah contoh proses parsing yang dilakukan pada sebuah kata dalam bahasa Indonesia. Perangkat lunak \textit{morphological parser} yang dirancang pada penelitian ini akan dapat memproses tidak hanya kata tapi juga kalimat dan paragraf yang ditulis dalam bahasa Indonesia. Proses parsing pada kalimat dan paragraf memerlukan beberapa langkah tambahan yaitu:
 
 \begin{enumerate}
 	\item Hilangkan tanda baca yang tidak diperlukan dalam proses parsing. Tanda baca yang diperlukan dalam proses parsing hanya tanda baca penghubung kata (-) sebagai tanda hasil proses reduplikasi
-	\item Gantikan tanda baca yang dihilangkan dengan karakter spasi sebagai tanda pemisah kata
-	\item Pisahkan setiap kata lalu lakukan proses parsing untuk setiap kata tersebut
+	\item Gantikan tanda baca yang dihilangkan dengan karakter kosong ("")
+	\item Pisahkan setiap kata berdasarkan karakter spasi yang memisahkan kata lalu lakukan proses parsing untuk setiap kata tersebut
 \end{enumerate}
+
+
+\section{Diagram Use Case}
+\label{sec:useCaseAwal}
+
+Perangkat lunak \textit{morphological parser} yang akan dibangun dapat memproses masukan berupa teks dalam bahasa Indonesia yang dapat dimasukkan ke dalam perangkat lunak melalui dua cara, melalui kolom masukan dan melalui file teks. Perangkat lunak juga memiliki leksikon yang isinya dapat dilihat oleh user. Selain itu, user juga dapat menambahkan entri pada leksikon melalui perangkat lunak ini. Fitur-fitur ini dapat digambarkan dalam diagram use case pada gambar \ref{gambar-diagram-use-case}.
+		
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.56]{Gambar/gambar-diagram-use-case}
+\caption[Diagram use case perangkat lunak morphological parser]{Diagram use case perangkat lunak morphological parser} 
+\label{gambar-diagram-use-case}
+\end{figure}
+
+Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
+
+\textbf{MEMASUKKAN TEKS}\\
+\textbf{Name:} Memasukkan teks\\
+\textbf{Actors:} User\\
+\textbf{Goals:} User berhasil memasukkan teks yang akan diproses ke dalam sistem\\
+\textbf{Precondition:} Teks sudah disiapkan\\
+\textbf{Steps:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+1. User memilih pilihan untuk& \\memasukkan teks melalui file&
+2. Sistem menampilkan kotak dialog \\&untuk memilih file\\
+3. User mengarahkan kotak dialog&\\ ke direktori tempat file teks masukan&\\
+4. User menekan tombol "OK"&
+5. Sistem mengeluarkan keterangan \\&"Teks berhasil dimasukkan"\\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Alternate flow:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+1a. User memilih pilihan untuk& \\memasukkan teks melalui kolom masukan&\\
+2a. User mempaste teks ke dalam kolom masukan&\\
+3a. User menekan tombol "OK"& 
+4a. Sistem mengeluarkan keterangan \\&"Teks berhasil dimasukkan" \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{MELIHAT LEKSIKON}\\
+\textbf{Name:} Melihat leksikon\\
+\textbf{Actors:} User\\
+\textbf{Goals:} User dapat melihat leksikon yang ada dalam sistem\\
+\textbf{Precondition:} Sistem sudah memuat leksikon ke dalam program\\
+\textbf{Steps:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+1. User memilih pilihan untuk&\\melihat leksikon&
+2. Sistem menampilkan leksikon\\&yang ada dalam sistem \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{MENAMBAH ENTRI PADA LEKSIKON}\\
+\textbf{Name:} Menambah entri pada leksikon\\
+\textbf{Actors:} User\\
+\textbf{Goals:} User berhasil menambah entri pada leksikon\\
+\textbf{Precondition:} Sistem sudah memuat leksikon ke dalam program\\
+\textbf{Steps:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+1. User memilih pilihan untuk&\\ menambah entri pada leksikon&
+2. Sistem menampilkan form untuk \\&menambah entri pada leksikon\\
+3. User mengisikan entri baru pada form&\\
+4. User menekan tombol "OK"&
+5. Sistem mengeluarkan keterangan \\&"Entri berhasil dimasukkan"\\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Alternate flow:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+&5a. Sistem mengeluarkan keterangan \\&"Format pengisian entri salah, ulangi lagi"\\
+\hline
+\end{tabular}
+\end{table}
