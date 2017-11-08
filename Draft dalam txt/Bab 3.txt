@@ -8,3 +8,4 @@
 	- Proses untuk Kata Hasil Komposisi
 - Finite-State Automata (ilustrasi aturan morfotaktik)
 - Use Case Diagram (tahap awal)
+- Class Diagram (tahap awal)
