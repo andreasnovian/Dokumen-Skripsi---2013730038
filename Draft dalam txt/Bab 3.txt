@@ -6,6 +6,7 @@
 	- Proses untuk Kata Hasil Afiksasi
 	- Proses untuk Kata Hasil Reduplikasi
 	- Proses untuk Kata Hasil Komposisi
+- Jenis Afiks, Reduplikasi, dan Komposisi	
 - Finite-State Automata (ilustrasi aturan morfotaktik)
 - Use Case Diagram (tahap awal)
 - Class Diagram (tahap awal)

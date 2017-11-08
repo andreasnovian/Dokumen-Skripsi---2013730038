@@ -180,7 +180,7 @@ Dari tabel, dapat dilihat bahwa hasil untuk proses analisis lebih baik dari pros
 
 \section{Leksikon}
 \label{sec:leksikon}
-Leksikon, seperti dijelaskan pada subbab \ref{sec:morfemDasarDLL}, dapat dipadankan dengan istilah \textit{kosakata} atau \textit{perbendaharaan kata}. Leksikon dibutuhkan pada proses \textit{morphological parsing} untuk mengetahui apakah sebuah kata yang sedang diproses adalah sebuah kata dasar yang valid atau tidak dalam bahasa Indonesia. Leksikon menyimpan kumpulan kata dasar dan turunannya untuk nantinya diakses ketika proses \textit{morphological parsing} dilakukan.
+Leksikon, seperti ditulis pada subbab \ref{sec:morfemDasarDLL}, dapat dipadankan dengan istilah \textit{kosakata} atau \textit{perbendaharaan kata}. Leksikon dibutuhkan pada proses \textit{morphological parsing} untuk mengetahui apakah sebuah kata yang sedang diproses adalah sebuah kata dasar yang valid atau tidak dalam bahasa Indonesia. Leksikon menyimpan kumpulan kata dasar dan turunannya untuk nantinya diakses ketika proses \textit{morphological parsing} dilakukan.
 
 Leksikon dalam proses \textit{morphological parsing} harus bisa diakses dengan cepat dan efektif. Hal ini dikarenakan leksikon akan diakses sangat sering dalam proses ini. Leksikon akan diakses sekitar 3-5 kali untuk setiap kata yang sedang diproses. Oleh karena itu, leksikon perlu disimpan pada struktur data yang memungkinkan waktu akses yang cepat supaya keseluruhan proses dapat dijalankan dalam waktu yang masuk akal. 
 
@@ -198,6 +198,8 @@ Struktur data trie yang digambarkan pada bagan \ref{bagan-trie} menyimpan enam s
 Perlu diperhatikan bahwa sebuah string kunci tidak harus disimpan dengan node terakhir ada pada posisi daun, seperti pada string "BOS" pada nomor 4. Node terakhir pada string tersebut merupakan node internal. Penyimpanan seperti ini bisa dilakukan dengan menandai setiap node yang merupakan akhir dari sebuah string yang membentuk kata.
 
 Ada dua jenis kata yang disimpan dalam leksikon, yaitu kata dasar dan kata turunan. Contoh kata dasar adalah kata 'sapu', 'makan', dan 'kerja' sementara contoh kata turunan adalah kata 'menyapu', 'makan-makan', dan 'kerja bakti'. Kata-kata turunan ini adalah kata yang merupakan hasil dari proses morfologi berupa afiksasi, duplikasi, atau komposisi. Kata turunan disimpan sebagai bagian dari kata dasar dan dapat diakses ketika dibutuhkan. 
+
+Dalam Kamus Besar Bahasa Indonesia, ada beberapa kata yang merupakan hasil dari proses morfologi yang sudah diserap dan dianggap sebagai sebuah kata dasar. Contohnya adalah kata 'gerigi' yang merupakan hasil penyisipan infiks -er- pada kata 'gigi', kata 'abu-abu' yang merupakan hasil reduplikasi dari kata 'abu', dan kata 'rumah sakit' yang merupakan hasil komposisi dari kata 'rumah' dan kata 'sakit'. Dalam kasus tersebut, untuk kata yang merupakan hasil penyisipan infiks akan disimpan sebagai sebuah kata dasar dalam leksikon sementara untuk kata yang merupakan hasil reduplikasi dan komposisi akan disimpan sebagai kata turunan dari kata dasar yang bersangkutan.
 
 Dalam Kamus Besar Bahasa Indonesia Dalam Jaringan (KBBI daring)\footnote{https://kbbi.kemdikbud.go.id/}, kata dasar dan kata turunan disimpan secara terpisah namun keduanya dapat dicari melalui kolom pencarian. Sementara pada Kamus Besar Bahasa Indonesia Luar Jaringan (KBBI luring)\footnote{http://ebsoft.web.id/kbbi-kamus-besar-bahasa-indonesia-offline-gratis/}, hanya kata dasar saja yang bisa dicari melalui kolom pencarian namun semua kata turunannya juga disimpan sebagai bagian dari sebuah kata dasar. Pada penelitian kali ini akan digunakan struktur penyimpanan dan pencarian seperti pada KBBI luring.
 
@@ -253,8 +255,32 @@ Beberapa contoh yang sudah dibahas di atas adalah contoh proses parsing yang dil
 \end{enumerate}
 
 
+\section{Pembentuk Kata}
+\label{sec:pembentukKata}
+
+Pada subbab \ref{sec:prosesMorfologi} yang membahas tentang proses morfologi, telah disinggung bahwa proses morfologi dalam bahasa Indonesia melibatkan dua komponen yaitu bentuk dasar dan alat pembentuk kata. Bentuk dasar adalah bentuk yang kepadanya dilakukan proses morfologi sedangkan alat pembentuk kata adalah komponen yang digunakan dalam proses morfologi yaitu afiks dalam proses afiksasi, pengulangan dalam proses reduplikasi, dan penggabungan dalam proses komposisi.
+
+Dalam proses afiksasi, sebuah afiks diimbuhkan kepada sebuah bentuk dasar sehingga menghasilkan sebuah kata baru yang merupakan hasil dari proses morfologi. Berdasarkan letak pengimbuhannya, afiks terdiri dari beberapa jenis, yaitu prefiks, infiks, sufiks, dan konfiks. Selain itu, dikenal pula afiks yang sekilas mirip dengan konfiks namun berbeda yang disebut klofiks. Lalu dalam pertuturan sering juga digunakan afiks yang disebut dengan klitika.
+
+Prefiks adalah afiks yang dibubuhkan di kiri bentuk dasar. Jenis-jenis prefiks adalah \textit{me-}, \textit{pe-}, \textit{per-}, \textit{di-}, \textit{ber-}, \textit{ter-}, \textit{se-}, dan \textit{ke-}. Lalu infiks adalah afiks yang dibubuhkan di tengah kata, biasanya pada suku awal kata. Jenis-jenis infiks adalah \textit{-el-}, \textit{-em-}, dan \textit{-er-}. Lalu sufiks adalah afiks yang dibubuhkan di kanan bentuk dasar. Jenis-jenis sufiks adalah \textit{-kan}, \textit{-an}, dan \textit{-i}.
+
+Konfiks adalah afiks yang dibubuhkan di kiri dan di kanan bentuk dasar secara bersamaan. Jenis-jenis konfiks adalah \textit{ke-an}, \textit{ber-an}, \textit{pe-an}, \textit{per-an}, dan \textit{se-nya}. Berbeda dengan konfiks, klofiks adalah dua atau tiga buah afiks yang dibubuhkan di kiri dan/atau di kanan bentuk dasar tetapi pembubuhannya tidak sekaligus, melainkan bertahap. Jenis-jenis klofiks adalah \textit{me-kan}, \textit{me-i}, \textit{memper-}, \textit{memper-kan}, \textit{memper-i}, \textit{ber-kan}, \textit{di-kan}, \textit{di-i}, \textit{diper-}, \textit{diper-kan}, \textit{diper-i}, \textit{ter-kan}, dan \textit{ter-i}.
+
+Klitika adalah adalah afiks yang dalam ucapan tidak mempunyai tekanan sendiri dan tidak merupakan kata karena tidak dapat berdiri sendiri. Berdasarkan letaknya, ada dua jenis klitika, yaitu proklitika dan enklitika. Proklitika adalah klitika yang dibubuhkan di kiri bentuk dasar sementara enklitika adalah klitika yang dibubuhkan di kanan bentuk dasar. Jenis-jenis proklitika adalah \textit{ku-} dan \textit{kau-} sementara jenis-jenis enklitika adalah \textit{-ku}, \textit{-mu}, \textit{-nya}, \textit{-lah}, \textit{-kah}, dan \textit{-pun}.
+
+Dalam proses reduplikasi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar, seperti pada kata 'rumah-rumah' yang berasal dari kata dasar 'rumah'. Selain itu, bentuk dasar dapat pula berupa kata yang merupakan hasil dari proses afiksasi seperti pada kata 'berlari-lari' yang berasal dari kata 'berlari'. Proses reduplikasi juga dapat menghasilkan kata ulang yang antara kata pertama dan kata kedua tidak sama atau disebut dengan kata ulang berubah bunyi, seperti kata 'sayur-mayur' dan 'gerak-gerik'.
+
+Dalam proses komposisi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar dan diikuti kata dasar lain yang tidak berhubungan dengan kata dasarnya dan hanya sebagai penjelas, seperti pada kata 'sate ayam' dan 'merah jambu'. Selain itu, dapat pula sebuah kata dasar diikuti oleh kata yang merupakan lawan kata atau antonimnya, seperti pada kata 'tua muda' dan 'jual beli'. Ada pula bentuk yang berupa sebuah kata dasar diikuti oleh kata yang tidak dapat berdiri sendiri dalam bahasa Indonesia, seperti pada kata 'gotong royong'.
+
+
+\section{\textit{Finite-State Automata}}
+\label{sec:fsa}
+
+Di sini akan dijelaskan mengenai FSA
+
+
 \section{Diagram Use Case}
-\label{sec:useCaseAwal}
+\label{sec:DiagramUseCaseAwal}
 
 Perangkat lunak \textit{morphological parser} yang akan dibangun dapat memproses masukan berupa teks dalam bahasa Indonesia yang dapat dimasukkan ke dalam perangkat lunak melalui dua cara, melalui kolom masukan dan melalui file teks. Perangkat lunak juga memiliki leksikon yang isinya dapat dilihat oleh user. Selain itu, user juga dapat menambahkan entri pada leksikon melalui perangkat lunak ini. Fitur-fitur ini dapat digambarkan dalam diagram use case pada gambar \ref{gambar-diagram-use-case}.
 		
@@ -358,3 +384,9 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 \hline
 \end{tabular}
 \end{table}
+
+
+\section{Diagram Kelas}
+\label{sec:DiagramKelasAwal}
+
+Berikut adalah diagram kelas yang dibuat untuk perangkat lunak ini.
