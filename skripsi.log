@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  8 NOV 2017 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  9 NOV 2017 10:24
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1247,14 +1247,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
-[46 <./Gambar/gambar-diagram-use-case-awal.png>]) [47] [48] (skripsi.bbl)
-[49
+[46 <./Gambar/gambar-diagram-use-case-awal.png>] [47]
+<Gambar/gambar-diagram-kelas-awal.png, id=538, 1680.2775pt x 831.105pt>
+File: Gambar/gambar-diagram-kelas-awal.png Graphic file (type png)
+
+<use Gambar/gambar-diagram-kelas-awal.png>
+Package pdftex.def Info: Gambar/gambar-diagram-kelas-awal.png used on input lin
+e 396.
+(pdftex.def)             Requested size: 504.08714pt x 249.33342pt.
+
+Overfull \hbox (34.61665pt too wide) in paragraph at lines 396--397
+ [][] 
+ []
+
+) [48 <./Gambar/gambar-diagram-kelas-awal.png>] (skripsi.bbl) [49
 
 
 ]
 \openout2 = `Lampiran/lampA.aux'.
 
- (Lampiran/lampA.tex)
+
+(Lampiran/lampA.tex)
 \openout2 = `Lampiran/lampB.aux'.
 
  (Lampiran/lampB.tex)
@@ -1273,10 +1286,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
- 34976 strings out of 493323
- 760110 string characters out of 3139037
+ 34983 strings out of 493323
+ 760344 string characters out of 3139037
  1108028 words of memory out of 3000000
- 37505 multiletter control sequences out of 15000+200000
+ 37510 multiletter control sequences out of 15000+200000
  87570 words of font info for 154 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
  78i,11n,130p,1631b,713s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1303,9 +1316,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on skripsi.pdf (49 pages, 706656 bytes).
+Output written on skripsi.pdf (49 pages, 870902 bytes).
 PDF statistics:
- 636 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 24993 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 176 named destinations out of 1000 (max. 500000)
+ 24998 words of extra memory for PDF output out of 29859 (max. 10000000)
 
