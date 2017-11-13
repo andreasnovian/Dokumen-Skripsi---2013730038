@@ -98,15 +98,15 @@ Pada kasus di mana perubahan terjadi pada afiks dan kata dasar sekaligus, perlu 
 
 Morphological analyser bahasa Indonesia ini diimplementasikan menggunakan \textbf{xfst} and \textbf{lexc}. Aturan morfotaktik diimplementasikan dengan \textbf{xfst} sementara aturan morfofonemik diimplementasikan dengan \textbf{lexc}.
 
-Implementasi aturan morfotaktik dapat diilustrasikan dengan \textit{finite-state automata} yang ditunjukkan pada gambar \ref{gambar-fsa-morfotaktik}. Kata bahasa Indonesia yang valid, yaitu yang dihasilkan melalui proses morfologi yang benar, dapat diterima oleh automata, sementara yang tidak valid ditolak.
+Implementasi aturan morfotaktik dapat diilustrasikan dengan \textit{finite-state automata} yang ditunjukkan pada gambar \ref{gambar-fsa-morfotaktik-contoh}. Kata bahasa Indonesia yang valid, yaitu yang dihasilkan melalui proses morfologi yang benar, dapat diterima oleh automata, sementara yang tidak valid ditolak.
 
 Berawal dari root, setiap state menentukan kemungkinan lanjutan state selagi mengambil simbol tertentu. Dalam \textbf{lexc}, state ini disebut \textit{continuation classes}. Semua continuation classes yang bisa dicapai dari root menampilkan prefiks dan preprefiks. Perbedaan di antara keduanya diperlukan untuk mengenali variasi morfologi berupa adanya 2 prefiks, seperti prefiks memper-, diper-. Dari sana, continuation class selanjutnya adalah stem, di mana kata dasar diambil. Ini diteruskan dengan beberapa classes yang menampilkan kemungkinan sufiks, namun ada juga class Redup1 dan Redup2 yang muncul sebelum dan setelah sufiks. Fungsinya adalah untuk menangani reduplikasi. Terakhir, tagEmit class memproses semua tags yang belum ditangani oleh class sebelumnya.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Gambar/gambar-fsa-morfotaktik}
+\includegraphics[scale=0.5]{Gambar/gambar-fsa-morfotaktik-contoh}
 \caption[Ilustrasi proses morfotaktik]{Ilustrasi proses morfotaktik\cite{manurung:08:indonesian}} 
-\label{gambar-fsa-morfotaktik}
+\label{gambar-fsa-morfotaktik-contoh}
 \end{figure}
 
 %Selama proses morfotaktik ini, kita menggunakan flag diacritics, fitur penting dari \textbf{lexc} yang memperkirakan kemampuan dari struktur fitur, di antaranya mampu menentukan hambatan tertentu untuk memastikan hanya jalur yang valid dari network yang dilewati. Satu keuntungan dari pendekatan ini adalah perbaikan dari representasi network yang ringkas. Ada 3 flag diacritics yang digunakan dalam model kita: positive setting (@P.feat.val@), required test (@R.feat.val@), dan disallow test (@D.feat.val@). Dengan menggunakan diacritics ini, kita dapat menetapkan nilai dan hambatan dari aspek tertentu, yang harus konsisten sepanjang jalur.
@@ -262,7 +262,7 @@ Pada subbab \ref{sec:prosesMorfologi} yang membahas tentang proses morfologi, te
 
 Dalam proses afiksasi, sebuah afiks diimbuhkan kepada sebuah bentuk dasar sehingga menghasilkan sebuah kata baru yang merupakan hasil dari proses morfologi. Berdasarkan letak pengimbuhannya, afiks terdiri dari beberapa jenis, yaitu prefiks, infiks, sufiks, dan konfiks. Selain itu, dikenal pula afiks yang sekilas mirip dengan konfiks namun berbeda yang disebut klofiks. Lalu dalam pertuturan sering juga digunakan afiks yang disebut dengan klitika.
 
-Prefiks adalah afiks yang dibubuhkan di kiri bentuk dasar. Jenis-jenis prefiks adalah \textit{me-}, \textit{pe-}, \textit{per-}, \textit{di-}, \textit{ber-}, \textit{ter-}, \textit{se-}, dan \textit{ke-}. Lalu infiks adalah afiks yang dibubuhkan di tengah kata, biasanya pada suku awal kata. Jenis-jenis infiks adalah \textit{-el-}, \textit{-em-}, dan \textit{-er-}. Lalu sufiks adalah afiks yang dibubuhkan di kanan bentuk dasar. Jenis-jenis sufiks adalah \textit{-kan}, \textit{-an}, dan \textit{-i}.
+Prefiks adalah afiks yang dibubuhkan di kiri bentuk dasar. Jenis-jenis prefiks adalah \textit{me-}, \textit{pe-}, \textit{per-}, \textit{di-}, \textit{ber-}, \textit{ter-}, \textit{se-}, dan \textit{ke-}. Lalu infiks adalah afiks yang dibubuhkan di tengah kata, biasanya pada suku awal kata. Jenis-jenis infiks adalah \textit{-el-}, \textit{-em-}, dan \textit{-er-}. Lalu sufiks adalah afiks yang dibubuhkan di kanan bentuk dasar. Jenis-jenis sufiks adalah \textit{-kan}, \textit{-an}, dan \textit{-i}. Perlu dicatat bahwa infiks sebagai alat pembentuk kata dalam bahasa Indonesia sudah tidak produktif pada saat ini.
 
 Konfiks adalah afiks yang dibubuhkan di kiri dan di kanan bentuk dasar secara bersamaan. Jenis-jenis konfiks adalah \textit{ke-an}, \textit{ber-an}, \textit{pe-an}, \textit{per-an}, dan \textit{se-nya}. Berbeda dengan konfiks, klofiks adalah dua atau tiga buah afiks yang dibubuhkan di kiri dan/atau di kanan bentuk dasar tetapi pembubuhannya tidak sekaligus, melainkan bertahap. Jenis-jenis klofiks adalah \textit{me-kan}, \textit{me-i}, \textit{memper-}, \textit{memper-kan}, \textit{memper-i}, \textit{ber-kan}, \textit{di-kan}, \textit{di-i}, \textit{diper-}, \textit{diper-kan}, \textit{diper-i}, \textit{ter-kan}, dan \textit{ter-i}.
 
@@ -273,10 +273,31 @@ Dalam proses reduplikasi, kata yang menjadi bentuk dasar dapat berupa sebuah kat
 Dalam proses komposisi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar dan diikuti kata dasar lain yang tidak berhubungan dengan kata dasarnya dan hanya sebagai penjelas, seperti pada kata 'sate ayam' dan 'merah jambu'. Selain itu, dapat pula sebuah kata dasar diikuti oleh kata yang merupakan lawan kata atau antonimnya, seperti pada kata 'tua muda' dan 'jual beli'. Ada pula bentuk yang berupa sebuah kata dasar diikuti oleh kata yang tidak dapat berdiri sendiri dalam bahasa Indonesia, seperti pada kata 'gotong royong'.
 
 
-\section{\textit{Finite-State Automata}}
-\label{sec:fsa}
+%\section{\textit{Finite-State Automata}}
+%\label{sec:fsa}
 
-Di sini akan dijelaskan mengenai FSA
+%Di sini akan dijelaskan mengenai FSA
+
+\section{Morfotaktik}
+\label{sec:morfotaktik}
+
+Pada subbab \ref{sec:morfemDasarDLL} dan \ref{sec:morfemAfiks} telah dijelaskan mengenai morfem dasar dan morfem afiks. Morfem dasar adalah morfem yang dapat menjadi dasar dalam suatu proses morfologi. Sementara morfem afiks adalah morfem yang tidak dapat menjadi dasar dalam pembentukan kata, tetapi hanya menjadi unsur pembentuk dalam proses afiksasi. Kedua morfem tersebut dapat digabungkan dalam proses morfologi berupa proses afiksasi untuk membentuk sebuah kata. Proses penggabungan antara kedua morfem tersebut tidak boleh dilakukan secara sembarangan sehingga diperlukan aturan khusus yang mengatur penggabungan antara morfem dasar dan morfem afiks. Aturan ini disebut dengan morfotaktik. 
+
+Aturan morfotaktik tidak hanya mengatur tentang proses penggabungan antara morfem dasar dengan morfem afiks, namun juga mengatur tentang proses pengulangan morfem dasar dalam proses reduplikasi dan proses penggabungan antara morfem dasar dengan morfem dasar lain dalam proses komposisi. Aturan morfotaktik ini dapat diilustrasikan dengan sebuah \textit{finite-state automata} yang dapat dilihat pada gambar \ref{gambar-fsa-morfotaktik}. Kata yang dibentuk dari proses morfologi bahasa Indonesia yang benar akan dapat diterima oleh automata, sementara yang lain tidak akan diterima oleh automata.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Gambar/gambar-fsa-morfotaktik}
+\caption[Ilustrasi proses morfotaktik]{Ilustrasi proses morfotaktik} 
+\label{gambar-fsa-morfotaktik}
+\end{figure}
+
+Automata dimulai dari state \textit{Akar}, lalu bisa berlanjut ke state \textit{Null}, yang berarti tidak digabungkan dengan apapun, atau bisa berlanjut ke state \textit{Redup}, yang berarti dilakukan proses reduplikasi, atau bisa berlanjut ke state \textit{Kompo}, yang berarti dilakukan proses komposisi, atau bisa berlanjut ke salah satu state prefiks, yaitu state \textit{me-, pe-, per-, di-, ber-, ter-, se-,} atau \textit{ke-}. Dari state ini, automata dapat bergerak ke state \textit{Pangkal} atau dapat bergerak ke salah satu state dalam kelas yang sama untuk kasus di mana ada dua prefiks yang diimbuhkan. Lalu dari ...
+
+\section{Morfofonemik}
+\label{sec:morfofonemik}
+
+Di sini akan dijelaskan mengenai morfofonemik
 
 
 \section{Diagram Use Case}

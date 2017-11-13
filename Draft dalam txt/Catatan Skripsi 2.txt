@@ -171,3 +171,12 @@ Bimbingan 5
 - Cari kasus sebanyak mungkin untuk kata dan kalimat yang akan diuji
 - Analisis perangkat lunak sejenis rasanya tidak perlu kalau memang tidak dipergunakan
 - 
+
+Finite-State Automata
+Root
+-> Null, Redup, Kompo, me-, pe-, per-, di-, ber-, ter-, se-, ke-
+-> Stem
+-> Redup1, Kompo1
+-> Null, -kan, -an, -i
+-> Redup2, Kompo2
+-> End

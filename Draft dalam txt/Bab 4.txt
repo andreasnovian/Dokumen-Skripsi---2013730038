@@ -2,4 +2,5 @@
 - Perancangan Struktur Penyimpanan Lexicon (rancangan detail + syntax)
 - Perancangan syntax keluaran proses Morphological Parsing
 - Perancangan Use Case Diagram (final)
+- Perancangan Class Diagram (final)
 - Perancangan Antarmuka (final)
