@@ -214,9 +214,9 @@ Pada subbab \ref{sec:prosesMorfologi} telah dibahas mengenai proses morfologi, y
 Proses \textit{morphological parsing} untuk setiap kata dalam masukan dapat dituliskan sebagai berikut:
 \begin{enumerate}
 	\item Periksa leksikon, jika kata tersebut ada dalam leksikon, masukkan sebagai salah satu kemungkinan keluaran
-	\item Periksa adanya kemungkinan afiks, baik itu prefiks, sufiks, maupun konfiks. Pisahkan afiks yang ditemukan dengan komponen kata yang lain dan lakukan pengecekan leksikon pada komponen kata tersebut
-	\item Periksa adanya simbol penghubung (-), yang menandakan hasil proses reduplikasi, lalu lakukan pengecekan leksikon terhadap kata dasar dari kata tersebut
-	\item Jika ada kata yang mengikuti, periksa kemungkinan kata yang sedang diproses dan kata yang mengikuti adalah dua kata hasil komposisi dengan melakukan pengecekan terhadap kata dasar dari kata tersebut
+	\item Periksa adanya kemungkinan afiks, baik itu prefiks, sufiks, maupun konfiks. Pisahkan afiks yang ditemukan dengan komponen kata yang lain dan lakukan proses parsing pada komponen kata tersebut
+	\item Periksa adanya simbol penghubung (-), yang menandakan hasil proses reduplikasi, lalu lakukan proses parsing terhadap bentuk dasar dari kata tersebut
+	\item Jika ada kata yang mengikuti, periksa kemungkinan kata yang sedang diproses dan kata yang mengikuti adalah dua kata hasil komposisi dengan melakukan pengecekan terhadap bentuk dasar dari kata tersebut
 	%\item Jika sudah dilakukan pemisahan terhadap kemungkinan afiks namun kata yang sedang diproses tidak ditemukan dalam leksikon, kemungkinan kata tersebut bukan kata dalam bahasa Indonesia
 \end{enumerate}
 
@@ -225,10 +225,10 @@ Lexicon yang dibuat dalam perangkat lunak ini juga menyimpan kata turunan yang v
 Sebagai contoh, jika dilakukan proses \textit{morphological parsing} pada kata 'kemerah-merahan', maka prosesnya adalah sebagai berikut:
 \begin{itemize}
 	\item Periksa leksikon, kata tersebut tidak ditemukan dalam leksikon
-	\item Periksa kemungkinan afiks, ditemukan kemungkinan konfiks {ke-an} dan klofiks {ke-an}, lakukan proses terhadap kata 'merah-merah'
-	\item Ditemukan simbol penghubung (-) sehingga diketahui kata tersebut adalah hasil proses reduplikasi. Pisahkan kata dan lakukan pengecekan leksikon sehingga didapat hasilnya adalah reduplikasi dari kata dasar 'merah'
-	\item Didapat dua kemungkinan hasil, yaitu reduplikasi kata 'merah' diikuti konfiksasi {ke-an} dan reduplikasi kata 'merah' diikuti klofiksasi {ke-an}
-	\item Lakukan validasi pada lexicon, dan didapatkan kata turunan yang valid adalah reduplikasi kata 'merah' diikuti konfiksasi {ke-an}
+	\item Periksa kemungkinan afiks, ditemukan kemungkinan konfiks $\lbrace$ke-an$\rbrace$ dan klofiks $\lbrace$ke-an$\rbrace$, lakukan proses parsing terhadap kata 'merah-merah'
+	\item Ditemukan simbol penghubung (-) sehingga diketahui kata tersebut adalah hasil proses reduplikasi. Pisahkan kata dan lakukan proses parsing sehingga didapat hasilnya adalah reduplikasi dari kata dasar 'merah'
+	\item Didapat dua kemungkinan hasil, yaitu reduplikasi kata 'merah' diikuti konfiksasi $\lbrace$ke-an$\rbrace$ dan reduplikasi kata 'merah' diikuti klofiksasi $\lbrace$ke-an$\rbrace$
+	\item Lakukan validasi pada lexicon, dan didapatkan kata turunan yang valid adalah reduplikasi kata 'merah' diikuti konfiksasi $\lbrace$ke-an$\rbrace$
 	\item Hasil akhir proses parsing adalah bentuk dasar $\lbrace$merah$\rbrace$ + reduplikasi + konfiks $\lbrace$ke-an$\rbrace$
 \end{itemize}
 
@@ -255,22 +255,22 @@ Beberapa contoh yang sudah dibahas di atas adalah contoh proses parsing yang dil
 \end{enumerate}
 
 
-\section{Pembentuk Kata}
-\label{sec:pembentukKata}
-
-Pada subbab \ref{sec:prosesMorfologi} yang membahas tentang proses morfologi, telah disinggung bahwa proses morfologi dalam bahasa Indonesia melibatkan dua komponen yaitu bentuk dasar dan alat pembentuk kata. Bentuk dasar adalah bentuk yang kepadanya dilakukan proses morfologi sedangkan alat pembentuk kata adalah komponen yang digunakan dalam proses morfologi yaitu afiks dalam proses afiksasi, pengulangan dalam proses reduplikasi, dan penggabungan dalam proses komposisi.
-
-Dalam proses afiksasi, sebuah afiks diimbuhkan kepada sebuah bentuk dasar sehingga menghasilkan sebuah kata baru yang merupakan hasil dari proses morfologi. Berdasarkan letak pengimbuhannya, afiks terdiri dari beberapa jenis, yaitu prefiks, infiks, sufiks, dan konfiks. Selain itu, dikenal pula afiks yang sekilas mirip dengan konfiks namun berbeda yang disebut klofiks. Lalu dalam pertuturan sering juga digunakan afiks yang disebut dengan klitika.
-
-Prefiks adalah afiks yang dibubuhkan di kiri bentuk dasar. Jenis-jenis prefiks adalah \textit{me-}, \textit{pe-}, \textit{per-}, \textit{di-}, \textit{ber-}, \textit{ter-}, \textit{se-}, dan \textit{ke-}. Lalu infiks adalah afiks yang dibubuhkan di tengah kata, biasanya pada suku awal kata. Jenis-jenis infiks adalah \textit{-el-}, \textit{-em-}, dan \textit{-er-}. Lalu sufiks adalah afiks yang dibubuhkan di kanan bentuk dasar. Jenis-jenis sufiks adalah \textit{-kan}, \textit{-an}, dan \textit{-i}. Perlu dicatat bahwa infiks sebagai alat pembentuk kata dalam bahasa Indonesia sudah tidak produktif pada saat ini.
-
-Konfiks adalah afiks yang dibubuhkan di kiri dan di kanan bentuk dasar secara bersamaan. Jenis-jenis konfiks adalah \textit{ke-an}, \textit{ber-an}, \textit{pe-an}, \textit{per-an}, dan \textit{se-nya}. Berbeda dengan konfiks, klofiks adalah dua atau tiga buah afiks yang dibubuhkan di kiri dan/atau di kanan bentuk dasar tetapi pembubuhannya tidak sekaligus, melainkan bertahap. Jenis-jenis klofiks adalah \textit{me-kan}, \textit{me-i}, \textit{memper-}, \textit{memper-kan}, \textit{memper-i}, \textit{ber-kan}, \textit{di-kan}, \textit{di-i}, \textit{diper-}, \textit{diper-kan}, \textit{diper-i}, \textit{ter-kan}, dan \textit{ter-i}.
-
-Klitika adalah adalah afiks yang dalam ucapan tidak mempunyai tekanan sendiri dan tidak merupakan kata karena tidak dapat berdiri sendiri. Berdasarkan letaknya, ada dua jenis klitika, yaitu proklitika dan enklitika. Proklitika adalah klitika yang dibubuhkan di kiri bentuk dasar sementara enklitika adalah klitika yang dibubuhkan di kanan bentuk dasar. Jenis-jenis proklitika adalah \textit{ku-} dan \textit{kau-} sementara jenis-jenis enklitika adalah \textit{-ku}, \textit{-mu}, \textit{-nya}, \textit{-lah}, \textit{-kah}, dan \textit{-pun}.
-
-Dalam proses reduplikasi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar, seperti pada kata 'rumah-rumah' yang berasal dari kata dasar 'rumah'. Selain itu, bentuk dasar dapat pula berupa kata yang merupakan hasil dari proses afiksasi seperti pada kata 'berlari-lari' yang berasal dari kata 'berlari'. Proses reduplikasi juga dapat menghasilkan kata ulang yang antara kata pertama dan kata kedua tidak sama atau disebut dengan kata ulang berubah bunyi, seperti kata 'sayur-mayur' dan 'gerak-gerik'.
-
-Dalam proses komposisi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar dan diikuti kata dasar lain yang tidak berhubungan dengan kata dasarnya dan hanya sebagai penjelas, seperti pada kata 'sate ayam' dan 'merah jambu'. Selain itu, dapat pula sebuah kata dasar diikuti oleh kata yang merupakan lawan kata atau antonimnya, seperti pada kata 'tua muda' dan 'jual beli'. Ada pula bentuk yang berupa sebuah kata dasar diikuti oleh kata yang tidak dapat berdiri sendiri dalam bahasa Indonesia, seperti pada kata 'gotong royong'.
+%\section{Pembentuk Kata}
+%\label{sec:pembentukKata}
+%
+%Pada subbab \ref{sec:prosesMorfologi} yang membahas tentang proses morfologi, telah disinggung bahwa proses morfologi dalam bahasa Indonesia melibatkan dua komponen yaitu bentuk dasar dan alat pembentuk kata. Bentuk dasar adalah bentuk yang kepadanya dilakukan proses morfologi sedangkan alat pembentuk kata adalah komponen yang digunakan dalam proses morfologi yaitu afiks dalam proses afiksasi, pengulangan dalam proses reduplikasi, dan penggabungan dalam proses komposisi.
+%
+%Dalam proses afiksasi, sebuah afiks diimbuhkan kepada sebuah bentuk dasar sehingga menghasilkan sebuah kata baru yang merupakan hasil dari proses morfologi. Berdasarkan letak pengimbuhannya, afiks terdiri dari beberapa jenis, yaitu prefiks, infiks, sufiks, dan konfiks. Selain itu, dikenal pula afiks yang sekilas mirip dengan konfiks namun berbeda yang disebut klofiks. Lalu dalam pertuturan sering juga digunakan afiks yang disebut dengan klitika.
+%
+%Prefiks adalah afiks yang dibubuhkan di kiri bentuk dasar. Jenis-jenis prefiks adalah \textit{me-}, \textit{pe-}, \textit{per-}, \textit{di-}, \textit{ber-}, \textit{ter-}, \textit{se-}, dan \textit{ke-}. Lalu infiks adalah afiks yang dibubuhkan di tengah kata, biasanya pada suku awal kata. Jenis-jenis infiks adalah \textit{-el-}, \textit{-em-}, dan \textit{-er-}. Lalu sufiks adalah afiks yang dibubuhkan di kanan bentuk dasar. Jenis-jenis sufiks adalah \textit{-kan}, \textit{-an}, dan \textit{-i}. Perlu dicatat bahwa infiks sebagai alat pembentuk kata dalam bahasa Indonesia sudah tidak produktif pada saat ini.
+%
+%Konfiks adalah afiks yang dibubuhkan di kiri dan di kanan bentuk dasar secara bersamaan. Jenis-jenis konfiks adalah \textit{ke-an}, \textit{ber-an}, \textit{pe-an}, \textit{per-an}, dan \textit{se-nya}. Berbeda dengan konfiks, klofiks adalah dua atau tiga buah afiks yang dibubuhkan di kiri dan/atau di kanan bentuk dasar tetapi pembubuhannya tidak sekaligus, melainkan bertahap. Jenis-jenis klofiks adalah \textit{me-kan}, \textit{me-i}, \textit{memper-}, \textit{memper-kan}, \textit{memper-i}, \textit{ber-kan}, \textit{di-kan}, \textit{di-i}, \textit{diper-}, \textit{diper-kan}, \textit{diper-i}, \textit{ter-kan}, dan \textit{ter-i}.
+%
+%Klitika adalah adalah afiks yang dalam ucapan tidak mempunyai tekanan sendiri dan tidak merupakan kata karena tidak dapat berdiri sendiri. Berdasarkan letaknya, ada dua jenis klitika, yaitu proklitika dan enklitika. Proklitika adalah klitika yang dibubuhkan di kiri bentuk dasar sementara enklitika adalah klitika yang dibubuhkan di kanan bentuk dasar. Jenis-jenis proklitika adalah \textit{ku-} dan \textit{kau-} sementara jenis-jenis enklitika adalah \textit{-ku}, \textit{-mu}, \textit{-nya}, \textit{-lah}, \textit{-kah}, dan \textit{-pun}.
+%
+%Dalam proses reduplikasi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar, seperti pada kata 'rumah-rumah' yang berasal dari kata dasar 'rumah'. Selain itu, bentuk dasar dapat pula berupa kata yang merupakan hasil dari proses afiksasi seperti pada kata 'berlari-lari' yang berasal dari kata 'berlari'. Proses reduplikasi juga dapat menghasilkan kata ulang yang antara kata pertama dan kata kedua tidak sama atau disebut dengan kata ulang berubah bunyi, seperti kata 'sayur-mayur' dan 'gerak-gerik'.
+%
+%Dalam proses komposisi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar dan diikuti kata dasar lain yang tidak berhubungan dengan kata dasarnya dan hanya sebagai penjelas, seperti pada kata 'sate ayam' dan 'merah jambu'. Selain itu, dapat pula sebuah kata dasar diikuti oleh kata yang merupakan lawan kata atau antonimnya, seperti pada kata 'tua muda' dan 'jual beli'. Ada pula bentuk yang berupa sebuah kata dasar diikuti oleh kata yang tidak dapat berdiri sendiri dalam bahasa Indonesia, seperti pada kata 'gotong royong'.
 
 
 %\section{\textit{Finite-State Automata}}
@@ -283,7 +283,7 @@ Dalam proses komposisi, kata yang menjadi bentuk dasar dapat berupa sebuah kata 
 
 Pada subbab \ref{sec:morfemDasarDLL} dan \ref{sec:morfemAfiks} telah dijelaskan mengenai morfem dasar dan morfem afiks. Morfem dasar adalah morfem yang dapat menjadi dasar dalam suatu proses morfologi. Sementara morfem afiks adalah morfem yang tidak dapat menjadi dasar dalam pembentukan kata, tetapi hanya menjadi unsur pembentuk dalam proses afiksasi. Kedua morfem tersebut dapat digabungkan dalam proses morfologi berupa proses afiksasi untuk membentuk sebuah kata. Proses penggabungan antara kedua morfem tersebut tidak boleh dilakukan secara sembarangan sehingga diperlukan aturan khusus yang mengatur penggabungan antara morfem dasar dan morfem afiks. Aturan ini disebut dengan morfotaktik. 
 
-Aturan morfotaktik tidak hanya mengatur tentang proses penggabungan antara morfem dasar dengan morfem afiks, namun juga mengatur tentang proses pengulangan morfem dasar dalam proses reduplikasi dan proses penggabungan antara morfem dasar dengan morfem dasar lain dalam proses komposisi. Aturan morfotaktik ini dapat diilustrasikan dengan sebuah \textit{finite-state automata} yang dapat dilihat pada gambar \ref{gambar-fsa-morfotaktik}. Kata yang dibentuk dari proses morfologi bahasa Indonesia yang benar akan dapat diterima oleh automata, sementara yang lain tidak akan diterima oleh automata.
+Aturan morfotaktik tidak hanya mengatur tentang proses penggabungan antara morfem dasar dengan morfem afiks, namun juga mengatur tentang proses pengulangan morfem dasar dalam proses reduplikasi dan proses penggabungan antara morfem dasar dengan morfem dasar lain dalam proses komposisi. Aturan morfotaktik ini dapat diilustrasikan dengan sebuah \textit{finite-state automata} yang dapat dilihat pada gambar \ref{gambar-fsa-morfotaktik}. Kata yang dibentuk dari proses morfologi bahasa Indonesia yang benar akan dapat diterima oleh automata, sementara yang tidak akan ditolak.
 
 \begin{figure}[H]
 \centering
@@ -293,11 +293,6 @@ Aturan morfotaktik tidak hanya mengatur tentang proses penggabungan antara morfe
 \end{figure}
 
 Automata dimulai dari state \textit{Akar}, lalu bisa berlanjut ke state \textit{Null}, yang berarti tidak digabungkan dengan apapun, atau bisa berlanjut ke state \textit{Redup}, yang berarti dilakukan proses reduplikasi, atau bisa berlanjut ke state \textit{Kompo}, yang berarti dilakukan proses komposisi, atau bisa berlanjut ke salah satu state prefiks, yaitu state \textit{me-, pe-, per-, di-, ber-, ter-, se-,} atau \textit{ke-}. Dari state ini, automata dapat bergerak ke state \textit{Pangkal} atau dapat bergerak ke salah satu state dalam kelas yang sama untuk kasus di mana ada dua prefiks yang diimbuhkan. Lalu dari ...
-
-\section{Morfofonemik}
-\label{sec:morfofonemik}
-
-Di sini akan dijelaskan mengenai morfofonemik
 
 
 \section{Diagram Use Case}
