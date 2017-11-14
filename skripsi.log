@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  14 NOV 2017 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  14 NOV 2017 19:38
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1242,28 +1242,35 @@ Bab 4.
 
 
 
-]) [42]
+] <Gambar/contoh-entri-sayur.png, id=495, 70.76437pt x 93.34875pt>
+File: Gambar/contoh-entri-sayur.png Graphic file (type png)
+
+<use Gambar/contoh-entri-sayur.png>
+Package pdftex.def Info: Gambar/contoh-entri-sayur.png used on input line 38.
+(pdftex.def)             Requested size: 70.76419pt x 93.34851pt.
+ [42 <./Gambar/contoh-entri-sayur.png>])
+[43]
 \openout2 = `Bab/bab5.aux'.
 
- (Bab/bab5.tex
-Bab 5.
-) [43
+ (Bab/bab5.tex [44
 
 
 
 ]
+Bab 5.
+) [45]
 \openout2 = `Bab/bab6.aux'.
 
- (Bab/bab6.tex [44
+ (Bab/bab6.tex [46
 
 
 
 ]
 Bab 6.
-) [45] (skripsi.bbl [46
+) [47] (skripsi.bbl [48
 
 
-]) [47]
+]) [49]
 \openout2 = `Lampiran/lampA.aux'.
 
  (Lampiran/lampA.tex)
@@ -1282,10 +1289,10 @@ Package rerunfilecheck Info: File `skripsi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
- 34961 strings out of 493323
- 759471 string characters out of 3139037
+ 34972 strings out of 493323
+ 759687 string characters out of 3139037
  1107028 words of memory out of 3000000
- 37487 multiletter control sequences out of 15000+200000
+ 37494 multiletter control sequences out of 15000+200000
  83003 words of font info for 150 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
  78i,12n,130p,1631b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1312,9 +1319,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy10.pfb>
-Output written on skripsi.pdf (47 pages, 718134 bytes).
+Output written on skripsi.pdf (49 pages, 725685 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 24479 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
+ 24484 words of extra memory for PDF output out of 24883 (max. 10000000)
 
