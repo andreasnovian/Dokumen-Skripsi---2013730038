@@ -557,12 +557,18 @@ Morfofonemik dalam proses pengimbuhan dengan prefiks \textit{ter-} dapat berupa:
 \end{enumerate}
 
 
-\section{Peran Morphological Parser dalam Natural Language Processing}
+\section{Peran Morphological Parser dalam Natural Language Processing\cite{jurafsky:09:nlp}}
 \label{sec:peranParser}
 
-Natural Language Processing atau pengolahan bahasa alami adalah ...
+Dalam bahasa Inggris, ketika kita ingin menulis sebuah kata benda plural, untuk sebagian besar kasus kita hanya tinggal menambahkan huruf 's' di belakang kata benda yang dimaksud. Misalnya, kita ingin membuat bentuk plural dari kata 'book' kita hanya perlu menambahkan huruf 's' di belakangnya sehingga menjadi kata 'books' yang merupakan bentuk plural dari 'book'. Namun, hal itu tidak berlaku jika kita ingin membuat bentuk plural dari kata 'baby', 'goose', atau 'fish'. Bentuk plural dari kata 'baby', 'goose', dan 'fish' adalah 'babies', 'geese', dan 'fish'. 
 
-Morphological parsing berperan dalam ...
+%Dibutuhkan dua buah aturan untuk menentukan bentuk singular dan plural dari kata benda tersebut. \textit{Ortographic rules} yang mengatur bahwa kata yang berakhiran huruf 'y' untuk membuat bentuk pluralnya adalah dengan mengganti 'y' dengan 'i' dan menambahkan 'es'. \textit{Morphological rules} yang mengatur bahwa kata 'fish' tidak mempunyai bentuk plural khusus dan kata 'goose' mempunyai bentuk plural dengan mengganti huruf vokalnya. 
+
+Untuk mengenali bentuk 'books' dapat dipisahkan menjadi dua buah morfem 'book' dan 's' diperlukan proses yang disebut dengan \textbf{morphological parsing}. Dalam ranah ilmu temu kembali informasi (\textit{information retrieval}), proses yang sama untuk memetakan bentuk 'books' menjadi 'book' disebut dengan \textit{stemming}. Morphological parsing atau stemming tidak hanya dapat memisahkan bentuk plural dari kata benda, tapi juga dapat untuk bentuk lain seperti bentuk kata kerja berakhiran 'ing' dalam contoh kata 'going', 'talking', dan 'eating'. Ketika dilakukan proses parsing terhadap bentuk tersebut akan didapatkan kata kerja 'go', 'talk', dan 'eat' yang ditambahkan morfem 'ing'. 
+
+Muncul pertanyaan, kenapa kita tidak simpan saja semua bentuk plural dari semua kata benda dan semua bentuk 'ing' dari semua kata kerja dalam bahasa Inggris yang ada dalam kamus? Alasan utamanya adalah karena bentuk 'ing' adalah sufiks yang sangat produktif, yang berarti bentuk tersebut dapat diterapkan pada semua kata kerja. Sama halnya dengan bentuk plural 's' yang bisa diterapkan di hampir semua kata benda. Oleh karena itu, ide untuk menyimpan semua bentuk plural dan bentuk 'ing' akan sangat tidak efisien. 
+
+Morphological parsing dibutuhkan tidak hanya untuk temu kembali informasi. Kita membutuhkan proses tersebut untuk supaya mesin dapat mengerti bahwa kata 'va' dan 'aller' dalam bahasa Perancis keduanya diterjemahkan menjadi kata kerja 'go' dalam bahasa Inggris. Kita juga membutuhkan proses tersebut untuk mengecek ejaan, karena dengan aturan morfologi kita dapat menentukan bahwa kata 'misclam' dan 'antiundoggingly' bukan merupakan kata yang valid dalam bahasa Inggris.
 
 
 \section{Finite-State Automata}
