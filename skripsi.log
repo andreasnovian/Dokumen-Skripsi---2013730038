@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  14 NOV 2017 09:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  14 NOV 2017 11:18
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -926,7 +926,8 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 e.tex"
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))) (skripsi.aux (Bab/bab1.aux) (Bab/bab2.aux) (Bab/bab3.aux)
-(Lampiran/lampA.aux) (Lampiran/lampB.aux))
+(Bab/bab4.aux) (Bab/bab5.aux) (Bab/bab6.aux) (Lampiran/lampA.aux)
+(Lampiran/lampB.aux))
 \openout1 = `skripsi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
@@ -1131,7 +1132,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [6] [7] [8]
-<Gambar/gambar-morfem-bebas-terikat.png, id=239, 243.91125pt x 124.21407pt>
+<Gambar/gambar-morfem-bebas-terikat.png, id=251, 243.91125pt x 124.21407pt>
 File: Gambar/gambar-morfem-bebas-terikat.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-bebas-terikat.png>
@@ -1139,7 +1140,7 @@ Package pdftex.def Info: Gambar/gambar-morfem-bebas-terikat.png used on input l
 ine 200.
 (pdftex.def)             Requested size: 243.91064pt x 124.21375pt.
  [9 <./Gambar/gambar-morfem-bebas-terikat.png>] [10]
-<Gambar/gambar-morfem-dasar-afiks.png, id=255, 269.50688pt x 137.01187pt>
+<Gambar/gambar-morfem-dasar-afiks.png, id=267, 269.50688pt x 137.01187pt>
 File: Gambar/gambar-morfem-dasar-afiks.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-dasar-afiks.png>
@@ -1161,28 +1162,28 @@ ge Processing[[]]|
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 560.
 
-[23] <Gambar/contoh-trie-1.jpg, id=359, 229.73245pt x 192.87953pt>
+[23] <Gambar/contoh-trie-1.jpg, id=371, 229.73245pt x 192.87953pt>
 File: Gambar/contoh-trie-1.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-trie-1.jpg>
 Package pdftex.def Info: Gambar/contoh-trie-1.jpg used on input line 589.
 (pdftex.def)             Requested size: 229.73187pt x 192.87904pt.
  [24] [25 <./Gambar/contoh-trie-1.jpg>]
-<Gambar/contoh-radix-tree.jpg, id=373, 353.82187pt x 226.8475pt>
+<Gambar/contoh-radix-tree.jpg, id=385, 353.82187pt x 226.8475pt>
 File: Gambar/contoh-radix-tree.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-radix-tree.jpg>
 Package pdftex.def Info: Gambar/contoh-radix-tree.jpg used on input line 610.
 (pdftex.def)             Requested size: 265.36574pt x 170.1352pt.
  [26 <./Gambar/contoh-radix-tree.jpg>]
-<Gambar/contoh-trie-2.jpg, id=380, 230.72295pt x 176.61707pt>
+<Gambar/contoh-trie-2.jpg, id=392, 230.72295pt x 176.61707pt>
 File: Gambar/contoh-trie-2.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-trie-2.jpg>
 Package pdftex.def Info: Gambar/contoh-trie-2.jpg used on input line 636.
 (pdftex.def)             Requested size: 288.40295pt x 220.77077pt.
  [27]
-<Gambar/contoh-trie-3.jpg, id=386, 220.92902pt x 152.77803pt>
+<Gambar/contoh-trie-3.jpg, id=398, 220.92902pt x 152.77803pt>
 File: Gambar/contoh-trie-3.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-trie-3.jpg>
@@ -1193,97 +1194,106 @@ Package pdftex.def Info: Gambar/contoh-trie-3.jpg used on input line 647.
 
  (Bab/bab3.tex
 Bab 3.
-[31
-
-
-
-] [32] [33] [34]
-<Gambar/gambar-fsa-morfotaktik-contoh.png, id=423, 648.92438pt x 408.02437pt>
-File: Gambar/gambar-fsa-morfotaktik-contoh.png Graphic file (type png)
-
-<use Gambar/gambar-fsa-morfotaktik-contoh.png>
-Package pdftex.def Info: Gambar/gambar-fsa-morfotaktik-contoh.png used on input
- line 107.
-(pdftex.def)             Requested size: 324.4614pt x 204.01169pt.
- [35 <./Gambar/gambar-fsa-morfotaktik-contoh.png>]
-<Gambar/gambar-implementasi-aturan-morfofonemik.png, id=433, 386.19281pt x 91.0
-9032pt>
-File: Gambar/gambar-implementasi-aturan-morfofonemik.png Graphic file (type png
-)
- <use Gambar/gambar-implementasi-aturan-morfofonemik.png>
-Package pdftex.def Info: Gambar/gambar-implementasi-aturan-morfofonemik.png use
-d on input line 126.
-(pdftex.def)             Requested size: 231.71745pt x 54.65459pt.
- [36 <./Gambar/gambar-implementasi-aturan-morfofonemik.png>] [37]
-<Gambar/gambar-trie.png, id=453, 234.8775pt x 325.215pt>
+<Gambar/gambar-trie.png, id=416, 234.8775pt x 325.215pt>
 File: Gambar/gambar-trie.png Graphic file (type png)
 
 <use Gambar/gambar-trie.png>
 Package pdftex.def Info: Gambar/gambar-trie.png used on input line 191.
 (pdftex.def)             Requested size: 176.15768pt x 243.91064pt.
- [38 <./Gambar/gambar-trie.png>] [39] [40] [41]
-<Gambar/gambar-fsa-morfotaktik.png, id=486, 648.92438pt x 408.02437pt>
+ [31
+
+
+
+] [32 <./Gambar/gambar-trie.png>] [33] [34]
+[35] <Gambar/gambar-fsa-morfotaktik.png, id=457, 648.92438pt x 408.02437pt>
 File: Gambar/gambar-fsa-morfotaktik.png Graphic file (type png)
 
 <use Gambar/gambar-fsa-morfotaktik.png>
 Package pdftex.def Info: Gambar/gambar-fsa-morfotaktik.png used on input line 2
 90.
 (pdftex.def)             Requested size: 324.4614pt x 204.01169pt.
- [42]
-<Gambar/gambar-diagram-use-case-awal.png, id=496, 563.85657pt x 500.62032pt>
-File: Gambar/gambar-diagram-use-case-awal.png Graphic file (type png)
+ [36 <./Gambar/gambar-fsa-morfotaktik.png>] <Gambar/gambar-diagram-use-case.png
+, id=465, 711.4078pt x 455.45157pt>
+File: Gambar/gambar-diagram-use-case.png Graphic file (type png)
 
-<use Gambar/gambar-diagram-use-case-awal.png>
-Package pdftex.def Info: Gambar/gambar-diagram-use-case-awal.png used on input 
-line 305.
-(pdftex.def)             Requested size: 315.75752pt x 280.34546pt.
- [43 <./Gambar/gambar-fsa-morfotaktik.png>]
+<use Gambar/gambar-diagram-use-case.png>
+Package pdftex.def Info: Gambar/gambar-diagram-use-case.png used on input line 
+305.
+(pdftex.def)             Requested size: 398.38565pt x 255.05113pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
-[44 <./Gambar/gambar-diagram-use-case-awal.png>] [45]
-<Gambar/gambar-diagram-kelas-awal.png, id=513, 1680.2775pt x 831.105pt>
+[37 <./Gambar/gambar-diagram-use-case.png>] [38]
+<Gambar/gambar-diagram-kelas-awal.png, id=477, 1680.2775pt x 831.105pt>
 File: Gambar/gambar-diagram-kelas-awal.png Graphic file (type png)
 
 <use Gambar/gambar-diagram-kelas-awal.png>
 Package pdftex.def Info: Gambar/gambar-diagram-kelas-awal.png used on input lin
-e 412.
+e 469.
 (pdftex.def)             Requested size: 504.08714pt x 249.33342pt.
 
-Overfull \hbox (34.61665pt too wide) in paragraph at lines 412--413
+Overfull \hbox (34.61665pt too wide) in paragraph at lines 469--470
  [][] 
  []
 
-) [46 <./Gambar/gambar-diagram-kelas-awal.png>] (skripsi.bbl) [47
+) [39] [40 <./Gambar/gambar-diagram-kelas-awal.png>]
+\openout2 = `Bab/bab4.aux'.
+
+ (Bab/bab4.tex
+Bab 4.
+) [41
+
 
 
 ]
+\openout2 = `Bab/bab5.aux'.
+
+ (Bab/bab5.tex [42
+
+
+
+]
+Bab 5.
+) [43]
+\openout2 = `Bab/bab6.aux'.
+
+ (Bab/bab6.tex [44
+
+
+
+]
+Bab 6.
+) [45] (skripsi.bbl [46
+
+
+]) [47]
 \openout2 = `Lampiran/lampA.aux'.
 
-
-(Lampiran/lampA.tex)
+ (Lampiran/lampA.tex)
 \openout2 = `Lampiran/lampB.aux'.
 
  (Lampiran/lampB.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
- (skripsi.aux (Bab/bab1.aux)
-(Bab/bab2.aux) (Bab/bab3.aux) (Lampiran/lampA.aux) (Lampiran/lampB.aux))
+
+(skripsi.aux (Bab/bab1.aux) (Bab/bab2.aux) (Bab/bab3.aux) (Bab/bab4.aux)
+(Bab/bab5.aux) (Bab/bab6.aux) (Lampiran/lampA.aux) (Lampiran/lampB.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: A309568C9E26E17010ECF31618FA3C48;6570.
+(rerunfilecheck)             Checksum: D412BEC5FD457A0F2F339CB2C8AE6221;7223.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
- 34957 strings out of 493323
- 759866 string characters out of 3139037
+ 34954 strings out of 493323
+ 759384 string characters out of 3139037
  1107028 words of memory out of 3000000
- 37496 multiletter control sequences out of 15000+200000
- 83039 words of font info for 151 fonts, out of 3000000 for 9000
+ 37483 multiletter control sequences out of 15000+200000
+ 82873 words of font info for 149 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 78i,12n,130p,1631b,707s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 78i,12n,130p,1631b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1294,8 +1304,8 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiK
-TeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.e
+TeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
+ps/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.e
 nc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
@@ -1306,10 +1316,10 @@ pe1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on skripsi.pdf (47 pages, 929349 bytes).
+/lmsy10.pfb>
+Output written on skripsi.pdf (47 pages, 828047 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 24465 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 601 PDF objects out of 1000 (max. 8388607)
+ 167 named destinations out of 1000 (max. 500000)
+ 24479 words of extra memory for PDF output out of 24883 (max. 10000000)
 

@@ -296,23 +296,23 @@ Automata dimulai dari state \textit{Akar}, lalu bisa berlanjut ke state \textit{
 
 
 \section{Diagram Use Case}
-\label{sec:DiagramUseCaseAwal}
+\label{sec:DiagramUseCase}
 
-Perangkat lunak \textit{morphological parser} yang akan dibangun dapat memproses masukan berupa teks dalam bahasa Indonesia yang dapat dimasukkan ke dalam perangkat lunak melalui dua cara, melalui kolom masukan dan melalui file teks. Perangkat lunak juga memiliki leksikon yang isinya dapat dilihat oleh user. Selain itu, user juga dapat menambahkan entri pada leksikon melalui perangkat lunak ini. Fitur-fitur ini dapat digambarkan dalam diagram use case pada gambar \ref{gambar-diagram-use-case-awal}.
+Perangkat lunak \textit{morphological parser} yang akan dibangun dapat memproses masukan berupa teks dalam bahasa Indonesia yang dapat dimasukkan ke dalam perangkat lunak melalui dua cara, melalui kolom masukan dan melalui file teks. Perangkat lunak juga memiliki leksikon yang isinya dapat dilihat oleh user. Selain itu, terdapat user khusus yang disebut dengan editor yang dapat melakukan penambahan, pengubahan, dan penghapusan entri pada leksikon melalui perangkat lunak ini. Fitur-fitur ini dapat digambarkan dalam diagram use case pada gambar \ref{gambar-diagram-use-case}.
 		
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.56]{Gambar/gambar-diagram-use-case-awal}
+\includegraphics[scale=0.56]{Gambar/gambar-diagram-use-case}
 \caption[Diagram use case perangkat lunak morphological parser]{Diagram use case perangkat lunak morphological parser} 
-\label{gambar-diagram-use-case-awal}
+\label{gambar-diagram-use-case}
 \end{figure}
 
 Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 
-\textbf{MEMASUKKAN TEKS}\\
-\textbf{Name:} Memasukkan teks\\
+\textbf{MEMPROSES TEKS}\\
+\textbf{Name:} Memproses teks\\
 \textbf{Actors:} User\\
-\textbf{Goals:} User berhasil memasukkan teks yang akan diproses ke dalam sistem\\
+\textbf{Goals:} User berhasil memproses teks melalui sistem\\
 \textbf{Precondition:} Teks sudah disiapkan\\
 \textbf{Steps:}
 
@@ -326,7 +326,8 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 2. Sistem menampilkan kotak dialog \\&untuk memilih file\\
 3. User mengarahkan kotak dialog&\\ ke direktori tempat file teks masukan&\\
 4. User menekan tombol "OK"&
-5. Sistem mengeluarkan keterangan \\&"Teks berhasil dimasukkan"\\
+5. Sistem menampilkan isi file \\&ke dalam kolom masukan\\
+6. User menekan tombol "Proses"&7. Sistem menampilkan hasil proses\\&ke dalam kolom keluaran\\
 \hline
 \end{tabular}
 \end{table}
@@ -339,18 +340,16 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 \hline
 \textbf{Actor actions} & \textbf{System responses} \\
 \hline
-1a. User memilih pilihan untuk& \\memasukkan teks melalui kolom masukan&\\
-2a. User mempaste teks ke dalam kolom masukan&\\
-3a. User menekan tombol "OK"& 
-4a. Sistem mengeluarkan keterangan \\&"Teks berhasil dimasukkan" \\
+1a. User menulis teks ke dalam kolom masukan&\\
+2a. User menekan tombol "Proses"&3a. Sistem menampilkan hasil proses\\&ke dalam kolom keluaran\\
 \hline
 \end{tabular}
 \end{table}
 
-\textbf{MELIHAT LEKSIKON}\\
-\textbf{Name:} Melihat leksikon\\
+\textbf{MELIHAT ENTRI LEKSIKON}\\
+\textbf{Name:} Melihat entri leksikon\\
 \textbf{Actors:} User\\
-\textbf{Goals:} User dapat melihat leksikon yang ada dalam sistem\\
+\textbf{Goals:} User dapat melihat semua entri leksikon yang ada dalam sistem\\
 \textbf{Precondition:} Sistem sudah memuat leksikon ke dalam program\\
 \textbf{Steps:}
 
@@ -368,8 +367,8 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 
 \textbf{MENAMBAH ENTRI PADA LEKSIKON}\\
 \textbf{Name:} Menambah entri pada leksikon\\
-\textbf{Actors:} User\\
-\textbf{Goals:} User berhasil menambah entri pada leksikon\\
+\textbf{Actors:} Editor\\
+\textbf{Goals:} Editor berhasil menambah entri pada leksikon\\
 \textbf{Precondition:} Sistem sudah memuat leksikon ke dalam program\\
 \textbf{Steps:}
 
@@ -379,10 +378,10 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 \hline
 \textbf{Actor actions} & \textbf{System responses} \\
 \hline
-1. User memilih pilihan untuk&\\ menambah entri pada leksikon&
+1. Editor memilih pilihan untuk&\\ menambah entri pada leksikon&
 2. Sistem menampilkan form untuk \\&menambah entri pada leksikon\\
-3. User mengisikan entri baru pada form&\\
-4. User menekan tombol "OK"&
+3. Editor mengisikan entri baru pada form&\\
+4. Editor menekan tombol "OK"&
 5. Sistem mengeluarkan keterangan \\&"Entri berhasil dimasukkan"\\
 \hline
 \end{tabular}
@@ -397,6 +396,64 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 \textbf{Actor actions} & \textbf{System responses} \\
 \hline
 &5a. Sistem mengeluarkan keterangan \\&"Format pengisian entri salah, ulangi lagi"\\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{MENGUBAH ENTRI PADA LEKSIKON}\\
+\textbf{Name:} Mengubah entri pada leksikon\\
+\textbf{Actors:} Editor\\
+\textbf{Goals:} Editor berhasil mengubah entri pada leksikon\\
+\textbf{Precondition:} Sistem sudah memuat leksikon ke dalam program\\
+\textbf{Steps:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+1. Editor memilih entri leksikon yang akan diubah&\\
+2. Editor memilih pilihan untuk&\\ mengubah entri pada leksikon&
+3. Sistem menampilkan form untuk \\&mengubah entri pada leksikon\\
+4. Editor melakukan perubahan entri pada form&\\
+5. Editor menekan tombol "OK"&
+6. Sistem mengeluarkan keterangan \\&"Entri berhasil diubah"\\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Alternate flow:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+&6a. Sistem mengeluarkan keterangan \\&"Format pengisian entri salah, ulangi lagi"\\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{MENGHAPUS ENTRI PADA LEKSIKON}\\
+\textbf{Name:} Menghapus entri pada leksikon\\
+\textbf{Actors:} Editor\\
+\textbf{Goals:} Editor berhasil menghapus entri pada leksikon\\
+\textbf{Precondition:} Sistem sudah memuat leksikon ke dalam program\\
+\textbf{Steps:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Actor actions} & \textbf{System responses} \\
+\hline
+1. Editor memilih entri leksikon yang akan dihapus&\\
+2. Editor memilih pilihan untuk&\\ menghapus entri pada leksikon&
+3. Sistem menampilkan kotak dialog \\&persetujuan menghapus entri\\
+5. Editor menekan tombol "OK"&
+6. Sistem mengeluarkan keterangan \\&"Entri berhasil dihapus"\\
 \hline
 \end{tabular}
 \end{table}
