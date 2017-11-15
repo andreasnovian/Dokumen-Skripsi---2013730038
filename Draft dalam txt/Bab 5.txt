@@ -1,4 +1,9 @@
 - Implementasi semua bab 4 dalam bentuk program
 - Hasil pengujian
+Proses penambahan dan penghapusan entri leksikon berlangsung cukup lama
 
-Kata yang kemungkinan nggak bisa diproses : mengotak-ngotakkan, gotong royong (karena royong bukan kata dasar)
+Kata yang kemungkinan nggak bisa diproses : 
+- mengotak-ngotakkan, tanggung-menanggung
+- gotong royong (karena royong bukan kata dasar), 
+- pekerjaan (rancu per dan pe) beda dengan penanggungan dan pertanggungan
+- sekuat-kuatnya (nya sebagai klitika atau sufiks?)
