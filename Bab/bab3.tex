@@ -275,26 +275,115 @@ Beberapa contoh yang sudah dibahas di atas adalah contoh proses parsing yang dil
 %Dalam proses komposisi, kata yang menjadi bentuk dasar dapat berupa sebuah kata dasar dan diikuti kata dasar lain yang tidak berhubungan dengan kata dasarnya dan hanya sebagai penjelas, seperti pada kata 'sate ayam' dan 'merah jambu'. Selain itu, dapat pula sebuah kata dasar diikuti oleh kata yang merupakan lawan kata atau antonimnya, seperti pada kata 'tua muda' dan 'jual beli'. Ada pula bentuk yang berupa sebuah kata dasar diikuti oleh kata yang tidak dapat berdiri sendiri dalam bahasa Indonesia, seperti pada kata 'gotong royong'.
 
 
-%\section{\textit{Finite-State Automata}}
-%\label{sec:fsa}
-
-%Di sini akan dijelaskan mengenai FSA
-
 \section{Morfotaktik}
 \label{sec:morfotaktik}
 
 Pada subbab \ref{sec:morfemDasarDLL} dan \ref{sec:morfemAfiks} telah dijelaskan mengenai morfem dasar dan morfem afiks. Morfem dasar adalah morfem yang dapat menjadi dasar dalam suatu proses morfologi. Sementara morfem afiks adalah morfem yang tidak dapat menjadi dasar dalam pembentukan kata, tetapi hanya menjadi unsur pembentuk dalam proses afiksasi. Kedua morfem tersebut dapat digabungkan dalam proses morfologi berupa proses afiksasi untuk membentuk sebuah kata. Proses penggabungan antara kedua morfem tersebut tidak boleh dilakukan secara sembarangan sehingga diperlukan aturan khusus yang mengatur penggabungan antara morfem dasar dan morfem afiks. Aturan ini disebut dengan morfotaktik. 
 
-Aturan morfotaktik tidak hanya mengatur tentang proses penggabungan antara morfem dasar dengan morfem afiks, namun juga mengatur tentang proses pengulangan morfem dasar dalam proses reduplikasi dan proses penggabungan antara morfem dasar dengan morfem dasar lain dalam proses komposisi. Aturan morfotaktik ini dapat diilustrasikan dengan sebuah \textit{finite-state automata} yang dapat dilihat pada gambar \ref{gambar-fsa-morfotaktik}. Kata yang dibentuk dari proses morfologi bahasa Indonesia yang benar akan dapat diterima oleh automata, sementara yang tidak akan ditolak.
+Morfem afiks terdiri dari prefiks, sufiks, dan konfiks. Jenis-jenis prefiks adalah prefiks \textit{ber-}, prefiks \textit{me-}, prefiks \textit{per-}, prefiks \textit{pe-}, prefiks \textit{di-}, prefiks \textit{ter-}, prefiks \textit{se-}, dan prefiks \textit{ke-}. Jenis-jenis sufiks adalah sufiks \textit{-kan}, sufiks \textit{-i}, dan sufiks \textit{-an}. Jenis-jenis konfiks adalah konfiks \textit{ke-an}, konfiks \textit{ber-an}, konfiks \textit{pe-an}, konfiks \textit{per-an}, dan konfiks \textit{se-nya}. Bahasa Indonesia membolehkan sebuah kata untuk dibentuk dengan dua buah prefiks, seperti contoh kata 'memperkuat' yang dibentuk dari kata dasar 'kuat' dengan dua buah prefiks, yaitu prefiks \textit{me-} dan prefiks \textit{per-}. Afiks yang diletakkan sebelum prefiks ini akan disebut dengan \textit{preprefiks}. 
 
-\begin{figure}[H]
+Selain afiks yang sudah disebutkan, ada juga morfem afiks yang disebut dengan klitika. Berdasarkan letaknya, dibedakan adanya \textit{proklitika}, yaitu klitika yang berposisi di sebelah kiri kata yang diikuti dan \textit{enklitika} adalah klitika yang berposisi di belakang kata yang dilekati. Contoh proklitika adalah klitika \textit{ku-} dan \textit{kau-} dalam bentuk \textit{kubawa} dan \textit{kauambil}. Sementara contoh enklitika adalah klitika \textit{-ku}, \textit{-mu}, \textit{-nya}, dan \textit{-lah} pada bentuk \textit{bukuku}, \textit{nasibmu}, \textit{duduknya}, dan \textit{pergilah}. Secara pertuturan, klitika pada umumnya diletakkan di paling kiri atau di paling kanan dari sebuah kata, sehingga tidak mungkin ada morfem afiks atau morfem dasar lain yang diletakkan di sebelah kiri proklitika atau di sebelah kanan enklitika pada sebuah kata.
+
+Aturan morfotaktik tidak hanya mengatur tentang proses penggabungan antara morfem dasar dengan morfem afiks, namun juga mengatur tentang proses pengulangan morfem dasar dalam proses reduplikasi dan proses penggabungan antara morfem dasar dengan morfem dasar lain dalam proses komposisi. Proses reduplikasi dan komposisi pun tidak boleh dilakukan secara sembarangan sehingga proses tersebut perlu juga diatur dalam aturan morfotaktik.
+
+Aturan morfotaktik yang digunakan pada penelitian ini akan dijelaskan melalui tabel. Akan ada beberapa tabel untuk mewakili setiap jenis morfem, yaitu preprefiks, prefiks, akar, sufiks, dan konfiks. Setiap tabel akan menunjukkan komponen tersebut boleh didahului oleh komponen apa saja dan boleh diikuti oleh komponen apa saja. Komponen 'null' berarti boleh tidak didahului atau diikuti oleh komponen apapun. Berikut adalah tabel aturan morfotaktik untuk preprefiks, prefiks/konfiks, akar, dan sufiks/konfiks.
+
+\begin{table}[H]
 \centering
-\includegraphics[scale=0.5]{Gambar/gambar-fsa-morfotaktik}
-\caption[Ilustrasi proses morfotaktik]{Ilustrasi proses morfotaktik} 
-\label{gambar-fsa-morfotaktik}
-\end{figure}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Pendahulu} & \textbf{Preprefiks} & \textbf{Pengikut} \\
+\hline
+ proklitika&me-&per-\\
+ null&di-&ke-\\
+ & &ber-\\
+ & &ter-\\
+ \hline
+ proklitika&pe-&ber-\\
+ null& & \\
+ \hline
+ proklitika&ke-&ber-\\
+ null& &pe-\\
+ \hline
+ proklitika&ber-&ke-\\
+ null& &pe-\\
+\hline
+\end{tabular}
+\caption{Tabel Aturan Morfotaktik untuk Preprefiks} 
+\label{tabel-morfotaktik-preprefiks}
+\end{table}
 
-Automata dimulai dari state \textit{Akar}, lalu bisa berlanjut ke state \textit{Null}, yang berarti tidak digabungkan dengan apapun, atau bisa berlanjut ke state \textit{Redup}, yang berarti dilakukan proses reduplikasi, atau bisa berlanjut ke state \textit{Kompo}, yang berarti dilakukan proses komposisi, atau bisa berlanjut ke salah satu state prefiks, yaitu state \textit{me-, pe-, per-, di-, ber-, ter-, se-,} atau \textit{ke-}. Dari state ini, automata dapat bergerak ke state \textit{Pangkal} atau dapat bergerak ke salah satu state dalam kelas yang sama untuk kasus di mana ada dua prefiks yang diimbuhkan. Lalu dari ...
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Pendahulu} & \textbf{Prefiks/Konfiks} & \textbf{Pengikut} \\
+\hline
+ proklitika&per-&akar\\
+ me-&ter-& \\
+ di-& & \\
+ null& & \\
+ \hline
+ proklitika&me-&akar\\
+ null&di-& \\
+  &se-& \\
+ \hline
+ proklitika&ke-&akar\\
+ me-& & \\
+ di-& & \\
+ ber-& & \\
+ null& & \\
+ \hline
+ proklitika&ber-&akar\\
+ me-& & \\
+ di-& & \\
+ pe-& & \\
+ ke-& & \\
+ null& & \\
+ \hline
+ proklitika&pe-&akar\\
+ ke-& & \\
+ ber-& & \\
+ null& & \\
+\hline
+\end{tabular}
+\caption{Tabel Aturan Morfotaktik untuk Prefiks atau Konfiks} 
+\label{tabel-morfotaktik-prefiks}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Pendahulu} & \textbf{Akar} & \textbf{Pengikut} \\
+\hline
+ proklitika&akar&konfiks\\
+ prefiks& &sufiks\\
+ null& &reduplikasi\\
+ & &komposisi\\
+ & &enklitika\\
+ & &null\\
+\hline
+\end{tabular}
+\caption{Tabel Aturan Morfotaktik untuk Akar} 
+\label{tabel-morfotaktik-akar}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Pendahulu} & \textbf{Sufiks/Konfiks} & \textbf{Pengikut} \\
+\hline
+ akar&-kan&reduplikasi\\
+ &-an&komposisi\\
+ &-i&enklitika\\
+ & &null\\
+\hline
+\end{tabular}
+\caption{Tabel Aturan Morfotaktik untuk Sufiks atau Konfiks} 
+\label{tabel-morfotaktik-sufiks}
+\end{table}
 
 
 \section{Diagram Use Case}
@@ -454,8 +543,8 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 1. Editor memilih entri leksikon yang akan dihapus&\\
 2. Editor memilih pilihan untuk&\\ menghapus entri pada leksikon&
 3. Sistem menampilkan kotak dialog \\&persetujuan menghapus entri\\
-5. Editor menekan tombol "OK"&
-6. Sistem mengeluarkan keterangan \\&"Entri berhasil dihapus"\\
+4. Editor menekan tombol "OK"&
+5. Sistem mengeluarkan keterangan \\&"Entri berhasil dihapus"\\
 \hline
 \end{tabular}
 \end{table}
@@ -464,11 +553,77 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 \section{Diagram Kelas}
 \label{sec:DiagramKelasAwal}
 
-Berikut adalah diagram kelas yang dibuat untuk perangkat lunak ini.
+Berdasarkan analisis yang telah dilakukan, kelas-kelas yang akan dibuat untuk perangkat lunak morphological parser adalah sebagai berikut.
+
+\textbf{Kelas Parser} berfungsi untuk melakukan proses parsing terhadap sebuah kalimat atau paragraf dalam bahasa Indonesia.
+
+Atribut yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{parseResult}: bertipe String dan menyimpan hasil parsing dari kalimat atau paragraf yang menjadi masukan
+	\item \textit{lexicon}: bertipe objek dari kelas Lexicon dan merupakan objek yang digunakan oleh kelas Parser untuk mengakses fitur leksikon dari perangkat lunak
+\end{itemize}
+
+Method yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{Parser}: konstruktor tanpa parameter untuk membuat objek dari kelas Parser.
+	\item \textit{isRootWord}: method dengan sebuah parameter bertipe String dan kembalian bertipe boolean untuk menentukan apakah kata yang ada di parameter merupakan kata dasar atau bukan. Method ini memanggil method searchInTree dari kelas Lexicon.
+	\item \textit{processFromText}: method dengan sebuah parameter bertipe String dan kembalian bertipe String untuk melakukan proses parsing dari teks yang ada di parameter.
+	\item \textit{processFromFile}: method dengan sebuah parameter bertipe String dan kembalian bertipe String untuk melakukan proses parsing terhadap isi file dari path yang ada di parameter.
+	\item \textit{checkPrefiks}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks dalam String kata yang diberikan di parameter.
+	\item \textit{checkSufiks}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak sufiks dalam String kata yang diberikan di parameter.
+	\item \textit{checkRedup}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan reduplikasi pada String kata yang diberikan di parameter.
+	\item \textit{checkKonfiks}: method tanpa parameter dan kembalian bertipe void untuk melakukan pengecekan adanya kemungkinan kombinasi prefiks dan sufiks yang membentuk konfiks pada atribut hasil parsing.
+	\item \textit{checkKomposisi}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan komposisi pada String kata yang diberikan di parameter.
+	\item \textit{checkKomposisi}: method dengan parameter sebuah String dan kembalian bertipe void untuk melakukan pengecekan kemungkinan komposisi antara kata yang sedang diproses dengan String kata yang diberikan di parameter.
+\end{itemize}
+
+\textbf{Kelas Lexicon} berfungsi untuk menyimpan kumpulan kata dasar dan kata turunan yang digunakan selama proses morphological parsing berlangsung.
+
+Atribut yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{roots}: bertipe array of Node dan menyimpan kumpulan kata dasar yang valid dalam bahasa Indonesia dalam bentuk pohon Node
+	\item \textit{components}: bertipe array of String dan menyimpan kumpulan kata turunan untuk setiap kata dasar dalam bahasa Indonesia
+\end{itemize}
+
+Method yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{Lexicon}: konstruktor tanpa parameter untuk membuat objek dari kelas Lexicon.
+	\item \textit{insertRoot}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk memasukkan sebuah kata dasar baru ke dalam leksikon.
+	\item \textit{updateRoot}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk mengubah kata dasar lama dalam parameter menjadi kata dasar baru dalam parameter.
+	\item \textit{deleteRoot}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk menghapus sebuah kata dasar dalam parameter.
+	\item \textit{insertComponent}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk memasukkan sebuah kata turunan baru dalam parameter ke kata dasar dalam parameter.
+	\item \textit{updateComponent}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk mengubah kata turunan lama dalam parameter menjadi kata turunan baru dalam parameter untuk kata dasar dalam parameter.
+	\item \textit{deleteComponent}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk menghapus sebuah kata turunan dalam parameter dari kata dasar dalam parameter.
+	\item \textit{searchInTree}: method dengan sebuah parameter bertipe String dan kembalian bertipe boolean untuk mencari kata dasar di parameter dalam pohon Node.
+	\item \textit{printAllWordInTree}: method tanpa parameter dan kembalian bertipe String untuk mencetak semua kata yang disimpan dalam pohon Node ke dalam sebuah String.
+\end{itemize}
+
+\textbf{Kelas Node} berfungsi untuk menyimpan satu karakter dalam pohon Node.
+
+Atribut yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{letter}: bertipe char dan menyimpan sebuah karakter
+	\item \textit{endOfWord}: bertipe boolean dan menyimpan keterangan apakah node ini merupakan karakter akhir dari sebuah kata dalam pohon atau tidak
+	\item \textit{children}: bertipe array of Node dan menyimpan kumpulan node yang merupakan anak dari node ini
+	\item \textit{parent}: bertipe node dan menyimpan sebuah node yang merupakan parent dari node ini
+\end{itemize}
+
+Method yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{Node}: konstruktor tanpa parameter untuk membuat objek dari kelas Node.
+\end{itemize}
+
+Gambar \ref{gambar-diagram-kelas-awal} berikut adalah diagram kelas awal yang dibuat untuk perangkat lunak ini.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{Gambar/gambar-diagram-kelas-awal}
-\caption[Diagram kelas perangkat lunak morphological parser]{Diagram kelas perangkat lunak morphological parser} 
+\includegraphics[scale=0.35]{Gambar/gambar-diagram-kelas-awal}
+\caption{Diagram kelas awal perangkat lunak morphological parser} 
 \label{gambar-diagram-kelas-awal}
 \end{figure}
