@@ -1,5 +1,9 @@
 - Implementasi semua bab 4 dalam bentuk program
 - Hasil pengujian
+
+Implementasi struktur data trie dengan tipe data hashmap
+Implementasi simbol khusus untuk klitika
+
 Proses penambahan dan penghapusan entri leksikon berlangsung cukup lama
 
 Kata yang kemungkinan nggak bisa diproses : 
@@ -7,3 +11,7 @@ Kata yang kemungkinan nggak bisa diproses :
 - gotong royong (karena royong bukan kata dasar), 
 - pekerjaan (rancu per dan pe) beda dengan penanggungan dan pertanggungan
 - sekuat-kuatnya (nya sebagai klitika atau sufiks?)
+
+Pengujian:
+Fungsional, fungsi program sesuai fitur, bisa atau tidak?
+Non-fungsional, kuantitatif tapi bukan fitur, seperti waktu proses, ketelitian, dll
