@@ -126,17 +126,6 @@ Gambar \ref{mockup-lexicon-delete-editor} berikut adalah rancangan antarmuka yan
 \label{mockup-lexicon-delete-editor}
 \end{figure}
 
-\section{Diagram Flowchart}
-\label{sec:diagramFlowchart}
-
-Gambar \ref{gambar-diagram-flowchart} berikut adalah diagram flowchart yang dibuat untuk proses morphological parsing.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{Gambar/gambar-diagram-flowchart}
-\caption{Diagram flowchart proses morphological parsing} 
-\label{gambar-diagram-flowchart}
-\end{figure}
 
 \section{Diagram Kelas Lengkap}
 \label{sec:DiagramKelasLengkap}
@@ -205,8 +194,56 @@ Method yang terdapat dalam kelas ini adalah:
 \subsection{Kelas Lexicon}
 \label{sec:kelasLexicon}
 
+Kelas ini berfungsi untuk menyimpan kumpulan kata dasar dan kata turunan yang digunakan selama proses morphological parsing berlangsung. Seperti telah diuraikan pada subbab \ref{sec:strukturPenyimpananLeksikon}, kata dasar disimpan dalam sebuah file bernama 'roots.lxc' dan kata turunan untuk setiap kata dasar disimpan dalam file bernama sama dengan kata dasar yang bersangkutan. File 'roots.lxc' akan dimuat oleh kelas ini setiap kali program dijalankan dan kata dasar akan disimpan dalam trie yang berbentuk pohon node supaya pencarian kata dasar dapat dilakukan dengan cepat dan efektif.
+
+Atribut yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{roots}: bertipe map of Node dengan key adalah sebuah karakter dan menyimpan kumpulan akar dari pohon node yang menyimpan kata dasar yang valid dalam bahasa Indonesia
+	\item \textit{folder}: bertipe String dan menyimpan path dari folder tempat file leksikon berada
+\end{itemize}
+
+Method yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{Lexicon}: konstruktor tanpa parameter untuk membuat objek dari kelas Lexicon.
+	\item \textit{load}: method tanpa parameter dan kembalian bertipe void untuk memuat semua kata dasar dalam leksikon dan menyimpannya ke dalam trie.
+	\item \textit{writeToFile}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk menulis parameter key ke dalam file dengan nama file dalam parameter fileName.
+	\item \textit{deleteFromFile}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk menghapus parameter key dari dalam file dengan nama file dalam parameter fileName.
+	\item \textit{createFile}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk membuat sebuah file baru dengan nama file dalam parameter fileName.
+	\item \textit{deleteFile}: method dengan sebuah parameter bertipe String dan kembalian bertipe boolean untuk menghapus sebuah file dengan nama file dalam parameter fileName dan mengembalikan status keberhasilan penghapusan file.
+	\item \textit{clearFile}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk mengosongkan isi sebuah file dengan nama file dalam parameter fileName.
+	\item \textit{getComponent}: method dengan sebuah parameter bertipe String dan kembalian bertipe String untuk mengembalikan semua komponen kata turunan dari sebuah kata dasar dalam parameter root.
+	\item \textit{searchInTree}: method dengan sebuah parameter bertipe String dan kembalian bertipe boolean untuk mencari ada atau tidak kata dasar pada parameter key dalam pohon Node.
+	\item \textit{searchRec}: method dengan sebuah parameter bertipe String, sebuah parameter bertipe objek dari kelas Node, dan kembalian bertipe boolean untuk melakukan pencarian secara rekursif dalam pohon Node dengan parameter string adalah kata yang dicari dan node adalah node yang sedang ditelusuri saat ini.
+	\item \textit{searchInFile}: method dengan dua buah parameter bertipe String dan kembalian bertipe boolean untuk melakukan pencarian dari parameter key dalam file dengan nama pada parameter fileName.
+	\item \textit{insertRoot}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk memasukkan kata dasar baru dalam parameter root ke dalam leksikon.
+	\item \textit{insertToTree}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk memasukkan sebuah kata dalam parameter word ke dalam pohon Node.
+	\item \textit{insertRec}: method dengan sebuah parameter bertipe String, sebuah parameter bertipe objek dari kelas Node, dan kembalian bertipe void untuk memasukkan kata secara rekursif dalam pohon Node dengan parameter string adalah kata yang dimasukkan dan node adalah node yang sedang ditelusuri saat ini.
+	\item \textit{insertComponent}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk memasukkan sebuah kata turunan baru dalam parameter component ke kata dasar dalam parameter root.
+	\item \textit{deleteRoot}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk menghapus sebuah kata dasar dalam parameter root dari pohon Node.
+	\item \textit{deleteRec}: method dengan sebuah parameter bertipe String, sebuah parameter bertipe objek dari kelas Node, dan kembalian bertipe void untuk menghapus kata secara rekursif dalam pohon Node dengan parameter string adalah kata yang dihapus dan node adalah node yang sedang ditelusuri saat ini.
+	\item \textit{deleteComponent}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk menghapus sebuah kata turunan dalam parameter component dari kata dasar dalam parameter root.
+	\item \textit{updateRoot}: method dengan dua buah parameter bertipe String dan kembalian bertipe void untuk mengubah kata dasar lama dalam parameter oldRoot menjadi kata dasar baru dalam parameter newRoot.
+	\item \textit{updateComponent}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk mengubah kata turunan lama dalam parameter oldComponent menjadi kata turunan baru dalam parameter newComponent untuk kata dasar dalam parameter root.
+	\item \textit{printAllWordInTree}: method tanpa parameter dan kembalian bertipe String untuk mencetak semua kata yang disimpan dalam pohon Node ke dalam sebuah String.
+	\item \textit{convertToWord}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk mengubah kata dasar dalam parameter rootWord dan komponen dalam parameter component menjadi kata-kata yang dapat dimengerti oleh manusia. Method ini memanggil method convertToWord dari kelas Combiner.
+\end{itemize}
+
 \subsection{Kelas Node}
 \label{sec:kelasNode}
 
 \subsection{Kelas Combiner}
 \label{sec:kelasCombiner}
+
+\section{Diagram Flowchart}
+\label{sec:diagramFlowchart}
+
+Gambar \ref{gambar-diagram-flowchart} berikut adalah diagram flowchart yang dibuat untuk proses morphological parsing.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Gambar/gambar-diagram-flowchart}
+\caption{Diagram flowchart proses morphological parsing} 
+\label{gambar-diagram-flowchart}
+\end{figure}

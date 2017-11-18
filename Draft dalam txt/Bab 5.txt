@@ -2,6 +2,7 @@
 - Hasil pengujian
 
 Implementasi struktur data trie dengan tipe data hashmap
+Baca tulis file dengan bufferedReader dan bufferedWriter dan diimplementasikan dengan fileReader dan fileWriter
 Implementasi simbol khusus untuk klitika
 
 Proses penambahan dan penghapusan entri leksikon berlangsung cukup lama
