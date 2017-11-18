@@ -141,7 +141,7 @@ Gambar \ref{gambar-diagram-flowchart} berikut adalah diagram flowchart yang dibu
 \section{Diagram Kelas Lengkap}
 \label{sec:DiagramKelasLengkap}
 
-Gambar \ref{gambar-diagram-kelas-final} berikut adalah diagram kelas lengkap yang dibuat untuk perangkat lunak morphological parser.
+Pada subbab \ref{sec:DiagramKelasAwal} telah diuraikan analisis mengenai kelas-kelas yang akan dibuat untuk perangkat lunak morphological parser. Pada subbab ini akan ditambahkan beberapa kelas dan method untuk melengkapi kelas-kelas yang sudah diuraikan sebelumnya. Gambar \ref{gambar-diagram-kelas-final} adalah diagram kelas lengkap yang dibuat untuk perangkat lunak morphological parser.
 
 \begin{figure}[H]
 \centering
@@ -149,3 +149,64 @@ Gambar \ref{gambar-diagram-kelas-final} berikut adalah diagram kelas lengkap yan
 \caption{Diagram kelas lengkap perangkat lunak morphological parser} 
 \label{gambar-diagram-kelas-final}
 \end{figure}
+
+\subsection{Kelas Parser}
+\label{sec:kelasParser}
+
+Kelas ini berfungsi untuk melakukan proses parsing terhadap sebuah kalimat atau paragraf dalam bahasa Indonesia.
+
+Atribut yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{parseResult}: bertipe ArrayList of String untuk menyimpan beberapa kemungkinan hasil parsing dari setiap kata dalam kalimat atau paragraf yang menjadi masukan
+	\item \textit{lexicon}: bertipe objek dari kelas Lexicon dan merupakan objek yang digunakan oleh kelas Parser untuk mengakses fitur leksikon dari perangkat lunak
+\end{itemize}
+
+Method yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{Parser}: konstruktor tanpa parameter untuk membuat objek dari kelas Parser.
+	\item \textit{isRootWord}: method dengan sebuah parameter bertipe String dan kembalian bertipe boolean untuk menentukan apakah kata yang ada di parameter merupakan kata dasar atau bukan. Method ini memanggil method searchInTree dari kelas Lexicon.
+	\item \textit{validateComponent}: method tanpa parameter dan kembalian bertipe void untuk melakukan validasi terhadap hasil parsing dengan melakukan pengecekan kata turunan dalam leksikon.
+	\item \textit{convertToWord}: method tanpa parameter dan kembalian bertipe void untuk melakukan konversi hasil parsing dari simbol leksikon ke kata-kata yang dapat dimengerti oleh manusia.
+	\item \textit{removeDuplicateResult}: method tanpa parameter dan kembalian bertipe void untuk menghapus hasil parsing yang memiliki duplikat pada atribut hasil parsing.
+	\item \textit{normalizeInput}: method dengan sebuah parameter bertipe String dan kembalian bertipe array of String untuk melakukan normalisasi pada teks pada parameter dengan membuat semua karakter huruf menjadi huruf kecil, membuang karakter yang tidak diperlukan, dan memisahkan teks berdasar karakter spasi. Karakter yang diperlukan adalah karakter huruf kecil (a..z), karakter pemisah (-), dan karakter angka (0..9).
+	\item \textit{readFile}: method dengan sebuah parameter bertipe String dan kembalian bertipe String untuk isi file dari path yang ada di parameter dan mengembalikan isinya.
+	\item \textit{process}: method dengan sebuah parameter bertipe String, dua buah parameter bertipe boolean, dan kembalian bertipe String untuk melakukan proses parsing terhadap teks yang ada di parameter. Fitur validator dan converter untuk hasil dari proses parsing dapat dinyalakan dan dimatikan bergantung pada nilai dari parameter validator dan converter. 
+	\item \textit{parse}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk melakukan parsing pada sebuah kata dalam parameter. Hasil parsing disimpan dalam atribut parseResult.
+	\item \textit{checkPrefiks}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{checkSufiks}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak sufiks dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{checkRedup}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan reduplikasi dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{check}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan terhadap semua kemungkinan proses morfologi dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksBer}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks ber- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksMe}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks me- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksDi}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks di- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksKe}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks ke- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{proklitikaKu}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak proklitika ku- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksSe}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks se- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksPe}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks pe- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksPer}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks per- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{prefiksTer}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks ter- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{proklitikaKau}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak proklitika kau- dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{sufiksKan}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak sufiks -kan dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{sufiksAn}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak sufiks -an dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{sufiksI}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak sufiks -i dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{enklitikaKu}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak enklitika -ku dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{enklitikaMu}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak enklitika -mu dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{enklitikaNya}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak enklitika -nya dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{enklitikaLah}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak enklitika -lah dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{enklitikaPun}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak enklitika -pun dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{enklitikaKah}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak enklitika -kah dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{checkKonfiks}: method tanpa parameter dan kembalian bertipe void untuk melakukan pengecekan adanya kemungkinan kombinasi prefiks dan sufiks yang membentuk konfiks pada atribut hasil parsing.
+	\item \textit{checkKomposisi}: method dengan tiga buah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan komposisi dalam String kata yang diberikan di parameter. Parameter component dan klitika menyimpan component dan klitika yang sudah ditemukan ketika method ini dipanggil.
+	\item \textit{checkKomposisi}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan kemungkinan komposisi antara kata yang sedang diproses dengan String kata yang diberikan di parameter.
+\end{itemize}
+
+\subsection{Kelas Lexicon}
+\label{sec:kelasLexicon}
+
+\subsection{Kelas Node}
+\label{sec:kelasNode}
+
+\subsection{Kelas Combiner}
+\label{sec:kelasCombiner}

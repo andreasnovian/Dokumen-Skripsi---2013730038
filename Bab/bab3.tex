@@ -569,14 +569,14 @@ Method yang terdapat dalam kelas ini adalah:
 \begin{itemize}
 	\item \textit{Parser}: konstruktor tanpa parameter untuk membuat objek dari kelas Parser.
 	\item \textit{isRootWord}: method dengan sebuah parameter bertipe String dan kembalian bertipe boolean untuk menentukan apakah kata yang ada di parameter merupakan kata dasar atau bukan. Method ini memanggil method searchInTree dari kelas Lexicon.
-	\item \textit{processFromText}: method dengan sebuah parameter bertipe String dan kembalian bertipe String untuk melakukan proses parsing dari teks yang ada di parameter.
+	\item \textit{processFromText}: method dengan sebuah parameter bertipe String dan kembalian bertipe String untuk melakukan proses parsing terhadap teks yang ada di parameter.
 	\item \textit{processFromFile}: method dengan sebuah parameter bertipe String dan kembalian bertipe String untuk melakukan proses parsing terhadap isi file dari path yang ada di parameter.
-	\item \textit{checkPrefiks}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks dalam String kata yang diberikan di parameter.
-	\item \textit{checkSufiks}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak sufiks dalam String kata yang diberikan di parameter.
-	\item \textit{checkRedup}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan reduplikasi pada String kata yang diberikan di parameter.
+	\item \textit{checkPrefiks}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak prefiks dalam String kata yang diberikan di parameter.
+	\item \textit{checkSufiks}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan ada atau tidak sufiks dalam String kata yang diberikan di parameter.
+	\item \textit{checkRedup}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan reduplikasi pada String kata yang diberikan di parameter.
 	\item \textit{checkKonfiks}: method tanpa parameter dan kembalian bertipe void untuk melakukan pengecekan adanya kemungkinan kombinasi prefiks dan sufiks yang membentuk konfiks pada atribut hasil parsing.
-	\item \textit{checkKomposisi}: method dengan parameter tiga buah String dan kembalian bertipe void untuk melakukan pengecekan komposisi pada String kata yang diberikan di parameter.
-	\item \textit{checkKomposisi}: method dengan parameter sebuah String dan kembalian bertipe void untuk melakukan pengecekan kemungkinan komposisi antara kata yang sedang diproses dengan String kata yang diberikan di parameter.
+	\item \textit{checkKomposisi}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan komposisi pada String kata yang diberikan di parameter.
+	\item \textit{checkKomposisi}: method dengan sebuah parameter bertipe String dan kembalian bertipe void untuk melakukan pengecekan kemungkinan komposisi antara kata yang sedang diproses dengan String kata yang diberikan di parameter.
 \end{itemize}
 
 \textbf{Kelas Lexicon} berfungsi untuk menyimpan kumpulan kata dasar dan kata turunan yang digunakan selama proses morphological parsing berlangsung.
@@ -584,7 +584,7 @@ Method yang terdapat dalam kelas ini adalah:
 Atribut yang terdapat dalam kelas ini adalah:
 
 \begin{itemize}
-	\item \textit{roots}: bertipe array of Node dan menyimpan kumpulan kata dasar yang valid dalam bahasa Indonesia dalam bentuk pohon Node
+	\item \textit{roots}: bertipe array of Node dan menyimpan kumpulan akar dari pohon node yang menyimpan kata dasar yang valid dalam bahasa Indonesia
 	\item \textit{components}: bertipe array of String dan menyimpan kumpulan kata turunan untuk setiap kata dasar dalam bahasa Indonesia
 \end{itemize}
 
