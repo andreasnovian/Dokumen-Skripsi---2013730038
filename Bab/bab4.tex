@@ -346,14 +346,25 @@ Method yang terdapat dalam kelas ini adalah:
 	\item \textit{duplikasi}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk melakukan proses reduplikasi pada kata dasar dalam parameter rootWord dan jenis reduplikasi dalam parameter duplikasi.
 \end{itemize}
 
-\section{Diagram Flowchart}
-\label{sec:diagramFlowchart}
+\section{Diagram Aktivitas}
+\label{sec:diagramAktivitas}
 
-Gambar \ref{gambar-diagram-flowchart} berikut adalah diagram flowchart yang dibuat untuk proses morphological parsing.
+Untuk menjelaskan proses morphological parsing yang akan dikerjakan oleh perangkat lunak, dibuat dua buah diagram aktivitas, yang pertama adalah diagram aktivitas untuk proses mengolah teks masukan dan yang kedua adalah diagram aktivitas untuk proses parsing pada sebuah kata.
+
+Gambar \ref{gambar-diagram-aktivitas-olah-masukan} berikut adalah diagram aktivitas yang dibuat untuk proses mengolah teks masukan, khususnya untuk yang terdiri dari lebih dari satu kata.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{Gambar/gambar-diagram-flowchart}
-\caption{Diagram flowchart proses morphological parsing} 
-\label{gambar-diagram-flowchart}
+\includegraphics[scale=0.45]{Gambar/gambar-diagram-aktivitas-olah-masukan}
+\caption{Diagram aktivitas proses mengolah teks masukan} 
+\label{gambar-diagram-aktivitas-olah-masukan}
+\end{figure}
+
+Gambar \ref{gambar-diagram-aktivitas-satu-kata} berikut adalah diagram aktivitas yang dibuat untuk proses parsing pada sebuah kata.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Gambar/gambar-diagram-aktivitas-satu-kata}
+\caption{Diagram aktivitas proses parsing pada sebuah kata} 
+\label{gambar-diagram-aktivitas-satu-kata}
 \end{figure}
