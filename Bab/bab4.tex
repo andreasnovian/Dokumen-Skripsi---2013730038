@@ -63,6 +63,11 @@ Berdasarkan penjelasan di atas, dapat disimpulkan ada dua jenis keluaran dari pr
 \section{Perancangan Antarmuka}
 \label{sec:perancanganAntarmuka}
 
+Antarmuka yang akan dibuat terdiri dari dua jenis, yaitu untuk perangkat lunak morphological parser dan perangkat lunak lexicon. Sesuai use case yang diuraikan pada subbab \ref{sec:AnalisisUseCase}, perangkat lunak lexicon memiliki dua jenis user, yaitu user biasa dan editor. Antarmuka untuk perangkat lunak morphological parser terdiri dari sebuah \textit{frame} sementara untuk perangkat lunak lexicon terdiri dari enam buah \textit{frame} yang masing-masing mewakili sebuah fitur untuk sebuah user dari perangkat lunak. Berikut adalah penjelasan untuk setiap rancangan antarmuka yang dibuat.
+
+\subsection{Perancangan Antarmuka Perangkat Lunak Morphological Parser}
+\label{sec:antarmukaParser}
+
 Gambar \ref{mockup-parser} berikut adalah rancangan antarmuka yang dibuat untuk perangkat lunak morphological parser.
 
 \begin{figure}[H]
@@ -71,6 +76,19 @@ Gambar \ref{mockup-parser} berikut adalah rancangan antarmuka yang dibuat untuk 
 \caption{Rancangan antarmuka perangkat lunak morphological parser} 
 \label{mockup-parser}
 \end{figure}
+
+Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai berikut.
+
+\begin{enumerate}
+	\item Tombol \textit{Lexicon}: untuk mengakses perangkat lunak lexicon
+	\item Tombol \textit{Insert From File}: untuk memuat isi dari sebuah file txt ke dalam kolom masukan dari perangkat lunak
+	\item Kolom masukan: untuk menulis masukan dari proses parsing
+	\item Tombol \textit{Parse}: untuk melakukan proses parsing terhadap teks dalam kolom masukan dan mengeluarkan hasilnya pada kolom keluaran
+	\item Kolom keluaran: untuk menampilkan keluaran dari proses parsing
+\end{enumerate}
+
+\subsection{Perancangan Antarmuka Perangkat Lunak Lexicon}
+\label{sec:antarmukaLexicon}
 
 Gambar \ref{mockup-lexicon-home-user} berikut adalah rancangan antarmuka yang dibuat untuk perangkat lunak lexicon pada halaman home untuk user.
 
@@ -81,6 +99,15 @@ Gambar \ref{mockup-lexicon-home-user} berikut adalah rancangan antarmuka yang di
 \label{mockup-lexicon-home-user}
 \end{figure}
 
+Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai berikut.
+
+\begin{enumerate}
+	\item Tombol \textit{Parser}: untuk mengakses perangkat lunak morphological parser
+	\item Tombol \textit{Read}: untuk melihat kata turunan dari sebuah entri kata dasar pada leksikon
+	\item Kolom entri leksikon: untuk menampilkan semua entri kata dasar yang disimpan dalam leksikon
+	\item Tombol \textit{Editor mode}: untuk mengaktifkan atau mematikan mode editor pada perangkat lunak lexicon
+\end{enumerate}
+
 Gambar \ref{mockup-lexicon-read-user} berikut adalah rancangan antarmuka yang dibuat untuk perangkat lunak lexicon pada halaman read untuk user.
 
 \begin{figure}[H]
@@ -89,6 +116,14 @@ Gambar \ref{mockup-lexicon-read-user} berikut adalah rancangan antarmuka yang di
 \caption{Rancangan antarmuka perangkat lunak lexicon halaman read untuk user} 
 \label{mockup-lexicon-read-user}
 \end{figure}
+
+Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai berikut.
+
+\begin{enumerate}
+	\item Tombol \textit{Home}: untuk kembali ke halaman home dari perangkat lunak lexicon
+	\item Label root: untuk menampilkan kata dasar yang sedang dilihat saat ini
+	\item Kolom entri kata turunan: untuk menampilkan semua entri kata turunan dari kata dasar yang disimpan dalam leksikon
+\end{enumerate}
 
 Gambar \ref{mockup-lexicon-home-editor} berikut adalah rancangan antarmuka yang dibuat untuk perangkat lunak lexicon pada halaman home untuk editor.
 
@@ -99,6 +134,18 @@ Gambar \ref{mockup-lexicon-home-editor} berikut adalah rancangan antarmuka yang 
 \label{mockup-lexicon-home-editor}
 \end{figure}
 
+Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai berikut.
+
+\begin{enumerate}
+	\item Tombol \textit{Parser}: untuk mengakses perangkat lunak morphological parser
+	\item Tombol \textit{Read}: untuk melihat kata turunan dari sebuah entri kata dasar pada leksikon
+	\item Tombol \textit{Create}: untuk memasukkan entri baru pada leksikon
+	\item Tombol \textit{Update}: untuk mengubah entri pada leksikon
+	\item Tombol \textit{Delete}: untuk menghapus entri pada leksikon
+	\item Kolom entri leksikon: untuk menampilkan semua entri kata dasar yang disimpan dalam leksikon
+	\item Tombol \textit{Editor mode}: untuk mengaktifkan atau mematikan mode editor pada perangkat lunak lexicon
+\end{enumerate}
+
 Gambar \ref{mockup-lexicon-create-editor} berikut adalah rancangan antarmuka yang dibuat untuk perangkat lunak lexicon pada halaman create untuk editor.
 
 \begin{figure}[H]
@@ -107,6 +154,15 @@ Gambar \ref{mockup-lexicon-create-editor} berikut adalah rancangan antarmuka yan
 \caption{Rancangan antarmuka perangkat lunak lexicon halaman create untuk editor} 
 \label{mockup-lexicon-create-editor}
 \end{figure}
+
+Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai berikut.
+
+\begin{enumerate}
+	\item Tombol \textit{Home}: untuk kembali ke halaman home dari perangkat lunak lexicon
+	\item Kolom kata dasar: untuk memasukkan kata dasar dari entri yang akan dibuat
+	\item Kolom kata turunan: untuk memasukkan kata turunan dari entri yang akan dibuat
+	\item Tombol \textit{Create}: untuk memasukkan entri baru yang sudah dibuat ke dalam leksikon
+\end{enumerate}
 
 Gambar \ref{mockup-lexicon-update-editor} berikut adalah rancangan antarmuka yang dibuat untuk perangkat lunak lexicon pada halaman update untuk editor.
 
@@ -117,6 +173,18 @@ Gambar \ref{mockup-lexicon-update-editor} berikut adalah rancangan antarmuka yan
 \label{mockup-lexicon-update-editor}
 \end{figure}
 
+Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai berikut.
+
+\begin{enumerate}
+	\item Tombol \textit{Home}: untuk kembali ke halaman home dari perangkat lunak lexicon
+	\item Kolom kata dasar: untuk mengubah kata dasar dari entri
+	\item Tombol \textit{Update Root}: untuk memasukkan entri kata dasar baru ke dalam leksikon
+	\item Kolom kata turunan: untuk mengubah kata turunan dari entri
+	\item Tombol \textit{Add}: untuk menambahkan entri kata turunan baru pada kata dasar
+	\item Tombol \textit{Update}: untuk mengubah entri kata turunan pada kata dasar
+	\item Tombol \textit{Delete}: untuk menghapus entri kata turunan pada kata dasar
+\end{enumerate}
+
 Gambar \ref{mockup-lexicon-delete-editor} berikut adalah rancangan antarmuka yang dibuat untuk perangkat lunak lexicon pada halaman delete untuk editor.
 
 \begin{figure}[H]
@@ -125,6 +193,13 @@ Gambar \ref{mockup-lexicon-delete-editor} berikut adalah rancangan antarmuka yan
 \caption{Rancangan antarmuka perangkat lunak lexicon halaman delete untuk editor} 
 \label{mockup-lexicon-delete-editor}
 \end{figure}
+
+Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai berikut.
+
+\begin{enumerate}
+	\item Tombol \textit{No}: untuk membatalkan penghapusan entri kata dasar dari leksikon
+	\item Tombol \textit{Yes}: untuk melakukan konfirmasi penghapusan entri kata dasar dari leksikon
+\end{enumerate}
 
 
 \section{Diagram Kelas Lengkap}
