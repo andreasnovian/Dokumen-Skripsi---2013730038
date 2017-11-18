@@ -233,8 +233,43 @@ Method yang terdapat dalam kelas ini adalah:
 \subsection{Kelas Node}
 \label{sec:kelasNode}
 
+Kelas ini berfungsi untuk merepresentasikan satu node dalam pohon Node.
+
+Atribut yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{endOfWord}: bertipe boolean dan menyimpan keterangan apakah node ini merupakan karakter akhir dari sebuah kata dalam pohon atau tidak
+	\item \textit{children}: bertipe map of Node dengan key adalah sebuah karakter dan menyimpan kumpulan node yang merupakan anak dari node ini
+	\item \textit{parent}: bertipe node dan menyimpan sebuah node yang merupakan parent dari node ini
+\end{itemize}
+
+Method yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{Node}: konstruktor tanpa parameter untuk membuat objek dari kelas Node.
+\end{itemize}
+
 \subsection{Kelas Combiner}
 \label{sec:kelasCombiner}
+
+Kelas ini berfungsi untuk melakukan konversi sebuah kata turunan yang disimpan dalam leksikon dari bentuk dalam simbol leksikon menjadi kata yang dapat dimengerti oleh manusia. Ini berfungsi supaya user dari program dapat melihat kata turunan yang disimpan dalam leksikon dalam bentuk kata yang dapat dimengerti dan bukan dalam bentuk simbol leksikon. Kelas ini digunakan dalam fitur Read yang dimiliki oleh perangkat lunak Lexicon.
+
+Atribut yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{rootWord}: bertipe String dan menyimpan kata dasar dari kata yang sedang diproses
+\end{itemize}
+
+Method yang terdapat dalam kelas ini adalah:
+
+\begin{itemize}
+	\item \textit{Combiner}: konstruktor tanpa parameter untuk membuat objek dari kelas Combiner.
+	\item \textit{convertToWord}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk mengubah kata dasar dalam parameter rootWord dan komponen dalam parameter component menjadi kata-kata yang dapat dimengerti oleh manusia.
+	\item \textit{prefiksasi}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk melakukan proses prefiksasi pada kata dasar dalam parameter rootWord dan prefiks dalam parameter prefiks.
+	\item \textit{sufiksasi}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk melakukan proses sufiksasi pada kata dasar dalam parameter rootWord dan sufiks dalam parameter sufiks.
+	\item \textit{konfiksasi}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk melakukan proses konfiksasi pada kata dasar dalam parameter rootWord dan konfiks dalam parameter konfiks.
+	\item \textit{duplikasi}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk melakukan proses reduplikasi pada kata dasar dalam parameter rootWord dan jenis reduplikasi dalam parameter duplikasi.
+\end{itemize}
 
 \section{Diagram Flowchart}
 \label{sec:diagramFlowchart}
