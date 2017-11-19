@@ -5,6 +5,9 @@ Implementasi struktur data trie dengan tipe data hashmap
 Baca tulis file dengan bufferedReader dan bufferedWriter dan diimplementasikan dengan fileReader dan fileWriter
 Implementasi simbol khusus untuk klitika
 
+KALIMAT PENGUJIAN:
+Bahasa Indonesia adalah bahasa pemersatu para pemuda pemudi bangsa
+
 Proses penambahan dan penghapusan entri leksikon berlangsung cukup lama
 
 Kata yang kemungkinan nggak bisa diproses : 
