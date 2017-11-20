@@ -9,10 +9,16 @@ Pada bab ini dijelaskan mengenai beberapa kesimpulan yang dapat diambil dari pen
 Beberapa kesimpulan yang dapat diambil dari penelitian ini adalah sebagai berikut.
 
 \begin{itemize}
-	\item Mengetahui aturan morfologi bahasa Indonesia
-	\item Mengetahui struktur data dari {\it lexicon} yang digunakan pada perangkat lunak
-	\item Mengimplementasikan aturan morfologi bahasa Indonesia ke dalam perangkat lunak
-	\item Mengetahui performansi dari perangkat lunak yang dihasilkan
+	\item Proses morfologi dalam bahasa Indonesia terdiri dari beberapa jenis, yaitu proses pembubuhan afiks dalam proses afiksasi, pengulangan dalam proses reduplikasi, dan penggabungan dalam proses komposisi
+	\item Terdapat beberapa aturan dalam proses morfologi bahasa Indonesia, yaitu morfofonemik yang mengatur perubahan bunyi atau perubahan fonem ketika dilakukan proses morfologi dan morfotaktik yang mengatur suatu morfem boleh digabungkan dengan morfem apa saja
+	\item Leksikon menyimpan seluruh kata dasar beserta kata turunan untuk setiap kata dasar yang valid dalam bahasa Indonesia
+	\item Perangkat lunak lexicon yang dibuat menyimpan semua kata dasar dalam bahasa Indonesia dengan menggunakan struktur data trie dan diimplementasikan dalam perangkat lunak dengan objek dari kelas HashMap yang dimiliki oleh bahasa pemrograman Java
+	\item Implementasi dari aturan morfofonemik dilakukan dalam perangkat lunak morphological parser dengan menghasilkan semua kemungkinan hasil parsing berdasarkan perubahan fonem yang valid dari kata masukan yang diproses 
+	\item Implementasi dari aturan morfotaktik dilakukan dalam perangkat lunak morphological parser dengan melakukan validasi hasil parsing melalui perangkat lunak lexicon
+	\item Perangkat lunak morphological parser yang dibuat dapat melakukan proses parsing pada kata dalam bahasa Indonesia, baik berupa kata dasar maupun kata turunan yang dihasilkan dari proses morfologi berupa afiksasi, reduplikasi, atau komposisi dalam waktu yang masuk akal
+	\item Perangkat lunak lexicon yang dibuat dapat menyimpan seluruh kata dasar dan kata turunan yang merupakan hasil dari proses morfologi berupa afiksasi, reduplikasi, atau komposisi
+	\item Perangkat lunak lexicon yang dibuat dapat melakukan create, update, dan delete untuk entri kata dasar dan kata turunan yang disimpan dalam leksikon
+	\item Operasi create dan delete pada perangkat lunak lexicon membutuhkan waktu cukup lama, yaitu sekitar 5 detik, dikarenakan perangkat lunak harus menelusuri node dalam pohon node dan harus mencetak ulang keseluruhan kata dalam leksikon setelah operasi tersebut selesai dilakukan
 \end{itemize}
 
 

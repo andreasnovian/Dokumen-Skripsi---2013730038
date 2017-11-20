@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  20 NOV 2017 12:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.17)  20 NOV 2017 15:01
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1439,10 +1439,10 @@ Package pdftex.def Info: Gambar/delete-abau-setelah.png used on input line 154.
 
 ]
 Bab 6.
-) [79] (skripsi.bbl [80
+[79]) [80] (skripsi.bbl) [81
 
 
-]) [81]
+]
 \openout2 = `Lampiran/lampA.aux'.
 
  (Lampiran/lampA.tex)
@@ -1461,10 +1461,10 @@ Package rerunfilecheck Info: File `skripsi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
- 35310 strings out of 493323
- 766574 string characters out of 3139037
+ 35312 strings out of 493323
+ 766589 string characters out of 3139037
  1111028 words of memory out of 3000000
- 37703 multiletter control sequences out of 15000+200000
+ 37705 multiletter control sequences out of 15000+200000
  83003 words of font info for 150 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
  78i,12n,130p,1631b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1491,7 +1491,7 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy10.pfb>
-Output written on skripsi.pdf (81 pages, 1497607 bytes).
+Output written on skripsi.pdf (81 pages, 1499575 bytes).
 PDF statistics:
  972 PDF objects out of 1000 (max. 8388607)
  279 named destinations out of 1000 (max. 500000)
