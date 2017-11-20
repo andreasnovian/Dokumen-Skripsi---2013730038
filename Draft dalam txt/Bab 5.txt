@@ -6,7 +6,8 @@ Baca tulis file dengan bufferedReader dan bufferedWriter dan diimplementasikan d
 Implementasi simbol khusus untuk klitika
 
 KALIMAT PENGUJIAN:
-Bahasa Indonesia adalah bahasa pemersatu para pemuda pemudi bangsa
+Mengisi kemerdekaan Indonesia tanggal 17 Agustus adalah tanggung jawab setiap warga
+Ayah menyuruh, ”Jangan main-main dengan makanan beku!”
 
 Proses penambahan dan penghapusan entri leksikon berlangsung cukup lama
 

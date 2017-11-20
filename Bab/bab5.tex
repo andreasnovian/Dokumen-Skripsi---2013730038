@@ -10,22 +10,298 @@ Pada subbab \ref{sec:DiagramKelasLengkap} telah dirancang beberapa kelas yang me
 
 Penyimpanan leksikon, seperti dibahas pada subbab \ref{sec:strukturPenyimpananLeksikon}, dilakukan dalam file khusus berekstensi '.lxc'. Supaya perangkat lunak dapat melakukan proses baca dan tulis dari dan ke file tersebut, diperlukan suatu implementasi dari proses baca tulis file oleh perangkat lunak. Proses ini diimplementasikan dalam bahasa Java dengan kelas BufferedReader dan kelas BufferedWriter yang menggunakan objek Reader dari kelas FileReader dan kelas FileWriter.
 
-Untuk implementasi dari rancangan antarmuka perangkat lunak, dilakukan dengan menggunakan kelas JFrame dalam bahasa Java. Sebagai tambahan dari perancangan yang sudah dilakukan, ditambahkan fitur untuk mengaktifkan dan mematikan fitur validator dan converter dari perangkat lunak. Fitur validator adalah fitur untuk melakukan validasi hasil parsing pada kata turunan dalam leksikon, seperti yang dibahas pada subbab \ref{sec:leksikon}. Sementara fitur converter adalah fitur untuk melakukan konversi hasil parsing dari simbol leksikon menjadi kata-kata yang dapat dimengerti oleh manusia. Gambar \ref{gambar-implementasi-antarmuka} berikut adalah implementasi antarmuka untuk perangkat lunak morphological parser.
+Untuk implementasi dari rancangan antarmuka perangkat lunak, dilakukan dengan menggunakan kelas JFrame dalam bahasa Java. Sebagai tambahan dari perancangan yang sudah dilakukan, ditambahkan fitur untuk mengaktifkan dan mematikan fitur validator dan converter dari perangkat lunak. Fitur validator adalah fitur untuk melakukan validasi hasil parsing pada kata turunan dalam leksikon, seperti yang dibahas pada subbab \ref{sec:leksikon}. Sementara fitur converter adalah fitur untuk melakukan konversi hasil parsing dari simbol leksikon menjadi kata-kata yang dapat dimengerti oleh manusia. Gambar \ref{gambar-implementasi-antarmuka-parser} berikut adalah implementasi antarmuka untuk perangkat lunak morphological parser.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{Gambar/gambar-implementasi-antarmuka}
+\includegraphics[scale=0.7]{Gambar/gambar-implementasi-antarmuka-parser}
 \caption{Implementasi antarmuka perangkat lunak morphological parser} 
-\label{gambar-implementasi-antarmuka}
+\label{gambar-implementasi-antarmuka-parser}
+\end{figure}
+
+Gambar \ref{gambar-implementasi-antarmuka-lexicon} berikut adalah implementasi antarmuka untuk perangkat lunak lexicon.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/gambar-implementasi-antarmuka-lexicon}
+\caption{Implementasi antarmuka perangkat lunak lexicon} 
+\label{gambar-implementasi-antarmuka-lexicon}
 \end{figure}
 
 \section{Pengujian}
 \label{sec:pengujian}
 
+Pengujian yang dilakukan pada perangkat lunak yang dibuat dalam penelitian ini dibagi menjadi dua bagian. Bagian pertama merupakan pengujian fungsional yang akan menguji kesesuaian antara implementasi dari perangkat lunak dengan kebutuhan. Bagian kedua merupakan pengujian nonfungsional yang akan menguji kualitas dari perangkat lunak.
+
 \subsection{Pengujian Fungsional}
 \label{sec:pengujianFungsional}
+
+Beberapa aspek yang akan diuji pada pengujian fungsional adalah sebagai berikut.
+
+\begin{itemize}
+	\item hasil normalisasi teks masukan
+	\item hasil proses parsing
+	\item proses create, update, dan delete entri leksikon
+\end{itemize}
+
+Pada tahap pengujian hasil normalisasi teks masukan dan hasil proses parsing, contoh masukan yang digunakan adalah:
+
+\begin{itemize}
+	\item Mengisi kemerdekaan Indonesia tanggal 17 Agustus adalah tanggung jawab setiap warga
+	\item Ayah menyuruh, "Jangan main-main dengan makanan beku!"
+\end{itemize}
+
+Hasil normalisasi dari teks masukan tersebut adalah sebagai berikut.
+
+\begin{itemize}
+	\item mengisi kemerdekaan indonesia tanggal 17 agustus adalah tanggung jawab setiap warga
+	\item ayah menyuruh jangan main-main dengan makanan beku
+\end{itemize}
+
+Hasil parsing dari kedua contoh masukan tersebut dapat dilihat pada gambar \ref{hasil-parsing-1} dan gambar \ref{hasil-parsing-2}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/hasil-parsing-1}
+\caption{Hasil parsing contoh masukan pertama} 
+\label{hasil-parsing-1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/hasil-parsing-2}
+\caption{Hasil parsing contoh masukan kedua} 
+\label{hasil-parsing-2}
+\end{figure}
+
+Seperti dijelaskan pada subbab \ref{sec:implementasi}, perangkat lunak yang dibuat memiliki fitur untuk mengaktifkan dan mematikan fitur validator dan converter untuk memproses hasil dari proses parsing. Hasil parsing pada contoh di atas menggunakan kedua fitur validator dan converter. Hasil dari proses parsing terhadap masukan yang sama akan berbeda ketika salah satu atau kedua fitur tersebut dimatikan. Berikut adalah beberapa contoh keluaran dari masukan yang sama dengan salah satu fitur tersebut dimatikan.
+
+Gambar \ref{hasil-parsing-tanpa-converter} berikut adalah hasil parsing dari contoh masukan pertama yang diproses tanpa fitur converter.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/hasil-parsing-tanpa-converter}
+\caption{Hasil parsing contoh masukan pertama tanpa fitur converter} 
+\label{hasil-parsing-tanpa-converter}
+\end{figure}
+
+Gambar \ref{hasil-parsing-tanpa-validator} berikut adalah hasil parsing dari contoh masukan kedua yang diproses tanpa fitur validator.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/hasil-parsing-tanpa-validator}
+\caption{Hasil parsing contoh masukan kedua tanpa fitur validator} 
+\label{hasil-parsing-tanpa-validator}
+\end{figure}
+
+Pada tahap pengujian proses create, update, dan delete entri leksikon, contoh masukan yang digunakan adalah:
+
+\begin{itemize}
+	\item Kata dasar 'warganet'
+	\item Kata turunan 'menyayur-mayur' pada kata dasar 'sayur'
+	\item Kata dasar 'abau'
+\end{itemize}
+
+Proses create akan dilakukan dengan menggunakan kata dasar 'warganet' yang merupakan serapan dari kata 'netizen' dalam bahasa Inggris. Gambar \ref{create-warganet-sebelum} berikut adalah isi dari leksikon sebelum kata tersebut dimasukkan.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/create-warganet-sebelum}
+\caption{Isi leksikon sebelum kata 'warganet' dimasukkan} 
+\label{create-warganet-sebelum}
+\end{figure}
+
+Gambar \ref{create-warganet-setelah} berikut adalah isi dari leksikon setelah kata 'warganet' dimasukkan.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/create-warganet-setelah}
+\caption{Isi leksikon setelah kata 'warganet' dimasukkan} 
+\label{create-warganet-setelah}
+\end{figure}
+
+Proses update akan dilakukan pada kata dasar 'sayur' dengan menambahkan kata turunan 'menyayur-mayur'. Gambar \ref{update-menyayurmayur-sebelum} berikut adalah isi dari leksikon pada kata dasar 'sayur' sebelum kata tersebut ditambahkan.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/update-menyayurmayur-sebelum}
+\caption{Turunan dari kata dasar 'sayur' sebelum kata turunan 'menyayur-mayur' ditambahkan} 
+\label{update-menyayurmayur-sebelum}
+\end{figure}
+
+Gambar \ref{update-menyayurmayur-setelah} berikut adalah isi dari leksikon pada kata dasar 'sayur' setelah kata turunan 'menyayur-mayur' ditambahkan.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/update-menyayurmayur-setelah}
+\caption{Turunan dari kata dasar 'sayur' setelah kata turunan 'menyayur-mayur' ditambahkan} 
+\label{update-menyayurmayur-setelah}
+\end{figure}
+
+Proses delete akan dilakukan pada kata dasar 'abau'. Gambar \ref{delete-abau-sebelum} berikut adalah isi dari leksikon sebelum kata tersebut dihapus.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/delete-abau-sebelum}
+\caption{Isi leksikon sebelum kata 'abau' dihapus} 
+\label{delete-abau-sebelum}
+\end{figure}
+
+Gambar \ref{delete-abau-setelah} berikut adalah isi dari leksikon setelah kata 'abau' dihapus.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{Gambar/delete-abau-setelah}
+\caption{Isi leksikon setelah kata 'abau' dihapus} 
+\label{delete-abau-setelah}
+\end{figure}
+
+Pengujian fungsional yang dilakukan untuk beberapa aspek di atas berjalan dengan baik dan sesuai dengan yang diharapkan. Perlu dicatat, bahwa untuk menggunakan fitur validator ketika melakukan proses parsing pada perangkat lunak, supaya hasil parsing akurat dan sesuai harapan kata yang diproses harus sudah disimpan dalam leksikon, baik itu kata dasar maupun kata turunan. Pada penelitian ini, belum semua kata dasar dan kata turunan yang valid dalam bahasa Indonesia disimpan dalam leksikon. Hal ini dikarenakan ada terlalu banyak kata dalam bahasa Indonesia, khususnya kata turunan. Perangkat lunak dapat digunakan tanpa fitur validator namun hasil dari proses parsing tidak akan seakurat jika menggunakan fitur validator.
 
 \subsection{Pengujian Nonfungsional}
 \label{sec:pengujianNonfungsional}
 
-Jangan lupa kesimpulan pengujian
+Beberapa aspek yang akan diuji pada pengujian nonfungsional adalah sebagai berikut.
+
+\begin{itemize}
+	\item waktu yang dibutuhkan untuk melakukan proses parsing
+	\item waktu yang dibutuhkan untuk melakukan create, update, dan delete entri leksikon
+\end{itemize}
+
+Pada tahap pengujian waktu proses parsing, contoh masukan yang digunakan adalah:
+
+\begin{itemize}
+	\item File txt berisi 10 kata
+	\item File txt berisi 20 kata
+	\item File txt berisi 100 kata
+\end{itemize}
+
+Untuk setiap contoh masukan, dilakukan proses parsing sebanyak 5 kali dan setiap proses parsing selesai dilakukan akan dicatat waktu prosesnya. Dari data waktu proses parsing tersebut akan diambil rata-rata waktu prosesnya.
+
+Tabel \ref{tabel-waktu-parsing-pertama} berikut berisi waktu proses parsing dan rata-ratanya untuk contoh masukan pertama.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
+\hline
+1&29\\
+2&3\\
+3&4\\
+4&3\\
+5&3\\
+\hline
+\textbf{Rata-rata} & \textbf{8,4}\\
+\hline
+\end{tabular}
+\caption{Tabel waktu proses parsing untuk contoh masukan pertama} 
+\label{tabel-waktu-parsing-pertama}
+\end{table}
+
+Tabel \ref{tabel-waktu-parsing-kedua} berikut berisi waktu proses parsing dan rata-ratanya untuk contoh masukan kedua.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
+\hline
+1&50\\
+2&8\\
+3&8\\
+4&9\\
+5&9\\
+\hline
+\textbf{Rata-rata} & \textbf{16,8}\\
+\hline
+\end{tabular}
+\caption{Tabel waktu proses parsing untuk contoh masukan kedua} 
+\label{tabel-waktu-parsing-kedua}
+\end{table}
+
+Tabel \ref{tabel-waktu-parsing-ketiga} berikut berisi waktu proses parsing dan rata-ratanya untuk contoh masukan ketiga.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
+\hline
+1&280\\
+2&41\\
+3&30\\
+4&36\\
+5&38\\
+\hline
+\textbf{Rata-rata} & \textbf{85}\\
+\hline
+\end{tabular}
+\caption{Tabel waktu proses parsing untuk contoh masukan ketiga} 
+\label{tabel-waktu-parsing-ketiga}
+\end{table}
+
+Dapat dilihat dari hasil pengujian terhadap waktu proses parsing di atas, kenaikan rata-rata waktu proses untuk contoh masukan pertama, kedua, dan ketiga berbanding lurus dengan jumlah kata yang diproses. Dapat disimpulkan bahwa waktu untuk melakukan proses parsing bergantung pada banyaknya kata yang diproses. Semakin banyak kata yang diproses waktu yang dibutuhkan untuk melakukan proses tersebut akan semakin lama.
+
+Dapat dilihat juga pada setiap tabel waktu proses untuk setiap contoh masukan, terjadi penurunan waktu yang signifikan antara proses pertama ke proses kedua untuk proses pada contoh masukan yang sama. Dapat disimpulkan bahwa ketika dilakukan beberapa kali proses pada masukan yang sama maka waktu prosesnya akan turun cukup signifikan. Hal ini dimungkinkan karena bahasa Java menyimpan data hasil proses yang pernah dijalankan sebelumnya.
+
+Pada tahap pengujian waktu untuk melakukan create, update, dan delete entri leksikon, akan dilakukan dengan melakukan masing-masing proses tersebut sebanyak 3 kali untuk kata yang sama. Dari data waktu proses tersebut akan diambil rata-rata waktunya.
+
+Tabel \ref{tabel-waktu-create} berikut berisi waktu untuk melakukan create sebuah entri baru pada leksikon dan rata-ratanya.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
+\hline
+1&5488\\
+2&5382\\
+3&5267\\
+\hline
+\textbf{Rata-rata} & \textbf{5379}\\
+\hline
+\end{tabular}
+\caption{Tabel waktu untuk melakukan create sebuah entri baru dalam leksikon} 
+\label{tabel-waktu-create}
+\end{table}
+
+Tabel \ref{tabel-waktu-update} berikut berisi waktu untuk melakukan update sebuah entri pada leksikon dan rata-ratanya.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
+\hline
+1&7\\
+2&3\\
+3&2\\
+\hline
+\textbf{Rata-rata} & \textbf{4}\\
+\hline
+\end{tabular}
+\caption{Tabel waktu untuk melakukan update sebuah entri dalam leksikon} 
+\label{tabel-waktu-update}
+\end{table}
+
+Tabel \ref{tabel-waktu-delete} berikut berisi waktu untuk melakukan delete sebuah entri dari leksikon dan rata-ratanya.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
+\hline
+1&5244\\
+2&5055\\
+3&5083\\
+\hline
+\textbf{Rata-rata} & \textbf{5127,33}\\
+\hline
+\end{tabular}
+\caption{Tabel waktu untuk melakukan delete sebuah entri dalam leksikon} 
+\label{tabel-waktu-delete}
+\end{table}
+
+Dapat dilihat dari hasil pengujian terhadap waktu untuk melakukan create, update, dan delete entri leksikon di atas, waktu yang dibutuhkan untuk melakukan create dan delete cukup lama, yaitu sekitar 5000 milidetik atau 5 detik, sementara waktu yang dibutuhkan untuk melakukan update sangat singkat, yaitu sekitar 4 milidetik. Hal ini dikarenakan untuk melakukan create dan delete dibutuhkan proses berupa menelusuri pohon node untuk membuat node yang diperlukan ketika melakukan create atau untuk menghapus node ketika melakukan delete. Selain itu, juga dibutuhkan waktu yang cukup lama untuk mencetak keseluruhan kata yang ada dalam pohon node untuk dimasukkan ke dalam file 'roots.lxc' yang menyimpan semua kata dasar. Untuk melakukan update dapat diselesaikan dalam waktu singkat karena proses ini hanya berupa menulis kata turunan baru ke dalam file kata dasar yang bersangkutan.

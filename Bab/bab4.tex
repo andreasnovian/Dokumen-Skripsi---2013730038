@@ -60,6 +60,8 @@ Seperti dijelaskan pada subbab \ref{sec:leksikon}, leksikon menyimpan setiap kat
 
 Sesuai analisis yang dilakukan pada subbab \ref{sec:leksikon}, kata turunan yang merupakan hasil proses afiksasi berupa pengimbuhan klitika tidak disimpan dalam leksikon. Oleh karena itu, kata tersebut harus dapat dikenali dan diproses dalam perangkat lunak tanpa melalui proses validasi dalam leksikon. Untuk melakukan proses tersebut diperlukan simbol khusus untuk menandai dan menyimpan klitika dalam hasil proses parsing. Untuk menandai proklitika, yaitu klitika yang berposisi di muka kata yang diikuti, digunakan simbol '\$'. Sementara untuk menandai enklitika, yaitu klitika yang berposisi di belakang kata yang dilekati, digunakan simbol '\%'.
 
+Untuk hasil parsing yang merupakan bentuk asing, seperti dijelaskan pada subbab \ref{sec:morphologicalParsing}, penulisan hasil parsing dalam simbol adalah dengan simbol '!' diikuti kata yang sedang diproses. Contohnya, hasil parsing dari kata 'netizen' adalah '!netizen' atau setelah dilakukan konversi ke dalam kata-kata yang dimengerti oleh manusia menjadi bentuk asing $\lbrace$netizen$\rbrace$.
+
 Berdasarkan penjelasan di atas, dapat disimpulkan ada dua jenis keluaran dari proses morphological parsing, yaitu keluaran dalam bentuk simbol seperti dalam leksikon dan keluaran dalam bentuk kata-kata yang dapat dimengerti oleh manusia. Perangkat lunak pertama kali membuat keluaran dalam bentuk simbol yang kemudian divalidasi oleh leksikon. Keluaran yang dianggap tidak valid akan dibuang oleh perangkat lunak sementara keluaran yang dianggap valid kemudian diterjemahkan menjadi keluaran berupa kata-kata yang dimengerti oleh manusia.
 
 \section{Perancangan Antarmuka}
