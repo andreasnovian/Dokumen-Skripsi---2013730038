@@ -12,10 +12,12 @@ Ayah menyuruh, ”Jangan main-main dengan makanan beku!”
 Proses penambahan dan penghapusan entri leksikon berlangsung cukup lama
 
 Kata yang kemungkinan nggak bisa diproses : 
-- mengotak-ngotakkan, tanggung-menanggung
+- mengotak-ngotakkan, menari-nari, tanggung-menanggung, tari-menari
 - gotong royong (karena royong bukan kata dasar), 
 - pekerjaan (rancu per dan pe) beda dengan penanggungan dan pertanggungan
 - sekuat-kuatnya (nya sebagai klitika atau sufiks?)
+- pertama-tama (kata dasarnya pertama, berulangnya gimana itu?)
+- ngomong-ngomong (prefiks nasal)
 
 Pengujian:
 Fungsional, fungsi program sesuai fitur, bisa atau tidak?
