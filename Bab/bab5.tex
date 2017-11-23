@@ -94,7 +94,23 @@ Gambar \ref{hasil-parsing-tanpa-validator} berikut adalah hasil parsing dari con
 \label{hasil-parsing-tanpa-validator}
 \end{figure}
 
-Pada tahap pengujian proses create, update, dan delete entri leksikon, contoh masukan yang digunakan adalah:
+Ada beberapa jenis kata yang merupakan kata valid dalam bahasa Indonesia namun diproses secara kurang tepat dalam perangkat lunak ini, yaitu:
+\begin{itemize}
+	\item sekuatnya
+	\item tari-menari
+	\item pertama-tama
+	\item ngomong-ngomong
+\end{itemize}
+
+Kata 'sekuatnya' merupakan kata yang dibentuk dari bentuk dasar $\lbrace$kuat$\rbrace$ + konfiks $\lbrace$se-nya$\rbrace$. Namun, seperti dibahas pada subbab \ref{sec:leksikon}, bentuk $\lbrace$nya$\rbrace$ dianggap sebagai klitika dan bukan dianggap sebagai sufiks dalam kesatuan konfiks $\lbrace$se-nya$\rbrace$. Oleh karena itu, kata 'sekuatnya' diproses dalam perangkat lunak menjadi bentuk dasar $\lbrace$kuat$\rbrace$ + prefiks $\lbrace$se$\rbrace$ + enklitika $\lbrace$nya$\rbrace$.
+
+Kata 'tari-menari' merupakan contoh kata yang dibentuk dari proses reduplikasi dari bentuk dasar $\lbrace$tari$\rbrace$ lalu dilakukan proses prefiksasi, namun proses prefiksasi dilakukan bukan pada bentuk dasarnya melainkan pada kata ulangnya. Umumnya, proses reduplikasi yang diikuti proses prefiksasi pada bentuk dasar $\lbrace$tari$\rbrace$ dan prefiks $\lbrace$me$\rbrace$ akan menghasilkan kata 'menari-nari'. Sementara, pada kasus ini yang diharapkan adalah kata 'tari-menari'. Untuk bentuk kata seperti 'tari-menari' ini diproses dalam perangkat lunak seperti memproses kata ulang berubah bunyi seperti 'sayur-mayur', sehingga hasil prosesnya menjadi bentuk dasar $\lbrace$tari$\rbrace$ + reduplikasi $\lbrace$menari$\rbrace$.
+
+Kata 'pertama-tama' merupakan contoh kata yang dibentuk dari proses reduplikasi dari bentuk dasar, namun reduplikasi tidak dilakukan secara utuh maupun berubah bunyi melainkan hanya sebagian. Sama halnya dengan bentuk 'tari-menari', bentuk ini diproses dalam perangkat lunak seperti memproses kata ulang berubah bunyi, sehingga hasil prosesnya menjadi bentuk dasar $\lbrace$pertama$\rbrace$ + reduplikasi $\lbrace$tama$\rbrace$.
+
+Kata 'ngomong-ngomong' merupakan contoh kata yang dibentuk dari bentuk dasar $\lbrace$omong$\rbrace$ melalui proses prefiksasi dan proses reduplikasi, namun prefiks yang digunakan bukan prefiks yang baku. Prefiks yang digunakan pada bentuk ini disebut dengan prefiks nasal, seperti dijelaskan pada subbab \ref{sec:morfemAfiks}. Prefiks nasal ini tidak dapat diproses dalam perangkat lunak sehingga bentuk seperti kata 'ngomong-ngomong' dianggap sebagai bentuk asing.
+
+Pengujian fungsional selanjutnya akan dilakukan pada proses create, update, dan delete entri leksikon, contoh masukan yang digunakan adalah:
 
 \begin{itemize}
 	\item Kata dasar 'warganet'
@@ -175,6 +191,8 @@ Pada tahap pengujian waktu proses parsing, contoh masukan yang digunakan adalah:
 	\item File txt berisi 20 kata
 	\item File txt berisi 100 kata
 \end{itemize}
+
+Isi file txt yang digunakan pada pengujian ini dapat dilihat pada lampiran \ref{lamp:A}.
 
 Untuk setiap contoh masukan, dilakukan proses parsing sebanyak 5 kali dan setiap proses parsing selesai dilakukan akan dicatat waktu prosesnya. Dari data waktu proses parsing tersebut akan diambil rata-rata waktu prosesnya.
 

@@ -1,0 +1,59 @@
+ALGORITMA Parsing sebuah kalimat
+
+Deklarasi:
+kalimat, hasil : String
+
+Deskripsi:
+	Read kalimat
+	Normalisasi kalimat
+	Pisahkan kata dalam kalimat berdasarkan karakter spasi
+	For each kata dalam kalimat
+		if kata adalah kata dasar then
+			simpan kata dasar di hasil
+		endif
+		
+		if kata diawali prefiks then
+			pisahkan prefiks dari kata
+			if kata adalah kata dasar then
+				simpan prefiks dan kata dasar di hasil
+			endif
+		endif
+		
+		if kata diawali prefiks then
+			pisahkan prefiks dari kata
+			if kata adalah kata dasar then
+				simpan prefiks dan kata dasar di hasil
+			endif
+		endif
+		
+		if kata diakhiri sufiks then
+			pisahkan sufiks dari kata
+			if kata adalah kata dasar then
+				simpan sufiks dan kata dasar di hasil
+			endif
+		endif
+		
+		if kata adalah kata ulang then
+			pisahkan kata pertama dan kata kedua
+			if kata pertama adalah kata dasar then
+				simpan kata kedua sebagai reduplikasi dari kata pertama di hasil
+			endif
+		endif
+		
+		if kata adalah kata komposisi then
+			pisahkan kata pertama dan kata kedua
+			if kata pertama adalah kata dasar then
+				simpan kata kedua sebagai kata komposisi dari kata pertama di hasil
+			endif
+		endif
+		
+		if hasil tidak kosong and masih ada kata selanjutnya and kata selanjutnya adalah kata dasar then
+			simpan di hasil kemungkinan kata selanjutnya adalah komposisi dari kata
+		endif
+		
+		if hasil kosong then
+			simpan kata sebagai bentuk asing di hasil
+		endif
+		
+	End
+	Write hasil

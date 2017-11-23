@@ -54,8 +54,10 @@
 \contentsline {section}{\numberline {5.1}Implementasi}{57}{section.5.1}
 \contentsline {section}{\numberline {5.2}Pengujian}{58}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Pengujian Fungsional}{59}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Pengujian Nonfungsional}{64}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6}Kesimpulan dan Saran}{67}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{67}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{68}{section.6.2}
-\contentsline {chapter}{Daftar Referensi}{69}{chapter*.4}
+\contentsline {subsection}{\numberline {5.2.2}Pengujian Nonfungsional}{65}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}Kesimpulan dan Saran}{69}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{69}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{70}{section.6.2}
+\contentsline {chapter}{Daftar Referensi}{71}{chapter*.4}
+\contentsline {chapter}{\numberline {A}Bahan Pengujian}{73}{appendix.A}
+\contentsline {chapter}{\numberline {B}Kode Program}{75}{appendix.B}
