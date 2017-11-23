@@ -1,14 +1,14 @@
 \begin{thebibliography}{99}
 
-\bibitem{chaer:08:morfologi}
-Chaer, A. (2008) {\em Morfologi Bahasa Indonesia (Pendekatan Proses)}. Rineka
-  Cipta,  Jakarta.
-
 \bibitem{jurafsky:09:nlp}
 Jurafsky, D. dan Martin, J.~H. (2009) {\em Speech and Language Processing: An
   Introduction to Natural Language Processing, Computational Linguistics and
   Speech Recognition},  2nd edition. Prentice-Hall, Inc.,  Upper Saddle River,
   NJ, USA.
+
+\bibitem{chaer:08:morfologi}
+Chaer, A. (2008) {\em Morfologi Bahasa Indonesia (Pendekatan Proses)}. Rineka
+  Cipta,  Jakarta.
 
 \bibitem{najogie:10:trie}
 Najogie, R.~D. (2010) Pengenalan trie dan aplikasinya.

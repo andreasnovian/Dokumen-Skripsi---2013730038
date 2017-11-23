@@ -1,6 +1,18 @@
 \select@language {bahasa}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Bentuk alomorf dari morfem $\delimiter "4266308 $ber-$\delimiter "5267309 $\cite {chaer:08:morfologi}}}{9}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Bentuk alomorf dari morfem $\delimiter "4266308 $me-$\delimiter "5267309 $\cite {chaer:08:morfologi}}}{9}{table.2.2}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Tabel Aturan Morfotaktik untuk Preprefiks}}{30}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Tabel Aturan Morfotaktik untuk Prefiks atau Konfiks}}{30}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Tabel Aturan Morfotaktik untuk Akar}}{31}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Tabel Aturan Morfotaktik untuk Sufiks atau Konfiks}}{31}{table.3.4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabel Lambang Bentuk Turunan dalam Leksikon}}{37}{table.4.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Tabel waktu proses parsing untuk contoh masukan pertama}}{65}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Tabel waktu proses parsing untuk contoh masukan kedua}}{65}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tabel waktu proses parsing untuk contoh masukan ketiga}}{65}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Tabel waktu untuk melakukan create sebuah entri baru dalam leksikon}}{66}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Tabel waktu untuk melakukan update sebuah entri dalam leksikon}}{66}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Tabel waktu untuk melakukan delete sebuah entri dalam leksikon}}{66}{table.5.6}
 \addvspace {10\p@ }
