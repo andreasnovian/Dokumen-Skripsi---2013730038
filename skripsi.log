@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.22)  23 NOV 2017 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.24)  25 NOV 2017 09:32
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -419,7 +419,7 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
-Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count124
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
@@ -541,13 +541,32 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 \pgffor@stack=\toks31
 \pgffor@toks=\toks32
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks33
+\c@algorithm=\count134
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count135
+\c@ALC@line=\count136
+\c@ALC@rem=\count137
+\c@ALC@depth=\count138
+\ALC@tlm=\skip98
+\algorithmicindent=\skip99
+)
 \@input{dosen.aux}
 \openout2 = `dosen.aux'.
 
 (dosen.tex)
-Package hyperref Info: Option `unicode' set `true' on input line 199.
-Package hyperref Info: Option `colorlinks' set `true' on input line 199.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 207.
+Package hyperref Info: Option `unicode' set `true' on input line 202.
+Package hyperref Info: Option `colorlinks' set `true' on input line 202.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 210.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -566,38 +585,38 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen155
 \cmidrulekern=\dimen156
 \defaultaddspace=\dimen157
-\@cmidla=\count134
-\@cmidlb=\count135
+\@cmidla=\count139
+\@cmidlb=\count140
 \@aboverulesep=\dimen158
 \@belowrulesep=\dimen159
-\@thisruleclass=\count136
-\@lastruleclass=\count137
+\@thisruleclass=\count141
+\@lastruleclass=\count142
 \@thisrulewidth=\dimen160
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip98
-\LTright=\skip99
-\LTpre=\skip100
-\LTpost=\skip101
-\LTchunksize=\count138
+\LTleft=\skip100
+\LTright=\skip101
+\LTpre=\skip102
+\LTpost=\skip103
+\LTchunksize=\count143
 \LTcapwidth=\dimen161
 \LT@head=\box34
 \LT@firsthead=\box35
 \LT@foot=\box36
 \LT@lastfoot=\box37
-\LT@cols=\count139
-\LT@rows=\count140
-\c@LT@tables=\count141
-\c@LT@chunks=\count142
-\LT@p@ftn=\toks33
+\LT@cols=\count144
+\LT@rows=\count145
+\c@LT@tables=\count146
+\c@LT@chunks=\count147
+\LT@p@ftn=\toks34
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks34
+\@emptytoks=\toks35
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -605,13 +624,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\todo\todo.sty"
 Package: todo 2010/03/31 v2.4142 To-do list (Federico Garcia)
-\@todotoks=\toks35
-\c@todo=\count143
+\@todotoks=\toks36
+\c@todo=\count148
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks36
-\verbatim@line=\toks37
+\every@verbatim=\toks37
+\verbatim@line=\toks38
 \verbatim@in@stream=\read1
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty"
@@ -638,13 +657,13 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \pgf@yc=\dimen169
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count144
-\c@pgf@countb=\count145
-\c@pgf@countc=\count146
-\c@pgf@countd=\count147
-\t@pgf@toka=\toks38
-\t@pgf@tokb=\toks39
-\t@pgf@tokc=\toks40
+\c@pgf@counta=\count149
+\c@pgf@countb=\count150
+\c@pgf@countc=\count151
+\c@pgf@countd=\count152
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -661,8 +680,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count148
-\pgfsyssoftpath@bigbuffer@items=\count149
+\pgfsyssoftpath@smallbuffer@items=\count153
+\pgfsyssoftpath@bigbuffer@items=\count154
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -706,7 +725,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box38
 \pgf@hbox=\box39
 \pgf@layerbox@main=\box40
-\pgf@picture@serial@count=\count150
+\pgf@picture@serial@count=\count155
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
@@ -739,7 +758,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen193
-\pgf@sys@shading@range@num=\count151
+\pgf@sys@shading@range@num=\count156
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -783,7 +802,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count152
+\pgf@plot@mark@count=\count157
 \pgfplotmarksize=\dimen196
 )
 \tikz@lastx=\dimen197
@@ -796,18 +815,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box44
 \tikz@tempbox=\box45
 \tikz@tempbox@bg=\box46
-\tikztreelevel=\count153
-\tikznumberofchildren=\count154
-\tikznumberofcurrentchild=\count155
-\tikz@fig@count=\count156
+\tikztreelevel=\count158
+\tikznumberofchildren=\count159
+\tikznumberofcurrentchild=\count160
+\tikz@fig@count=\count161
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count157
-\pgfmatrixcurrentcolumn=\count158
-\pgf@matrix@numberofcolumns=\count159
+\pgfmatrixcurrentrow=\count162
+\pgfmatrixcurrentcolumn=\count163
+\pgf@matrix@numberofcolumns=\count164
 )
-\tikz@expandcount=\count160
+\tikz@expandcount=\count165
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -815,12 +834,12 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscore.code.tex"
-\t@pgfplots@toka=\toks41
-\t@pgfplots@tokb=\toks42
-\t@pgfplots@tokc=\toks43
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
 \pgfplots@tmpa=\dimen259
-\c@pgfplots@coordindex=\count161
-\c@pgfplots@scanlineindex=\count162
+\c@pgfplots@coordindex=\count166
+\c@pgfplots@scanlineindex=\count167
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.
 tex"))
@@ -836,7 +855,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 fsupp_pgflibraryfpu.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
 fsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count163
+\c@pgfmathroundto@lastzeros=\count168
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotslistst
@@ -845,14 +864,14 @@ ructure.code.tex")
 ructureext.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.
 code.tex"
-\c@pgfplotsarray@tmp=\count164
+\c@pgfplotsarray@tmp=\count169
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix
 .code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstableshared
 .code.tex"
-\c@pgfplotstable@counta=\count165
-\t@pgfplotstable@a=\toks44
+\c@pgfplotstable@counta=\count170
+\t@pgfplotstable@a=\toks45
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.
 code.tex")
@@ -864,7 +883,7 @@ e.tex"))
 tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surf
 shading.code.tex"
-\c@pgfplotslibrarysurf@no=\count166
+\c@pgfplotslibrarysurf@no=\count171
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfs
 hading.pgfsys-pdftex.def")))
@@ -896,7 +915,7 @@ librarydecorations.code.tex"
 \pgfdecoratedinputsegmentcompleteddistance=\dimen262
 \pgfdecoratedinputsegmentremainingdistance=\dimen263
 \pgf@decorate@distancetomove=\dimen264
-\pgf@decorate@repeatstate=\count167
+\pgf@decorate@repeatstate=\count172
 \pgfdecorationsegmentamplitude=\dimen265
 \pgfdecorationsegmentlength=\dimen266
 )
@@ -910,7 +929,7 @@ ecorations.pathmorphing.code.tex"))
 librarydecorations.pathreplacing.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
 ecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count168
+\pgfplots@numplots=\count173
 \pgfplots@xmin@reg=\dimen267
 \pgfplots@xmax@reg=\dimen268
 \pgfplots@ymin@reg=\dimen269
@@ -930,22 +949,22 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 (Lampiran/lampB.aux))
 \openout1 = `skripsi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 242.
-LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -981,7 +1000,7 @@ LaTeX Font Info:    ... okay on input line 242.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 242.
+LaTeX Info: Redefining \microtypecontext on input line 245.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -996,7 +1015,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 242.
+Package hyperref Info: Link coloring ON on input line 245.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1004,11 +1023,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count169
+\c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 242.
-LaTeX Info: Redefining \pageref on input line 242.
-LaTeX Info: Redefining \nameref on input line 242.
+LaTeX Info: Redefining \ref on input line 245.
+LaTeX Info: Redefining \pageref on input line 245.
+LaTeX Info: Redefining \nameref on input line 245.
 
 (skripsi.out) (skripsi.out)
 \@outlinefile=\write5
@@ -1017,17 +1036,17 @@ LaTeX Info: Redefining \nameref on input line 242.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count170
+\scratchcounter=\count175
 \scratchdimen=\dimen273
 \scratchbox=\box49
-\nofMPsegments=\count171
-\nofMParguments=\count172
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count173
+\nofMPsegments=\count176
+\nofMParguments=\count177
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count178
 \MPscratchDim=\dimen274
-\MPnumerator=\count174
-\makeMPintoPDFobject=\count175
-\everyMPtoPDFconversion=\toks46
+\MPnumerator=\count179
+\makeMPintoPDFobject=\count180
+\everyMPtoPDFconversion=\toks47
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1041,17 +1060,17 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count176
+\c@lstlisting=\count181
 
 ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.15}).
 
-<./Gambar/Logo-UNPAR.png, id=254, 180.31364pt x 177.42285pt>
+<./Gambar/Logo-UNPAR.png, id=258, 180.31364pt x 177.42285pt>
 File: ./Gambar/Logo-UNPAR.png Graphic file (type png)
 
 <use ./Gambar/Logo-UNPAR.png>
-Package pdftex.def Info: ./Gambar/Logo-UNPAR.png used on input line 401.
+Package pdftex.def Info: ./Gambar/Logo-UNPAR.png used on input line 404.
 (pdftex.def)             Requested size: 180.3132pt x 177.42241pt.
  [1
 
@@ -1065,7 +1084,7 @@ Package pdftex.def Info: ./Gambar/Logo-UNPAR.png used on input line 401.
 ]
 File: ./Gambar/Logo-UNPAR.png Graphic file (type png)
  <use ./Gambar/Logo-UNPAR.png>
-Package pdftex.def Info: ./Gambar/Logo-UNPAR.png used on input line 401.
+Package pdftex.def Info: ./Gambar/Logo-UNPAR.png used on input line 404.
 (pdftex.def)             Requested size: 180.3132pt x 177.42241pt.
  [3] [4
 
@@ -1178,7 +1197,7 @@ Package microtype Info: Character `029' is missing
 ]
 Bab 2.
 [5] [6] [7]
-<Gambar/gambar-morfem-bebas-terikat.png, id=534, 243.91125pt x 124.21407pt>
+<Gambar/gambar-morfem-bebas-terikat.png, id=539, 243.91125pt x 124.21407pt>
 File: Gambar/gambar-morfem-bebas-terikat.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-bebas-terikat.png>
@@ -1186,7 +1205,7 @@ Package pdftex.def Info: Gambar/gambar-morfem-bebas-terikat.png used on input l
 ine 200.
 (pdftex.def)             Requested size: 243.91064pt x 124.21375pt.
  [8 <./Gambar/gambar-morfem-bebas-terikat.png>] [9]
-<Gambar/gambar-morfem-dasar-afiks.png, id=549, 269.50688pt x 137.01187pt>
+<Gambar/gambar-morfem-dasar-afiks.png, id=554, 269.50688pt x 137.01187pt>
 File: Gambar/gambar-morfem-dasar-afiks.png Graphic file (type png)
 
 <use Gambar/gambar-morfem-dasar-afiks.png>
@@ -1208,28 +1227,28 @@ ge Processing[[]]|
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 560.
 
-[19] <Gambar/contoh-trie-1.jpg, id=637, 229.73245pt x 192.87953pt>
+[19] <Gambar/contoh-trie-1.jpg, id=642, 229.73245pt x 192.87953pt>
 File: Gambar/contoh-trie-1.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-trie-1.jpg>
 Package pdftex.def Info: Gambar/contoh-trie-1.jpg used on input line 589.
 (pdftex.def)             Requested size: 229.73187pt x 192.87904pt.
  [20 <./Gambar/contoh-trie-1.jpg>]
-<Gambar/contoh-radix-tree.jpg, id=645, 353.82187pt x 226.8475pt>
+<Gambar/contoh-radix-tree.jpg, id=650, 353.82187pt x 226.8475pt>
 File: Gambar/contoh-radix-tree.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-radix-tree.jpg>
 Package pdftex.def Info: Gambar/contoh-radix-tree.jpg used on input line 610.
 (pdftex.def)             Requested size: 265.36574pt x 170.1352pt.
  [21 <./Gambar/contoh-radix-tree.jpg>]
-<Gambar/contoh-trie-2.jpg, id=651, 230.72295pt x 176.61707pt>
+<Gambar/contoh-trie-2.jpg, id=656, 230.72295pt x 176.61707pt>
 File: Gambar/contoh-trie-2.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-trie-2.jpg>
 Package pdftex.def Info: Gambar/contoh-trie-2.jpg used on input line 636.
 (pdftex.def)             Requested size: 288.40295pt x 220.77077pt.
  [22 <./Gambar/contoh-trie-2.jpg>]
-<Gambar/contoh-trie-3.jpg, id=657, 220.92902pt x 152.77803pt>
+<Gambar/contoh-trie-3.jpg, id=662, 220.92902pt x 152.77803pt>
 File: Gambar/contoh-trie-3.jpg Graphic file (type jpg)
 
 <use Gambar/contoh-trie-3.jpg>
@@ -1241,7 +1260,7 @@ Package pdftex.def Info: Gambar/contoh-trie-3.jpg used on input line 647.
 
 (Bab/bab3.tex
 Bab 3.
-<Gambar/gambar-trie.png, id=670, 234.8775pt x 325.215pt>
+<Gambar/gambar-trie.png, id=675, 234.8775pt x 325.215pt>
 File: Gambar/gambar-trie.png Graphic file (type png)
 
 <use Gambar/gambar-trie.png>
@@ -1253,7 +1272,7 @@ Package pdftex.def Info: Gambar/gambar-trie.png used on input line 191.
 
 ] [26 <./Gambar/gambar-trie.png>] [27] [28]
 [29] [30]
-<Gambar/gambar-diagram-use-case.png, id=713, 711.4078pt x 455.45157pt>
+<Gambar/gambar-diagram-use-case.png, id=718, 711.4078pt x 455.45157pt>
 File: Gambar/gambar-diagram-use-case.png Graphic file (type png)
 
 <use Gambar/gambar-diagram-use-case.png>
@@ -1266,7 +1285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--402
  []
 
 [31 <./Gambar/gambar-diagram-use-case.png>] [32] [33] [34] [35]
-<Gambar/gambar-diagram-kelas-awal.png, id=737, 882.29625pt x 820.56563pt>
+<Gambar/gambar-diagram-kelas-awal.png, id=742, 882.29625pt x 820.56563pt>
 File: Gambar/gambar-diagram-kelas-awal.png Graphic file (type png)
 
 <use Gambar/gambar-diagram-kelas-awal.png>
@@ -1282,21 +1301,21 @@ Bab 4.
 
 
 
-] <Gambar/contoh-entri-sayur.png, id=750, 70.76437pt x 93.34875pt>
+] <Gambar/contoh-entri-sayur.png, id=755, 70.76437pt x 93.34875pt>
 File: Gambar/contoh-entri-sayur.png Graphic file (type png)
 
 <use Gambar/contoh-entri-sayur.png>
 Package pdftex.def Info: Gambar/contoh-entri-sayur.png used on input line 40.
 (pdftex.def)             Requested size: 70.76419pt x 93.34851pt.
  [38 <./Gambar/contoh-entri-sayur.png>]
-[39] <Gambar/mockup-parser.png, id=767, 501.875pt x 351.3125pt>
+[39] <Gambar/mockup-parser.png, id=772, 501.875pt x 351.3125pt>
 File: Gambar/mockup-parser.png Graphic file (type png)
 
 <use Gambar/mockup-parser.png>
 Package pdftex.def Info: Gambar/mockup-parser.png used on input line 79.
 (pdftex.def)             Requested size: 351.31009pt x 245.91707pt.
  [40 <./Gambar/mockup-parser.png>]
-<Gambar/mockup-lexicon-home-user.png, id=777, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-home-user.png, id=782, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-home-user.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-home-user.png>
@@ -1304,7 +1323,7 @@ Package pdftex.def Info: Gambar/mockup-lexicon-home-user.png used on input line
  101.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
 
-<Gambar/mockup-lexicon-read-user.png, id=779, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-read-user.png, id=784, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-read-user.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-read-user.png>
@@ -1312,7 +1331,7 @@ Package pdftex.def Info: Gambar/mockup-lexicon-read-user.png used on input line
  119.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
  [41 <./Gambar/mockup-lexicon-home-user.png>]
-<Gambar/mockup-lexicon-home-editor.png, id=793, 253.94875pt x 301.125pt>
+<Gambar/mockup-lexicon-home-editor.png, id=798, 253.94875pt x 301.125pt>
 File: Gambar/mockup-lexicon-home-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-home-editor.png>
@@ -1321,7 +1340,7 @@ ne 136.
 (pdftex.def)             Requested size: 203.15926pt x 240.90031pt.
  [42 <./Gambar/mockup-lexicon-read-user.png> <./Gambar/mockup-lexicon-home-edit
 or.png>]
-<Gambar/mockup-lexicon-create-editor.png, id=804, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-create-editor.png, id=809, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-create-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-create-editor.png>
@@ -1329,7 +1348,7 @@ Package pdftex.def Info: Gambar/mockup-lexicon-create-editor.png used on input
 line 157.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
 
-<Gambar/mockup-lexicon-update-editor.png, id=806, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-update-editor.png, id=811, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-update-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-update-editor.png>
@@ -1337,7 +1356,7 @@ Package pdftex.def Info: Gambar/mockup-lexicon-update-editor.png used on input
 line 175.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
  [43 <./Gambar/mockup-lexicon-create-editor.png>]
-<Gambar/mockup-lexicon-delete-editor.png, id=824, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-delete-editor.png, id=829, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-delete-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-delete-editor.png>
@@ -1345,7 +1364,7 @@ Package pdftex.def Info: Gambar/mockup-lexicon-delete-editor.png used on input
 line 196.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
  [44 <./Gambar/mockup-lexicon-update-editor.png>]
-<Gambar/gambar-diagram-kelas-final.png, id=839, 1073.51062pt x 1376.14125pt>
+<Gambar/gambar-diagram-kelas-final.png, id=844, 1073.51062pt x 1376.14125pt>
 File: Gambar/gambar-diagram-kelas-final.png Graphic file (type png)
 
 <use Gambar/gambar-diagram-kelas-final.png>
@@ -1355,7 +1374,7 @@ ne 216.
  [45 <./Gambar/mockup-lexicon-delete-editor.png>] [46 <./Gambar/gambar-diagram-
 kelas-final.png>] [47] [48] [49]
 [50] [51] [52]
-<Gambar/gambar-diagram-aktivitas-olah-masukan.png, id=879, 769.37437pt x 618.05
+<Gambar/gambar-diagram-aktivitas-olah-masukan.png, id=884, 769.37437pt x 618.05
 907pt>
 File: Gambar/gambar-diagram-aktivitas-olah-masukan.png Graphic file (type png)
  <use Gambar/gambar-diagram-aktivitas-olah-masukan.png>
@@ -1363,33 +1382,36 @@ Package pdftex.def Info: Gambar/gambar-diagram-aktivitas-olah-masukan.png used
 on input line 362.
 (pdftex.def)             Requested size: 346.21527pt x 278.12401pt.
  [53]
-<Gambar/gambar-diagram-aktivitas-satu-kata.png, id=886, 861.9703pt x 1503.36656
+<Gambar/gambar-diagram-aktivitas-satu-kata.png, id=891, 861.9703pt x 1503.36656
 pt>
 File: Gambar/gambar-diagram-aktivitas-satu-kata.png Graphic file (type png)
  <use Gambar/gambar-diagram-aktivitas-satu-kata.png>
 Package pdftex.def Info: Gambar/gambar-diagram-aktivitas-satu-kata.png used on 
 input line 371.
 (pdftex.def)             Requested size: 344.78201pt x 601.33598pt.
- [54 <./Gambar/gambar-diagram-aktivitas-olah-masukan.png>]) [55 <./Gambar/gamba
-r-diagram-aktivitas-satu-kata.png>]
+ [54 <./Gambar/gambar-diagram-aktivitas-olah-masukan.png>] [55 <./Gambar/gambar
+-diagram-aktivitas-satu-kata.png>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 383.
+) [56]
 \openout2 = `Bab/bab5.aux'.
 
- (Bab/bab5.tex [56
-
-
-
-]
+ (Bab/bab5.tex
 Bab 5.
 
-<Gambar/gambar-implementasi-antarmuka-parser.png, id=905, 491.8375pt x 346.2937
+<Gambar/gambar-implementasi-antarmuka-parser.png, id=950, 491.8375pt x 346.2937
 5pt>
 File: Gambar/gambar-implementasi-antarmuka-parser.png Graphic file (type png)
  <use Gambar/gambar-implementasi-antarmuka-parser.png>
 Package pdftex.def Info: Gambar/gambar-implementasi-antarmuka-parser.png used o
 n input line 17.
 (pdftex.def)             Requested size: 344.28389pt x 242.40396pt.
- [57]
-<Gambar/gambar-implementasi-antarmuka-lexicon.png, id=911, 223.83624pt x 300.12
+ [57
+
+
+
+]
+<Gambar/gambar-implementasi-antarmuka-lexicon.png, id=956, 223.83624pt x 300.12
 125pt>
 File: Gambar/gambar-implementasi-antarmuka-lexicon.png Graphic file (type png)
  <use Gambar/gambar-implementasi-antarmuka-lexicon.png>
@@ -1397,7 +1419,7 @@ Package pdftex.def Info: Gambar/gambar-implementasi-antarmuka-lexicon.png used
 on input line 26.
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
  [58 <./Gambar/gambar-implementasi-antarmuka-parser.png> <./Gambar/gambar-imple
-mentasi-antarmuka-lexicon.png>] <Gambar/hasil-parsing-1.png, id=920, 302.12875p
+mentasi-antarmuka-lexicon.png>] <Gambar/hasil-parsing-1.png, id=965, 302.12875p
 t x 404.51125pt>
 File: Gambar/hasil-parsing-1.png Graphic file (type png)
 
@@ -1405,14 +1427,14 @@ File: Gambar/hasil-parsing-1.png Graphic file (type png)
 Package pdftex.def Info: Gambar/hasil-parsing-1.png used on input line 65.
 (pdftex.def)             Requested size: 211.48868pt x 283.15593pt.
 
-<Gambar/hasil-parsing-2.png, id=921, 354.82562pt x 247.92625pt>
+<Gambar/hasil-parsing-2.png, id=966, 354.82562pt x 247.92625pt>
 File: Gambar/hasil-parsing-2.png Graphic file (type png)
 
 <use Gambar/hasil-parsing-2.png>
 Package pdftex.def Info: Gambar/hasil-parsing-2.png used on input line 72.
 (pdftex.def)             Requested size: 248.37622pt x 173.54718pt.
  [59 <./Gambar/hasil-parsing-1.png>]
-<Gambar/hasil-parsing-tanpa-converter.png, id=930, 147.04938pt x 400.49625pt>
+<Gambar/hasil-parsing-tanpa-converter.png, id=975, 147.04938pt x 400.49625pt>
 File: Gambar/hasil-parsing-tanpa-converter.png Graphic file (type png)
 
 <use Gambar/hasil-parsing-tanpa-converter.png>
@@ -1420,7 +1442,7 @@ Package pdftex.def Info: Gambar/hasil-parsing-tanpa-converter.png used on input
  line 83.
 (pdftex.def)             Requested size: 102.93384pt x 280.34546pt.
 
-<Gambar/hasil-parsing-tanpa-validator.png, id=932, 430.10687pt x 306.14375pt>
+<Gambar/hasil-parsing-tanpa-validator.png, id=977, 430.10687pt x 306.14375pt>
 File: Gambar/hasil-parsing-tanpa-validator.png Graphic file (type png)
 
 <use Gambar/hasil-parsing-tanpa-validator.png>
@@ -1429,7 +1451,7 @@ Package pdftex.def Info: Gambar/hasil-parsing-tanpa-validator.png used on input
 (pdftex.def)             Requested size: 301.07274pt x 214.29915pt.
  [60 <./Gambar/hasil-parsing-2.png> <./Gambar/hasil-parsing-tanpa-converter.png
 >] [61 <./Gambar/hasil-parsing-tanpa-validator.png>]
-<Gambar/create-warganet-sebelum.png, id=947, 223.83624pt x 300.12125pt>
+<Gambar/create-warganet-sebelum.png, id=992, 223.83624pt x 300.12125pt>
 File: Gambar/create-warganet-sebelum.png Graphic file (type png)
 
 <use Gambar/create-warganet-sebelum.png>
@@ -1437,7 +1459,7 @@ Package pdftex.def Info: Gambar/create-warganet-sebelum.png used on input line
 125.
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
 
-<Gambar/create-warganet-setelah.png, id=949, 223.83624pt x 300.12125pt>
+<Gambar/create-warganet-setelah.png, id=994, 223.83624pt x 300.12125pt>
 File: Gambar/create-warganet-setelah.png Graphic file (type png)
 
 <use Gambar/create-warganet-setelah.png>
@@ -1445,7 +1467,7 @@ Package pdftex.def Info: Gambar/create-warganet-setelah.png used on input line
 134.
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
  [62 <./Gambar/create-warganet-sebelum.png>]
-<Gambar/update-menyayurmayur-sebelum.png, id=956, 215.80624pt x 296.10625pt>
+<Gambar/update-menyayurmayur-sebelum.png, id=1001, 215.80624pt x 296.10625pt>
 File: Gambar/update-menyayurmayur-sebelum.png Graphic file (type png)
 
 <use Gambar/update-menyayurmayur-sebelum.png>
@@ -1453,7 +1475,7 @@ Package pdftex.def Info: Gambar/update-menyayurmayur-sebelum.png used on input
 line 143.
 (pdftex.def)             Requested size: 151.06332pt x 207.27295pt.
 
-<Gambar/update-menyayurmayur-setelah.png, id=958, 215.80624pt x 296.10625pt>
+<Gambar/update-menyayurmayur-setelah.png, id=1003, 215.80624pt x 296.10625pt>
 File: Gambar/update-menyayurmayur-setelah.png Graphic file (type png)
 
 <use Gambar/update-menyayurmayur-setelah.png>
@@ -1462,7 +1484,7 @@ line 152.
 (pdftex.def)             Requested size: 151.06332pt x 207.27295pt.
  [63 <./Gambar/create-warganet-setelah.png> <./Gambar/update-menyayurmayur-sebe
 lum.png>]
-<Gambar/delete-abau-sebelum.png, id=966, 223.83624pt x 300.12125pt>
+<Gambar/delete-abau-sebelum.png, id=1011, 223.83624pt x 300.12125pt>
 File: Gambar/delete-abau-sebelum.png Graphic file (type png)
 
 <use Gambar/delete-abau-sebelum.png>
@@ -1470,7 +1492,7 @@ Package pdftex.def Info: Gambar/delete-abau-sebelum.png used on input line 161.
 
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
 
-<Gambar/delete-abau-setelah.png, id=968, 223.83624pt x 300.12125pt>
+<Gambar/delete-abau-setelah.png, id=1013, 223.83624pt x 300.12125pt>
 File: Gambar/delete-abau-setelah.png Graphic file (type png)
 
 <use Gambar/delete-abau-setelah.png>
@@ -1539,26 +1561,26 @@ LaTeX Font Warning: Font shape `OMS/fvm/m/it' undefined
 (Lampiran/src/Lexicon/Model/Lexicon.java [83] [84] [85] [86]) [87]
 (Lampiran/src/Lexicon/Model/Node.java)
 (Lampiran/src/Lexicon/Model/Combiner.java [88] [89] [90])) [91]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 441.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 441.
  (skripsi.aux
 (Bab/bab1.aux) (Bab/bab2.aux) (Bab/bab3.aux) (Bab/bab4.aux) (Bab/bab5.aux)
 (Bab/bab6.aux) (Lampiran/lampA.aux) (Lampiran/lampB.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 441.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 441.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: B123BFA6585946EDF483F71EEA717BF1;9860.
+(rerunfilecheck)             Checksum: 6E4C1E648D8E12746E4631451A687EA2;10024.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
  ) 
 Here is how much of TeX's memory you used:
- 37330 strings out of 493323
- 799038 string characters out of 3139065
- 1463157 words of memory out of 3000000
- 38019 multiletter control sequences out of 15000+200000
+ 37598 strings out of 493323
+ 802335 string characters out of 3139065
+ 1466332 words of memory out of 3000000
+ 38237 multiletter control sequences out of 15000+200000
  92820 words of font info for 171 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
  78i,12n,130p,1542b,1959s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1590,9 +1612,9 @@ lic/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:
 eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10
 .pfb>
-Output written on skripsi.pdf (105 pages, 1963795 bytes).
+Output written on skripsi.pdf (105 pages, 1972595 bytes).
 PDF statistics:
- 3196 PDF objects out of 3580 (max. 8388607)
- 1916 named destinations out of 2073 (max. 500000)
- 29858 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 3249 PDF objects out of 3580 (max. 8388607)
+ 1956 named destinations out of 2073 (max. 500000)
+ 29866 words of extra memory for PDF output out of 35830 (max. 10000000)
 

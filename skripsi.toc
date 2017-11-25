@@ -50,6 +50,7 @@
 \contentsline {subsection}{\numberline {4.4.3}Kelas Node}{52}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Kelas Combiner}{52}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Diagram Aktivitas}{53}{section.4.5}
+\contentsline {section}{\numberline {4.6}Perancangan Algoritma}{56}{section.4.6}
 \contentsline {chapter}{\numberline {5}Implementasi dan Pengujian}{57}{chapter.5}
 \contentsline {section}{\numberline {5.1}Implementasi}{57}{section.5.1}
 \contentsline {section}{\numberline {5.2}Pengujian}{58}{section.5.2}

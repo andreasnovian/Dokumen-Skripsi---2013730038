@@ -373,7 +373,53 @@ Gambar \ref{gambar-diagram-aktivitas-satu-kata} berikut adalah diagram aktivitas
 \label{gambar-diagram-aktivitas-satu-kata}
 \end{figure}
 
-%\section{Perancangan Algoritma}
-%\label{sec:perancanganAlgoritma}
-%
-%Untuk memperjelas cara kerja perangkat lunak morphological parser ketika melakukan proses parsing, dirancang sebuah algoritma untuk melakukan proses parsing pada masukan berupa kalimat dalam bahasa Indonesia. Algoritma \ref{rancangan-algoritma} berikut adalah rancangan algoritma untuk proses parsing.
+\section{Perancangan Algoritma}
+\label{sec:perancanganAlgoritma}
+
+Untuk memperjelas cara kerja perangkat lunak morphological parser ketika melakukan proses parsing, dirancang sebuah algoritma untuk melakukan proses parsing pada masukan berupa kalimat dalam bahasa Indonesia. Algoritma \ref{rancangan-algoritma} berikut adalah rancangan algoritma untuk proses parsing.
+
+\begin{algorithm}
+\floatname{algorithm}{Algoritma}
+\caption{Parsing sebuah kalimat} %String parse (String kalimat)
+\label{rancangan-algoritma}
+\begin{algorithmic}[H]
+	\STATE $kalimat \gets$ normalisasi $kalimat$
+	\STATE pisahkan $kata$ dalam $kalimat$ berdasarkan karakter spasi
+	\FORALL{$kata$ dalam $kalimat$} 
+		\IF{$kata$ adalah kata dasar} 
+			\STATE {simpan $kata$ dalam $hasil$} 
+		\ENDIF
+		\WHILE{$kata$ diawali $prefiks$} 
+			\STATE {pisahkan $prefiks$ dari $kata$}
+			\IF{$kata$ adalah kata dasar} 
+				\STATE {simpan $prefiks$ dan $kata$ dalam $hasil$} 
+			\ENDIF
+		\ENDWHILE
+		\IF{$kata$ diakhiri $sufiks$} 
+			\STATE {pisahkan $sufiks$ dari $kata$}
+			\IF{$kata$ adalah kata dasar} 
+				\STATE {simpan $sufiks$ dan $kata$ dalam $hasil$} 
+			\ENDIF
+		\ENDIF
+		\IF{$kata$ adalah kata ulang} 
+			\STATE {pisahkan $kataPertama$ dari $kataKedua$}
+			\IF{$kataPertama$ adalah kata dasar} 
+				\STATE {simpan $kataKedua$ sebagai reduplikasi dari $kataPertama$ dalam $hasil$} 
+			\ENDIF
+		\ENDIF
+		\IF{$kata$ adalah kata komposisi} 
+			\STATE {pisahkan $kataPertama$ dari $kataKedua$}
+			\IF{$kataPertama$ dan $kataKedua$ adalah kata dasar} 
+				\STATE {simpan $kataKedua$ sebagai komposisi dari $kataPertama$ dalam $hasil$} 
+			\ENDIF
+		\ENDIF
+		\IF{$hasil$ tidak kosong $dan$ masih ada $kataSelanjutnya$ $dan$ $kataSelanjutnya$ adalah kata dasar} 
+			\STATE {simpan $kataSelanjutnya$ sebagai komposisi dari $kata$ dalam $hasil$}
+		\ENDIF
+		\IF{$hasil$ kosong} 
+			\STATE {simpan $kata$ sebagai bentuk asing dalam $hasil$}
+		\ENDIF
+	\ENDFOR
+	\RETURN $hasil$
+\end{algorithmic}
+\end{algorithm}
