@@ -1,7 +1,7 @@
 \chapter{Analisis}
 \label{chap:analisis}
 
-Pada bab ini dijelaskan mengenai hasil analisis yang dilakukan untuk penelitian ini, yaitu analisis mengenai leksikon, proses morphological parsing, morfotaktik, use case dan skenario dari perangkat lunak, dan yang terakhir diagram kelas dari perangkat lunak yang akan dibangun.
+Pada bab ini dijelaskan mengenai hasil analisis yang dilakukan untuk penelitian ini, yaitu analisis mengenai leksikon, proses morphological parsing, morfotaktik, use case dan skenario dari perangkat lunak, dan yang terakhir analisis kelas dari perangkat lunak yang akan dibangun.
 
 %\section{Analisis Perangkat Lunak Serupa}
 %\label{sec:mpYangSudahAda}
@@ -286,7 +286,7 @@ Selain afiks yang sudah disebutkan, ada juga morfem afiks yang disebut dengan kl
 
 Aturan morfotaktik tidak hanya mengatur tentang proses penggabungan antara morfem dasar dengan morfem afiks, namun juga mengatur tentang proses pengulangan morfem dasar dalam proses reduplikasi dan proses penggabungan antara morfem dasar dengan morfem dasar lain dalam proses komposisi. Proses reduplikasi dan komposisi pun tidak boleh dilakukan secara sembarangan sehingga proses tersebut perlu juga diatur dalam aturan morfotaktik.
 
-Aturan morfotaktik yang digunakan pada penelitian ini akan dijelaskan melalui tabel. Akan ada beberapa tabel untuk mewakili setiap jenis morfem, yaitu preprefiks, prefiks, akar, sufiks, dan konfiks. Setiap tabel akan menunjukkan komponen tersebut boleh didahului oleh komponen apa saja dan boleh diikuti oleh komponen apa saja. Komponen 'null' berarti boleh tidak didahului atau diikuti oleh komponen apapun. Berikut adalah tabel aturan morfotaktik untuk preprefiks, prefiks/konfiks, akar, dan sufiks/konfiks.
+Aturan morfotaktik yang digunakan pada penelitian ini akan dijelaskan melalui beberapa tabel, yaitu tabel \ref{tabel-morfotaktik-preprefiks} untuk morfem preprefiks, tabel \ref{tabel-morfotaktik-prefiks} untuk morfem prefiks atau konfiks, tabel \ref{tabel-morfotaktik-akar} untuk morfem akar, dan tabel \ref{tabel-morfotaktik-sufiks} untuk morfem sufiks atau konfiks. Setiap tabel akan menunjukkan komponen tersebut boleh didahului oleh komponen apa saja dan boleh diikuti oleh komponen apa saja. Komponen 'null' berarti boleh tidak didahului atau diikuti oleh komponen apapun. Berikut adalah tabel aturan morfotaktik untuk preprefiks, prefiks/konfiks, akar, dan sufiks/konfiks.
 
 \begin{table}[H]
 \centering
@@ -550,8 +550,8 @@ Dari diagram tersebut dapat dituliskan use case scenario sebagai berikut:\\
 \end{table}
 
 
-\section{Diagram Kelas}
-\label{sec:DiagramKelasAwal}
+\section{Analisis Kelas}
+\label{sec:AnalisisKelasAwal}
 
 Berdasarkan analisis yang telah dilakukan, kelas-kelas yang akan dibuat untuk perangkat lunak morphological parser adalah sebagai berikut.
 

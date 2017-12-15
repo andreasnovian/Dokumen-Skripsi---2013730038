@@ -37,14 +37,14 @@
 \contentsline {section}{\numberline {3.2}Proses \textit {Morphological Parsing}}{27}{section.3.2}
 \contentsline {section}{\numberline {3.3}Morfotaktik}{29}{section.3.3}
 \contentsline {section}{\numberline {3.4}Analisis Use Case}{31}{section.3.4}
-\contentsline {section}{\numberline {3.5}Diagram Kelas}{34}{section.3.5}
+\contentsline {section}{\numberline {3.5}Analisis Kelas}{34}{section.3.5}
 \contentsline {chapter}{\numberline {4}Perancangan}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}Struktur Penyimpanan Leksikon}{37}{section.4.1}
-\contentsline {section}{\numberline {4.2}Syntax Keluaran Proses Morphological Parsing}{39}{section.4.2}
+\contentsline {section}{\numberline {4.2}\textit {Syntax} Keluaran Proses Morphological Parsing}{39}{section.4.2}
 \contentsline {section}{\numberline {4.3}Perancangan Antarmuka}{40}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Perancangan Antarmuka Perangkat Lunak Morphological Parser}{40}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Perancangan Antarmuka Perangkat Lunak Lexicon}{41}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Diagram Kelas Lengkap}{45}{section.4.4}
+\contentsline {section}{\numberline {4.4}Perancangan Kelas Lengkap}{45}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Kelas Parser}{46}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Kelas Lexicon}{50}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Kelas Node}{52}{subsection.4.4.3}

@@ -1,7 +1,7 @@
 \chapter{Perancangan}
 \label{chap:perancangan}
 
-Pada bab ini dijelaskan mengenai beberapa perancangan yang dilakukan dalam penelitian ini, yaitu perancangan struktur penyimpanan leksikon, syntax keluaran proses morphological parsing, antarmuka perangkat lunak, diagram kelas lengkap dari perangkat lunak, dan yang terakhir adalah diagram aktivitas dari perangkat lunak yang akan dibangun.
+Pada bab ini dijelaskan mengenai beberapa perancangan yang dilakukan dalam penelitian ini, yaitu perancangan struktur penyimpanan leksikon, \textit{syntax} keluaran proses morphological parsing, antarmuka perangkat lunak, diagram kelas lengkap dan diagram aktivitas dari perangkat lunak, dan yang terakhir adalah algoritma dari perangkat lunak yang akan dibangun.
 
 \section{Struktur Penyimpanan Leksikon}
 \label{sec:strukturPenyimpananLeksikon}
@@ -47,7 +47,7 @@ Pada kasus di mana terdapat lebih dari satu prefiks seperti pada kata 'memperkua
 Pada kasus kata yang merupakan hasil dari proses komposisi dan prefiksasi, seperti pada kata 'bekerja bakti', proses yang lebih dulu ditulis adalah proses yang melekat pada kata dasarnya yaitu proses prefiksasi \textit{ber-} pada kata 'kerja'. Kata 'bekerja bakti' disimpan dalam file 'kerja.lxc' dengan bentuk '[ber+@bakti'. Sementara pada contoh kasus kata yang merupakan hasil dari proses komposisi dan konfiksasi, seperti pada kata 'pertanggungjawaban', proses yang lebih dulu ditulis adalah proses komposisi kata 'tanggung' dengan kata 'jawab'. Kata 'pertanggungjawaban' disimpan dalam file 'tanggung.lxc' dengan bentuk '@jawab+\# per-an'. Hal ini berlaku juga untuk kata yang merupakan hasil dari proses komposisi dan klofiksasi, seperti pada kata 'menanggungjawabi' yang disimpan dengan bentuk '@jawab+]i+[me'.
 
 
-\section{Syntax Keluaran Proses Morphological Parsing}
+\section{\textit{Syntax} Keluaran Proses Morphological Parsing}
 \label{sec:syntaxKeluaran}
 
 Pada subbab \ref{sec:morfem} disebutkan bahwa dalam konvensi linguistik sebuah bentuk dinyatakan sebagai morfem ditulis dalam kurung kurawal ($\lbrace$...$\rbrace$). Proses morphological parsing merupakan proses memisahkan sebuah kata menjadi morfem-morfem penyusunnya. Oleh karena itu, keluaran dari proses morphological parsing sebaiknya mengikuti konvensi linguistik di mana setiap morfem penyusun kata ditulis dalam kurung kurawal ($\lbrace$...$\rbrace$).
@@ -206,10 +206,10 @@ Penjelasan untuk setiap objek dalam \textit{frame} di atas adalah sebagai beriku
 \end{enumerate}
 
 
-\section{Diagram Kelas Lengkap}
+\section{Perancangan Kelas Lengkap}
 \label{sec:DiagramKelasLengkap}
 
-Pada subbab \ref{sec:DiagramKelasAwal} telah diuraikan analisis mengenai kelas-kelas yang akan dibuat untuk perangkat lunak morphological parser. Pada subbab ini akan ditambahkan beberapa kelas dan method untuk melengkapi kelas-kelas yang sudah diuraikan sebelumnya. Gambar \ref{gambar-diagram-kelas-final} adalah diagram kelas lengkap yang dibuat untuk perangkat lunak morphological parser.
+Pada subbab \ref{sec:DiagramKelasAwal} telah diuraikan analisis mengenai kelas-kelas yang akan dibuat untuk perangkat lunak morphological parser. Pada subbab ini akan ditambahkan beberapa kelas dan method untuk melengkapi kelas-kelas yang sudah diuraikan sebelumnya. Gambar \ref{gambar-diagram-kelas-final} berikut adalah diagram kelas lengkap yang dibuat untuk perangkat lunak morphological parser.
 
 \begin{figure}[H]
 \centering
