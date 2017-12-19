@@ -350,7 +350,7 @@ Method yang terdapat dalam kelas ini adalah:
 	\item \textit{duplikasi}: method dengan dua buah parameter bertipe String dan kembalian bertipe String untuk melakukan proses reduplikasi pada kata dasar dalam parameter rootWord dan jenis reduplikasi dalam parameter duplikasi.
 \end{itemize}
 
-\section{Diagram Aktivitas}
+\section{Perancangan Diagram Aktivitas}
 \label{sec:diagramAktivitas}
 
 Untuk menjelaskan proses morphological parsing yang akan dikerjakan oleh perangkat lunak, dibuat dua buah diagram aktivitas, yang pertama adalah diagram aktivitas untuk proses mengolah teks masukan dan yang kedua adalah diagram aktivitas untuk proses parsing pada sebuah kata.
@@ -376,13 +376,13 @@ Gambar \ref{gambar-diagram-aktivitas-satu-kata} berikut adalah diagram aktivitas
 \section{Perancangan Algoritma}
 \label{sec:perancanganAlgoritma}
 
-Untuk memperjelas cara kerja perangkat lunak morphological parser ketika melakukan proses parsing, dirancang sebuah algoritma untuk melakukan proses parsing pada masukan berupa kalimat dalam bahasa Indonesia. Algoritma \ref{rancangan-algoritma} berikut adalah rancangan algoritma untuk proses parsing.
+Untuk memperjelas cara kerja perangkat lunak morphological parser ketika melakukan proses parsing, dirancang sebuah algoritma untuk melakukan proses parsing pada masukan berupa kalimat dalam bahasa Indonesia. Algoritma \ref{rancangan-algoritma} berikut adalah rancangan algoritma untuk proses parsing. Perlu dicatat bahwa afiks berupa klofiks tidak ditangani secara khusus dalam algoritma karena pada dasarnya klofiks adalah pasangan prefiks dan sufiks atau beberapa prefiks.
 
-\begin{algorithm}
+\begin{algorithm}[H]
 \floatname{algorithm}{Algoritma}
 \caption{Parsing sebuah kalimat} %String parse (String kalimat)
 \label{rancangan-algoritma}
-\begin{algorithmic}[H]
+\begin{algorithmic}[1]
 	\STATE $kalimat \gets$ normalisasi $kalimat$
 	\STATE pisahkan $kata$ dalam $kalimat$ berdasarkan karakter spasi
 	\FORALL{$kata$ dalam $kalimat$} 
@@ -399,6 +399,9 @@ Untuk memperjelas cara kerja perangkat lunak morphological parser ketika melakuk
 			\STATE {pisahkan $sufiks$ dari $kata$}
 			\IF{$kata$ adalah kata dasar} 
 				\STATE {simpan $sufiks$ dan $kata$ dalam $hasil$} 
+				\IF{ada pasangan $prefiks$ dan $sufiks$ yang merupakan $konfiks$}
+					\STATE {simpan $konfiks$ dan $kata$ dalam $hasil$} 
+				\ENDIF
 			\ENDIF
 		\ENDIF
 		\IF{$kata$ adalah kata ulang} 
