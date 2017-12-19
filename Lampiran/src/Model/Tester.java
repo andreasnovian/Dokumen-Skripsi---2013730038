@@ -23,14 +23,15 @@ public class Tester {
             Parser p = new Parser(new Lexicon());
             Combiner c = new Combiner();
             Lexicon l = new Lexicon();
-
             for (int t = 1; t <= 3; t++) {
-                l.insertRoot("andreas");
                 long a = System.currentTimeMillis();
-                l.deleteRoot("andreas");
+                l.insertRoot("andreas");
                 long b = System.currentTimeMillis();
+                l.deleteRoot("andreas");
+                long d = System.currentTimeMillis();
 
-                System.out.println("waktu " + t + " : " + (b - a));
+                System.out.println("waktu insert" + t + " : " + (b - a));
+                System.out.println("waktu delete" + t + " : " + (d - b));
             }
 //        MorphologicalParser mp = new MorphologicalParser();
 
