@@ -2,40 +2,40 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Morfem bebas dan terikat}}{8}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Morfem dasar dan afiks}}{10}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Trie dengan kata "trie","ini", dan "contoh"}}{20}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Pohon radix dengan 7 kata dengan prefix "r"}}{21}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Trie dengan kata "hello","hey","number","name","cat","camel", dan "cup"}}{22}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Penambahan kata "coding" pada trie di gambar \ref {contoh-trie-2}}}{23}{figure.2.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Morfem dasar dan afiks}}{9}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Trie dengan kata "trie","ini", dan "contoh"}}{18}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Pohon radix dengan 7 kata dengan prefix "r"}}{19}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Trie dengan kata "hello","hey","number","name","cat","camel", dan "cup"}}{20}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Penambahan kata "coding" pada trie di gambar \ref {contoh-trie-2}}}{20}{figure.2.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Struktur data trie}}{26}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagram use case perangkat lunak morphological parser}}{31}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagram kelas awal perangkat lunak morphological parser}}{36}{figure.3.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Struktur data trie}}{24}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagram use case perangkat lunak morphological parser}}{29}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagram kelas awal perangkat lunak morphological parser}}{33}{figure.3.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Isi dari file sayur.lxc}}{38}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Rancangan antarmuka perangkat lunak morphological parser}}{40}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman home untuk user}}{41}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman read untuk user}}{42}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman home untuk editor}}{42}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman create untuk editor}}{43}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman update untuk editor}}{44}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman delete untuk editor}}{45}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagram kelas lengkap perangkat lunak morphological parser}}{46}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagram aktivitas proses mengolah teks masukan}}{54}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagram aktivitas proses parsing pada sebuah kata}}{55}{figure.4.11}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Isi dari file sayur.lxc}}{36}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Rancangan antarmuka perangkat lunak morphological parser}}{38}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman home untuk user}}{39}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman read untuk user}}{40}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman home untuk editor}}{40}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman create untuk editor}}{41}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman update untuk editor}}{42}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Rancangan antarmuka perangkat lunak lexicon halaman delete untuk editor}}{43}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagram kelas lengkap perangkat lunak morphological parser}}{44}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagram aktivitas proses mengolah teks masukan}}{51}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagram aktivitas proses parsing pada sebuah kata}}{52}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Implementasi antarmuka perangkat lunak morphological parser}}{58}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Implementasi antarmuka perangkat lunak lexicon}}{58}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Hasil parsing contoh masukan pertama}}{59}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Hasil parsing contoh masukan kedua}}{60}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Hasil parsing contoh masukan pertama tanpa fitur converter}}{60}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Hasil parsing contoh masukan kedua tanpa fitur validator}}{61}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Isi leksikon sebelum kata 'warganet' dimasukkan}}{62}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Isi leksikon setelah kata 'warganet' dimasukkan}}{63}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Turunan dari kata dasar 'sayur' sebelum kata turunan 'menyayur-mayur' ditambahkan}}{63}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Turunan dari kata dasar 'sayur' setelah kata turunan 'menyayur-mayur' ditambahkan}}{64}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Isi leksikon sebelum kata 'abau' dihapus}}{64}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Isi leksikon setelah kata 'abau' dihapus}}{65}{figure.5.12}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Implementasi antarmuka perangkat lunak morphological parser}}{56}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Implementasi antarmuka perangkat lunak lexicon}}{56}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Hasil parsing contoh masukan pertama}}{57}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Hasil parsing contoh masukan kedua}}{58}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Hasil parsing contoh masukan pertama tanpa fitur converter}}{58}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Hasil parsing contoh masukan kedua tanpa fitur validator}}{59}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Isi leksikon sebelum kata 'warganet' dimasukkan}}{60}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Isi leksikon setelah kata 'warganet' dimasukkan}}{60}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Turunan dari kata dasar 'sayur' sebelum kata turunan 'menyayur-mayur' ditambahkan}}{61}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Turunan dari kata dasar 'sayur' setelah kata turunan 'menyayur-mayur' ditambahkan}}{61}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Isi leksikon sebelum kata 'abau' dihapus}}{62}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Isi leksikon setelah kata 'abau' dihapus}}{62}{figure.5.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
