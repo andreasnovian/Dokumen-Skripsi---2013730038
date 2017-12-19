@@ -41,9 +41,9 @@
 \contentsline {section}{\numberline {3.5}Analisis Kelas}{31}{section.3.5}
 \contentsline {chapter}{\numberline {4}Perancangan}{35}{chapter.4}
 \contentsline {section}{\numberline {4.1}Struktur Penyimpanan Leksikon}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}\textit {Syntax} Keluaran Proses Morphological Parsing}{36}{section.4.2}
-\contentsline {section}{\numberline {4.3}Perancangan Antarmuka}{37}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Perancangan Antarmuka Perangkat Lunak Morphological Parser}{37}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.2}\textit {Syntax} Keluaran Proses Morphological Parsing}{37}{section.4.2}
+\contentsline {section}{\numberline {4.3}Perancangan Antarmuka}{38}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Perancangan Antarmuka Perangkat Lunak Morphological Parser}{38}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Perancangan Antarmuka Perangkat Lunak Lexicon}{38}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Perancangan Kelas Lengkap}{43}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Kelas Parser}{44}{subsection.4.4.1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.24)  19 DEC 2017 20:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.24)  19 DEC 2017 20:50
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1269,11 +1269,11 @@ Package pdftex.def Info: Gambar/contoh-trie-3.jpg used on input line 647.
 
 ]
 Bab 3.
-<Gambar/gambar-trie.png, id=711, 234.8775pt x 325.215pt>
+<Gambar/gambar-trie.png, id=712, 234.8775pt x 325.215pt>
 File: Gambar/gambar-trie.png Graphic file (type png)
 
 <use Gambar/gambar-trie.png>
-Package pdftex.def Info: Gambar/gambar-trie.png used on input line 193.
+Package pdftex.def Info: Gambar/gambar-trie.png used on input line 195.
 (pdftex.def)             Requested size: 176.15768pt x 243.91064pt.
  [23] [24 <./Gambar/gambar-trie.png>] [25] [26]
 [27] <Gambar/gambar-diagram-use-case.png, id=754, 711.4078pt x 469.755pt>
@@ -1281,10 +1281,10 @@ File: Gambar/gambar-diagram-use-case.png Graphic file (type png)
 
 <use Gambar/gambar-diagram-use-case.png>
 Package pdftex.def Info: Gambar/gambar-diagram-use-case.png used on input line 
-398.
+400.
 (pdftex.def)             Requested size: 398.38565pt x 263.061pt.
  [28]
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
@@ -1294,7 +1294,7 @@ File: Gambar/gambar-diagram-kelas-awal.png Graphic file (type png)
 
 <use Gambar/gambar-diagram-kelas-awal.png>
 Package pdftex.def Info: Gambar/gambar-diagram-kelas-awal.png used on input lin
-e 628.
+e 630.
 (pdftex.def)             Requested size: 352.91225pt x 328.22043pt.
 ) [33 <./Gambar/gambar-diagram-kelas-awal.png>]
 \openout2 = `Bab/bab4.aux'.
@@ -1305,102 +1305,102 @@ e 628.
 
 ]
 Bab 4.
-[35] <Gambar/contoh-entri-sayur.png, id=795, 70.76437pt x 93.34875pt>
+[35] <Gambar/contoh-entri-sayur.png, id=799, 70.76437pt x 93.34875pt>
 File: Gambar/contoh-entri-sayur.png Graphic file (type png)
 
 <use Gambar/contoh-entri-sayur.png>
-Package pdftex.def Info: Gambar/contoh-entri-sayur.png used on input line 40.
+Package pdftex.def Info: Gambar/contoh-entri-sayur.png used on input line 44.
 (pdftex.def)             Requested size: 70.76419pt x 93.34851pt.
  [36 <./Gambar/contoh-entri-sayur.png>]
-<Gambar/mockup-parser.png, id=808, 501.875pt x 351.3125pt>
+[37] <Gambar/mockup-parser.png, id=816, 501.875pt x 351.3125pt>
 File: Gambar/mockup-parser.png Graphic file (type png)
 
 <use Gambar/mockup-parser.png>
-Package pdftex.def Info: Gambar/mockup-parser.png used on input line 79.
+Package pdftex.def Info: Gambar/mockup-parser.png used on input line 83.
 (pdftex.def)             Requested size: 351.31009pt x 245.91707pt.
- [37]
-<Gambar/mockup-lexicon-home-user.png, id=814, 225.84375pt x 301.125pt>
+
+<Gambar/mockup-lexicon-home-user.png, id=818, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-home-user.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-home-user.png>
 Package pdftex.def Info: Gambar/mockup-lexicon-home-user.png used on input line
- 101.
+ 105.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
  [38 <./Gambar/mockup-parser.png>]
-<Gambar/mockup-lexicon-read-user.png, id=826, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-read-user.png, id=830, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-read-user.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-read-user.png>
 Package pdftex.def Info: Gambar/mockup-lexicon-read-user.png used on input line
- 119.
+ 123.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
  [39 <./Gambar/mockup-lexicon-home-user.png>]
-<Gambar/mockup-lexicon-home-editor.png, id=838, 253.94875pt x 301.125pt>
+<Gambar/mockup-lexicon-home-editor.png, id=842, 253.94875pt x 301.125pt>
 File: Gambar/mockup-lexicon-home-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-home-editor.png>
 Package pdftex.def Info: Gambar/mockup-lexicon-home-editor.png used on input li
-ne 136.
+ne 140.
 (pdftex.def)             Requested size: 203.15926pt x 240.90031pt.
  [40 <./Gambar/mockup-lexicon-read-user.png> <./Gambar/mockup-lexicon-home-edit
 or.png>]
-<Gambar/mockup-lexicon-create-editor.png, id=849, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-create-editor.png, id=853, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-create-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-create-editor.png>
 Package pdftex.def Info: Gambar/mockup-lexicon-create-editor.png used on input 
-line 157.
+line 161.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
 
-<Gambar/mockup-lexicon-update-editor.png, id=851, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-update-editor.png, id=855, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-update-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-update-editor.png>
 Package pdftex.def Info: Gambar/mockup-lexicon-update-editor.png used on input 
-line 175.
+line 179.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
  [41 <./Gambar/mockup-lexicon-create-editor.png>]
-<Gambar/mockup-lexicon-delete-editor.png, id=869, 225.84375pt x 301.125pt>
+<Gambar/mockup-lexicon-delete-editor.png, id=873, 225.84375pt x 301.125pt>
 File: Gambar/mockup-lexicon-delete-editor.png Graphic file (type png)
 
 <use Gambar/mockup-lexicon-delete-editor.png>
 Package pdftex.def Info: Gambar/mockup-lexicon-delete-editor.png used on input 
-line 196.
+line 200.
 (pdftex.def)             Requested size: 180.67523pt x 240.90031pt.
  [42 <./Gambar/mockup-lexicon-update-editor.png>]
 
 LaTeX Warning: Reference `sec:DiagramKelasAwal' on page 43 undefined on input l
-ine 212.
+ine 216.
 
-<Gambar/gambar-diagram-kelas-final.png, id=883, 1073.51062pt x 1376.14125pt>
+<Gambar/gambar-diagram-kelas-final.png, id=887, 1073.51062pt x 1376.14125pt>
 File: Gambar/gambar-diagram-kelas-final.png Graphic file (type png)
 
 <use Gambar/gambar-diagram-kelas-final.png>
 Package pdftex.def Info: Gambar/gambar-diagram-kelas-final.png used on input li
-ne 216.
+ne 220.
 (pdftex.def)             Requested size: 429.39664pt x 550.44676pt.
  [43 <./Gambar/mockup-lexicon-delete-editor.png>] [44 <./Gambar/gambar-diagram-
 kelas-final.png>] [45] [46] [47]
 [48] [49]
-<Gambar/gambar-diagram-aktivitas-olah-masukan.png, id=919, 769.37437pt x 618.05
+<Gambar/gambar-diagram-aktivitas-olah-masukan.png, id=923, 769.37437pt x 618.05
 907pt>
 File: Gambar/gambar-diagram-aktivitas-olah-masukan.png Graphic file (type png)
  <use Gambar/gambar-diagram-aktivitas-olah-masukan.png>
 Package pdftex.def Info: Gambar/gambar-diagram-aktivitas-olah-masukan.png used 
-on input line 362.
+on input line 366.
 (pdftex.def)             Requested size: 346.21527pt x 278.12401pt.
  [50]
-<Gambar/gambar-diagram-aktivitas-satu-kata.png, id=925, 861.9703pt x 1584.67032
+<Gambar/gambar-diagram-aktivitas-satu-kata.png, id=929, 861.9703pt x 1584.67032
 pt>
 File: Gambar/gambar-diagram-aktivitas-satu-kata.png Graphic file (type png)
  <use Gambar/gambar-diagram-aktivitas-satu-kata.png>
 Package pdftex.def Info: Gambar/gambar-diagram-aktivitas-satu-kata.png used on 
-input line 371.
+input line 375.
 (pdftex.def)             Requested size: 344.78201pt x 633.8569pt.
  [51 <./Gambar/gambar-diagram-aktivitas-olah-masukan.png>] [52 <./Gambar/gambar
 -diagram-aktivitas-satu-kata.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 383.
+put line 387.
 ) [53]
 \openout2 = `Bab/bab5.aux'.
 
@@ -1411,7 +1411,7 @@ put line 383.
 ]
 Bab 5.
 
-<Gambar/gambar-implementasi-antarmuka-parser.png, id=992, 491.8375pt x 346.2937
+<Gambar/gambar-implementasi-antarmuka-parser.png, id=996, 491.8375pt x 346.2937
 5pt>
 File: Gambar/gambar-implementasi-antarmuka-parser.png Graphic file (type png)
  <use Gambar/gambar-implementasi-antarmuka-parser.png>
@@ -1419,30 +1419,30 @@ Package pdftex.def Info: Gambar/gambar-implementasi-antarmuka-parser.png used o
 n input line 17.
 (pdftex.def)             Requested size: 344.28389pt x 242.40396pt.
  [55]
-<Gambar/gambar-implementasi-antarmuka-lexicon.png, id=998, 223.83624pt x 300.12
-125pt>
+<Gambar/gambar-implementasi-antarmuka-lexicon.png, id=1002, 223.83624pt x 300.1
+2125pt>
 File: Gambar/gambar-implementasi-antarmuka-lexicon.png Graphic file (type png)
  <use Gambar/gambar-implementasi-antarmuka-lexicon.png>
 Package pdftex.def Info: Gambar/gambar-implementasi-antarmuka-lexicon.png used 
 on input line 26.
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
  [56 <./Gambar/gambar-implementasi-antarmuka-parser.png> <./Gambar/gambar-imple
-mentasi-antarmuka-lexicon.png>] <Gambar/hasil-parsing-1.png, id=1007, 302.12875
-pt x 404.51125pt>
+mentasi-antarmuka-lexicon.png>]
+<Gambar/hasil-parsing-1.png, id=1011, 302.12875pt x 404.51125pt>
 File: Gambar/hasil-parsing-1.png Graphic file (type png)
 
 <use Gambar/hasil-parsing-1.png>
 Package pdftex.def Info: Gambar/hasil-parsing-1.png used on input line 65.
 (pdftex.def)             Requested size: 211.48868pt x 283.15593pt.
 
-<Gambar/hasil-parsing-2.png, id=1008, 354.82562pt x 247.92625pt>
+<Gambar/hasil-parsing-2.png, id=1012, 354.82562pt x 247.92625pt>
 File: Gambar/hasil-parsing-2.png Graphic file (type png)
 
 <use Gambar/hasil-parsing-2.png>
 Package pdftex.def Info: Gambar/hasil-parsing-2.png used on input line 72.
 (pdftex.def)             Requested size: 248.37622pt x 173.54718pt.
  [57 <./Gambar/hasil-parsing-1.png>]
-<Gambar/hasil-parsing-tanpa-converter.png, id=1017, 147.04938pt x 400.49625pt>
+<Gambar/hasil-parsing-tanpa-converter.png, id=1021, 147.04938pt x 400.49625pt>
 File: Gambar/hasil-parsing-tanpa-converter.png Graphic file (type png)
 
 <use Gambar/hasil-parsing-tanpa-converter.png>
@@ -1450,7 +1450,7 @@ Package pdftex.def Info: Gambar/hasil-parsing-tanpa-converter.png used on input
  line 83.
 (pdftex.def)             Requested size: 102.93384pt x 280.34546pt.
 
-<Gambar/hasil-parsing-tanpa-validator.png, id=1019, 430.10687pt x 306.14375pt>
+<Gambar/hasil-parsing-tanpa-validator.png, id=1023, 430.10687pt x 306.14375pt>
 File: Gambar/hasil-parsing-tanpa-validator.png Graphic file (type png)
 
 <use Gambar/hasil-parsing-tanpa-validator.png>
@@ -1459,7 +1459,7 @@ Package pdftex.def Info: Gambar/hasil-parsing-tanpa-validator.png used on input
 (pdftex.def)             Requested size: 301.07274pt x 214.29915pt.
  [58 <./Gambar/hasil-parsing-2.png> <./Gambar/hasil-parsing-tanpa-converter.png
 >] [59 <./Gambar/hasil-parsing-tanpa-validator.png>]
-<Gambar/create-warganet-sebelum.png, id=1034, 223.83624pt x 300.12125pt>
+<Gambar/create-warganet-sebelum.png, id=1038, 223.83624pt x 300.12125pt>
 File: Gambar/create-warganet-sebelum.png Graphic file (type png)
 
 <use Gambar/create-warganet-sebelum.png>
@@ -1467,7 +1467,7 @@ Package pdftex.def Info: Gambar/create-warganet-sebelum.png used on input line
 125.
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
 
-<Gambar/create-warganet-setelah.png, id=1036, 223.83624pt x 300.12125pt>
+<Gambar/create-warganet-setelah.png, id=1040, 223.83624pt x 300.12125pt>
 File: Gambar/create-warganet-setelah.png Graphic file (type png)
 
 <use Gambar/create-warganet-setelah.png>
@@ -1475,7 +1475,7 @@ Package pdftex.def Info: Gambar/create-warganet-setelah.png used on input line
 134.
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
 
-<Gambar/update-menyayurmayur-sebelum.png, id=1038, 215.80624pt x 296.10625pt>
+<Gambar/update-menyayurmayur-sebelum.png, id=1042, 215.80624pt x 296.10625pt>
 File: Gambar/update-menyayurmayur-sebelum.png Graphic file (type png)
 
 <use Gambar/update-menyayurmayur-sebelum.png>
@@ -1484,7 +1484,7 @@ line 143.
 (pdftex.def)             Requested size: 151.06332pt x 207.27295pt.
  [60 <./Gambar/create-warganet-sebelum.png> <./Gambar/create-warganet-setelah.p
 ng>]
-<Gambar/update-menyayurmayur-setelah.png, id=1046, 215.80624pt x 296.10625pt>
+<Gambar/update-menyayurmayur-setelah.png, id=1050, 215.80624pt x 296.10625pt>
 File: Gambar/update-menyayurmayur-setelah.png Graphic file (type png)
 
 <use Gambar/update-menyayurmayur-setelah.png>
@@ -1492,7 +1492,7 @@ Package pdftex.def Info: Gambar/update-menyayurmayur-setelah.png used on input
 line 152.
 (pdftex.def)             Requested size: 151.06332pt x 207.27295pt.
 
-<Gambar/delete-abau-sebelum.png, id=1048, 223.83624pt x 300.12125pt>
+<Gambar/delete-abau-sebelum.png, id=1052, 223.83624pt x 300.12125pt>
 File: Gambar/delete-abau-sebelum.png Graphic file (type png)
 
 <use Gambar/delete-abau-sebelum.png>
@@ -1501,7 +1501,7 @@ Package pdftex.def Info: Gambar/delete-abau-sebelum.png used on input line 161.
 (pdftex.def)             Requested size: 156.6843pt x 210.08344pt.
  [61 <./Gambar/update-menyayurmayur-sebelum.png> <./Gambar/update-menyayurmayur
 -setelah.png>]
-<Gambar/delete-abau-setelah.png, id=1056, 223.83624pt x 300.12125pt>
+<Gambar/delete-abau-setelah.png, id=1060, 223.83624pt x 300.12125pt>
 File: Gambar/delete-abau-setelah.png Graphic file (type png)
 
 <use Gambar/delete-abau-setelah.png>
@@ -1589,15 +1589,18 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
  ) 
 Here is how much of TeX's memory you used:
- 37437 strings out of 493323
- 800764 string characters out of 3139065
+ 37438 strings out of 493323
+ 800775 string characters out of 3139065
  1467384 words of memory out of 3000000
  38081 multiletter control sequences out of 15000+200000
  98629 words of font info for 172 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
  78i,12n,130p,1542b,1956s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -1624,9 +1627,9 @@ lic/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:
 eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy1
 0.pfb>
-Output written on skripsi.pdf (109 pages, 1981433 bytes).
+Output written on skripsi.pdf (109 pages, 1983896 bytes).
 PDF statistics:
- 3270 PDF objects out of 3580 (max. 8388607)
- 1955 named destinations out of 2073 (max. 500000)
+ 3274 PDF objects out of 3580 (max. 8388607)
+ 1956 named destinations out of 2073 (max. 500000)
  30386 words of extra memory for PDF output out of 35830 (max. 10000000)
 
