@@ -186,6 +186,8 @@ Leksikon dalam proses \textit{morphological parsing} harus bisa diakses dengan c
 
 Struktur data yang saat ini terkenal paling cepat untuk diakses adalah struktur data \textit{trie}. Trie adalah struktur data berbentuk pohon yang menyimpan himpunan string yang jika ditelusuri setiap node mulai dari akar hingga daun akan membentuk suatu string yang merupakan kunci yang kita cari. Setiap string yang dihasilkan dari node awal yang sama akan mempunyai awalan (prefiks) yang sama, karena itulah trie disebut juga pohon prefiks.
 
+Dari dua jenis trie yang sudah dijelaskan pada subbab \ref{sec:trie}, trie yang akan digunakan pada penelitian ini adalah \textit{bitwise trie}. Perbedaan mendasar antara bitwise trie dan patricia trie terletak pada bagaimana huruf disimpan dalam setiap node dalam pohon. Pada bitwise trie sebuah node hanya menyimpan sebuah huruf sedangkan pada patricia trie sebuah node dapat menyimpan lebih dari sebuah huruf jika node tersebut hanya memiliki satu buah anak. Patricia trie memiliki kelebihan berupa efisiensi yang lebih baik namun implementasinya lebih sulit. Bitwise trie dipilih dalam penelitian ini karena berdasarkan pengamatan, efisiensi dari patricia trie tidak terlalu dibutuhkan.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{Gambar/gambar-trie}
