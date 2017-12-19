@@ -8,7 +8,7 @@ Pada bab ini dijelaskan mengenai beberapa perancangan yang dilakukan dalam penel
 
 Leksikon yang dirancang pada perangkat lunak morphological parser ini akan menyimpan kata dasar dan kata turunan yang valid dalam bahasa Indonesia. Kata dasar secara khusus akan dimuat ke dalam program dalam sebuah struktur data trie supaya dapat diakses dengan cepat dan efektif. Sementara kata turunan akan diakses setelah proses parsing selesai untuk melakukan validasi terhadap hasil dari proses parsing. Kata dasar dan kata turunan tersebut harus disimpan dalam file khusus supaya dapat dimuat dan diakses oleh program ketika program dijalankan.
 
-Semua kata dasar disimpan pada sebuah file yang bernama 'roots' berekstensi '.lxc' pada sebuah folder dalam program. Setiap entri kata dasar dipisahkan oleh karakter enter dan disimpan terurut berdasarkan urutan abjad. Untuk menyimpan kata turunan dari setiap kata dasar, dibuat sebuah file khusus dengan nama file sama dengan kata dasar dan berekstensi '.lxc' yang disimpan pada folder yang sama. Isi dari setiap file tersebut adalah kata dasar diikuti oleh semua kemungkinan kata turunan yang dapat dibentuk dari kata dasar yang bersangkutan.
+Setiap kata dasar disimpan pada sebuah file yang bernama sama dengan kata dasar yang disimpan dan berekstensi '.lxc' pada sebuah folder dalam program. Kata turunan untuk setiap kata dasar disimpan dalam file kata dasar yang bersangkutan. Isi dari setiap file tersebut adalah kata dasar diikuti oleh semua kemungkinan kata turunan yang dapat dibentuk dari kata dasar yang bersangkutan.
 
 Seperti dibahas pada subbab \ref{sec:peranParser}, penyimpanan kata turunan tidak bisa dilakukan dengan menulis semua bentuk turunan secara langsung karena akan sangat tidak efisien, terutama untuk bentuk turunan dari afiks yang sangat produktif seperti prefiks \textit{ber-} dan prefiks \textit{me-}. Perlu struktur khusus untuk menyimpan semua kata turunan dengan efisien dalam setiap file kata dasar. Oleh karena itu, dirancang beberapa lambang leksikon seperti dapat dilihat pada tabel \ref{tabel-lambang-leksikon} berikut.
 
@@ -273,7 +273,7 @@ Method yang terdapat dalam kelas ini adalah:
 \subsection{Kelas Lexicon}
 \label{sec:kelasLexicon}
 
-Kelas ini berfungsi untuk menyimpan kumpulan kata dasar dan kata turunan yang digunakan selama proses morphological parsing berlangsung. Seperti telah diuraikan pada subbab \ref{sec:strukturPenyimpananLeksikon}, kata dasar disimpan dalam sebuah file bernama 'roots.lxc' dan kata turunan untuk setiap kata dasar disimpan dalam file bernama sama dengan kata dasar yang bersangkutan. File 'roots.lxc' akan dimuat oleh kelas ini setiap kali program dijalankan dan kata dasar akan disimpan dalam trie yang berbentuk pohon node supaya pencarian kata dasar dapat dilakukan dengan cepat dan efektif.
+Kelas ini berfungsi untuk menyimpan kumpulan kata dasar dan kata turunan yang digunakan selama proses morphological parsing berlangsung. Seperti telah diuraikan pada subbab \ref{sec:strukturPenyimpananLeksikon}, kata dasar disimpan dalam sebuah folder bernama 'lxc' dengan setiap kata dasar dibuatkan sebuah file bernama sama dengan kata dasar yang disimpan dan berekstensi '.lxc'. Kata turunan untuk setiap kata dasar disimpan dalam file kata dasar yang bersangkutan. Isi dari folder 'lxc' akan dimuat oleh kelas ini setiap kali program dijalankan dan kata dasar akan disimpan dalam trie yang berbentuk pohon node supaya pencarian kata dasar dapat dilakukan dengan cepat dan efektif.
 
 Atribut yang terdapat dalam kelas ini adalah:
 

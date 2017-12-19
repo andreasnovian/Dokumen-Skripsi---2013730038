@@ -273,11 +273,11 @@ Tabel \ref{tabel-waktu-create} berikut berisi waktu untuk melakukan create sebua
 \hline
 \textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
 \hline
-1&5488\\
-2&5382\\
-3&5267\\
+1&4\\
+2&4\\
+3&5\\
 \hline
-\textbf{Rata-rata} & \textbf{5379}\\
+\textbf{Rata-rata} & \textbf{4,33}\\
 \hline
 \end{tabular}
 \caption{Tabel waktu untuk melakukan create sebuah entri baru dalam leksikon} 
@@ -311,15 +311,15 @@ Tabel \ref{tabel-waktu-delete} berikut berisi waktu untuk melakukan delete sebua
 \hline
 \textbf{Proses ke-} & \textbf{Waktu} (dalam milidetik) \\
 \hline
-1&5244\\
-2&5055\\
-3&5083\\
+1&1\\
+2&1\\
+3&1\\
 \hline
-\textbf{Rata-rata} & \textbf{5127,33}\\
+\textbf{Rata-rata} & \textbf{1}\\
 \hline
 \end{tabular}
 \caption{Tabel waktu untuk melakukan delete sebuah entri dalam leksikon} 
 \label{tabel-waktu-delete}
 \end{table}
 
-Dapat dilihat dari hasil pengujian terhadap waktu untuk melakukan create, update, dan delete entri leksikon di atas, waktu yang dibutuhkan untuk melakukan create dan delete cukup lama, yaitu sekitar 5000 milidetik atau 5 detik, sementara waktu yang dibutuhkan untuk melakukan update sangat singkat, yaitu sekitar 4 milidetik. Hal ini dikarenakan untuk melakukan create dan delete dibutuhkan proses berupa menelusuri pohon node untuk membuat node yang diperlukan ketika melakukan create atau untuk menghapus node ketika melakukan delete. Selain itu, juga dibutuhkan waktu yang cukup lama untuk mencetak keseluruhan kata yang ada dalam pohon node untuk dimasukkan ke dalam file 'roots.lxc' yang menyimpan semua kata dasar. Untuk melakukan update dapat diselesaikan dalam waktu singkat karena proses ini hanya berupa menulis kata turunan baru ke dalam file kata dasar yang bersangkutan.
+Dapat dilihat dari hasil pengujian terhadap waktu untuk melakukan create, update, dan delete entri leksikon di atas, waktu yang dibutuhkan untuk melakukan create, update, dan delete entri leksikon sangat singkat, yaitu di bawah 10 milidetik untuk setiap operasi yang dilakukan. Hal ini dikarenakan untuk melakukan operasi-operasi tersebut proses yang dilakukan adalah memodifikasi file lxc yang bersangkutan, yaitu menambahkan file baru saat melakukan create, menyisipkan kata turunan ke dalam file saat melakukan update, dan menghapus file saat melakukan delete. Proses ini sebagian besar dilakukan oleh sistem operasi dan dilakukan dengan sangat efektif.

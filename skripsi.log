@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.24)  19 DEC 2017 10:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.24)  19 DEC 2017 10:41
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1590,7 +1590,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
 Here is how much of TeX's memory you used:
  37434 strings out of 493323
  800725 string characters out of 3139065
- 1466384 words of memory out of 3000000
+ 1467384 words of memory out of 3000000
  38081 multiletter control sequences out of 15000+200000
  98629 words of font info for 172 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -1623,7 +1623,7 @@ lic/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:
 eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy1
 0.pfb>
-Output written on skripsi.pdf (109 pages, 1967304 bytes).
+Output written on skripsi.pdf (109 pages, 1966959 bytes).
 PDF statistics:
  3266 PDF objects out of 3580 (max. 8388607)
  1952 named destinations out of 2073 (max. 500000)
